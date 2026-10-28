@@ -7,7 +7,10 @@
       "shortLabel": "FdI",
       "kind": "party",
       "colorHex": "34478F",
-      "aliases": ["Fratelli d'Italia, Fratelli d'Italia con Giorgia Meloni"],
+      "aliases": [
+        "Fratelli d'Italia",
+        "Fratelli d'Italia con Giorgia Meloni"
+      ],
       "bindings": []
     },
     {
@@ -16,7 +19,9 @@
       "shortLabel": "PD",
       "kind": "party",
       "colorHex": "E94F39",
-      "aliases": ["Partito Democratico"],
+      "aliases": [
+        "Partito Democratico"
+      ],
       "bindings": []
     },
     {
@@ -25,7 +30,9 @@
       "shortLabel": "M5S",
       "kind": "party",
       "colorHex": "E3B62F",
-      "aliases": ["Movimento 5 Stelle"],
+      "aliases": [
+        "Movimento 5 Stelle"
+      ],
       "bindings": []
     },
     {
@@ -34,7 +41,9 @@
       "shortLabel": "FI",
       "kind": "party",
       "colorHex": "299BD6",
-      "aliases": ["Forza Italia"],
+      "aliases": [
+        "Forza Italia"
+      ],
       "bindings": []
     },
     {
@@ -43,7 +52,11 @@
       "shortLabel": "L",
       "kind": "party",
       "colorHex": "168574",
-      "aliases": ["Lega, Lega Salvini Premier, Lega - Salvini Premier"],
+      "aliases": [
+        "Lega",
+        "Lega Salvini Premier",
+        "Lega - Salvini Premier"
+      ],
       "bindings": []
     },
     {
@@ -52,7 +65,9 @@
       "shortLabel": "AVS",
       "kind": "party",
       "colorHex": "78A83F",
-      "aliases": ["Alleanza Verdi e Sinistra"],
+      "aliases": [
+        "Alleanza Verdi e Sinistra"
+      ],
       "bindings": []
     },
     {
@@ -61,7 +76,9 @@
       "shortLabel": "Az",
       "kind": "party",
       "colorHex": "7564C4",
-      "aliases": ["Azione"],
+      "aliases": [
+        "Azione"
+      ],
       "bindings": []
     },
     {
@@ -70,16 +87,20 @@
       "shortLabel": "IV",
       "kind": "party",
       "colorHex": "DA4D91",
-      "aliases": ["Italia Viva"],
+      "aliases": [
+        "Italia Viva"
+      ],
       "bindings": []
     },
     {
-      "id": "+europa",
+      "id": "piu-europa",
       "label": "+Europa",
       "shortLabel": "+EU",
       "kind": "party",
       "colorHex": "D5812B",
-      "aliases": ["+Europa"],
+      "aliases": [
+        "+Europa"
+      ],
       "bindings": []
     },
     {
@@ -88,7 +109,9 @@
       "shortLabel": "NM",
       "kind": "party",
       "colorHex": "94815E",
-      "aliases": ["Noi Moderati"],
+      "aliases": [
+        "Noi Moderati"
+      ],
       "bindings": []
     },
     {
@@ -97,7 +120,9 @@
       "shortLabel": "LeU",
       "kind": "party",
       "colorHex": "B64764",
-      "aliases": ["Liberi e Uguali"],
+      "aliases": [
+        "Liberi e Uguali"
+      ],
       "bindings": []
     },
     {
@@ -106,7 +131,10 @@
       "shortLabel": "PaP",
       "kind": "party",
       "colorHex": "9E303E",
-      "aliases": ["Potere al Popolo"],
+      "aliases": [
+        "Potere al Popolo",
+        "POTERE AL POPOLO!"
+      ],
       "bindings": []
     }
   ]

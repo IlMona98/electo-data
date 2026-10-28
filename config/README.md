@@ -61,3 +61,11 @@ Alias ambigui, associazioni duplicate, colori non validi e immagini mancanti/cor
 Il documento pubblicato è [v1/identities.json](https://ilmona98.github.io/electo-data/v1/identities.json). Il client conserva l’ultimo registro valido e le immagini già caricate; le immagini sono verificate tramite SHA-256. Un errore non sostituisce il registro valido con dati non verificati. Le modifiche raggiungono gli utenti dopo la pubblicazione Actions e un aggiornamento del registro nell’app, senza ulteriori build.
 
 [identities.example.json](identities.example.json) è un esempio separato e non viene applicato automaticamente.
+
+## Due errori comuni
+
+L’identificativo tecnico `id` accetta solo lettere minuscole, numeri e trattini: per +Europa usa per esempio `piu-europa`. Il nome visibile e gli alias possono contenere il segno `+`.
+
+Ogni nome alternativo deve essere una stringa distinta: `"aliases": ["Lega", "Lega Salvini Premier", "Lega - Salvini Premier"]`. Inserire tutte le varianti in una sola stringa separata da virgole cerca invece quella frase intera, che non corrisponde alle singole liste.
+
+Per le liste congiunte, come `AZIONE - ITALIA VIVA - CALENDA`, scegli un’identità dedicata o assegna esplicitamente il nome completo a un’unica identità. Non inserire lo stesso alias in due partiti. Il file pubblicato `public/v1/identities.json` è generato: modifica sempre `config/identities.json` e controlla che l’ultima esecuzione di Actions sia verde prima di aggiornare il registro nell’app.
