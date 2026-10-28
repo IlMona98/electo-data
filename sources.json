@@ -79,5 +79,88 @@
     "level": "Regione",
     "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20190526.zip",
     "zipMember": "europee-20190526.txt"
+  },
+  {
+    "id": "camera-2018",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 2018,
+    "dateLabel": "4 marzo 2018",
+    "coverage": "Italia · voto di lista",
+    "note": "Voti di lista e affluenza delle tabelle ministeriali territoriali, riconciliati con i corrispondenti totali nazionali. Valle d’Aosta ed estero esclusi. Non rappresenta i voti ai candidati uninominali né una ricostruzione dei seggi.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20180304.zip",
+    "sourceFile": "Camera2018_Scrutini_Italia_Liv_Circ.txt + Camera2018_Liste_Italia_Liv_Circ.txt",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20180304.zip",
+    "level": "Circoscrizione",
+    "adapter": "aggregate-tables",
+    "tables": {
+      "stats": "Camera2018_Scrutini_Italia_Liv_Circ.txt",
+      "lists": "Camera2018_Liste_Italia_Liv_Circ.txt",
+      "nationalStats": "Camera2018_Scrutini_Italia_Liv_Naz.txt",
+      "nationalLists": "Camera2018_Liste_Italia_Liv_Naz.txt",
+      "statsKey": "CIRCOSCR",
+      "listsKey": "CIRCOSCRIZIONE"
+    }
+  },
+  {
+    "id": "senato-2018",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2018,
+    "dateLabel": "4 marzo 2018",
+    "coverage": "Italia · voto di lista",
+    "note": "Voti di lista e affluenza delle tabelle ministeriali territoriali, riconciliati con i corrispondenti totali nazionali. Valle d’Aosta ed estero esclusi. Non rappresenta i voti ai candidati uninominali né una ricostruzione dei seggi. Gli elettori sono quelli del file Senato 2018 e non coincidono necessariamente con il corpo elettorale della Camera.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20180304.zip",
+    "sourceFile": "Senato2018_Scrutini_Italia_Liv_Reg.txt + Senato2018_Liste_Italia_Liv_Reg.txt",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20180304.zip",
+    "level": "Regione",
+    "adapter": "aggregate-tables",
+    "tables": {
+      "stats": "Senato2018_Scrutini_Italia_Liv_Reg.txt",
+      "lists": "Senato2018_Liste_Italia_Liv_Reg.txt",
+      "nationalStats": "Senato2018_Scrutini_Italia_Liv_Naz.txt",
+      "nationalLists": "Senato2018_Liste_Italia_Liv_Naz.txt",
+      "statsKey": "REGIONE",
+      "listsKey": "REGIONE"
+    }
+  },
+  {
+    "id": "europee-2014",
+    "title": "Europee",
+    "category": "europee",
+    "year": 2014,
+    "dateLabel": "25 maggio 2014",
+    "coverage": "Italia · voto sul territorio",
+    "note": "Aggregazione dei voti di lista del file comunale. Voto estero escluso. Le percentuali si riferiscono esclusivamente al perimetro del file.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20140525.zip",
+    "sourceFile": "europee-20140525.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20140525.zip",
+    "zipMember": "europee-20140525.txt",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA",
+          "PAVIA",
+          "MONTESCANO"
+        ],
+        "electors": 348,
+        "voters": 352,
+        "reason": "Nel file originale Montescano (Pavia) riporta 348 elettori e 352 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ]
   }
 ]

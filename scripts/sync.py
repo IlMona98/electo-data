@@ -12,7 +12,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
-from aggregate import build, require
+from aggregate import build, build_tables, require
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_DOWNLOAD = 160_000_000
@@ -73,16 +73,27 @@ def fetch(config, cache_dir):
         if error.code != 304 or not raw_path.exists() or not metadata.get('sha256'): raise
         raw = raw_path.read_bytes()
         require(hashlib.sha256(raw).hexdigest()==metadata['sha256'], 'Corrupt download cache')
-    member = config.get('zipMember')
-    if member:
+    if config.get('adapter') == 'aggregate-tables':
+        names = [config['tables'][key] for key in ['stats','lists','nationalStats','nationalLists']]
+        require(len(set(names)) == 4, 'Duplicate aggregate table configuration')
+        members = {}
         with zipfile.ZipFile(io.BytesIO(raw)) as archive:
-            info = archive.getinfo(member)
-            require(not info.flag_bits & 1 and info.file_size <= MAX_EXTRACTED, 'Invalid or oversized ZIP member')
-            data = archive.read(info)
+            for name in names:
+                info = archive.getinfo(name)
+                require(not info.flag_bits & 1 and info.file_size <= MAX_EXTRACTED, 'Invalid or oversized ZIP member')
+                members[name] = archive.read(info)
+        election = build_tables(members, config)
     else:
-        data = raw
-    require(len(data) <= MAX_EXTRACTED, 'Extracted source too large')
-    election = build(data, config)
+        member = config.get('zipMember')
+        if member:
+            with zipfile.ZipFile(io.BytesIO(raw)) as archive:
+                info = archive.getinfo(member)
+                require(not info.flag_bits & 1 and info.file_size <= MAX_EXTRACTED, 'Invalid or oversized ZIP member')
+                data = archive.read(info)
+        else:
+            data = raw
+        require(len(data) <= MAX_EXTRACTED, 'Extracted source too large')
+        election = build(data, config)
     election['retrievedAt'] = metadata['acquiredAt']
     checked_at = now()
     election['checkedAt'] = checked_at
