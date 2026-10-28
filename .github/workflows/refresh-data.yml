@@ -3,7 +3,7 @@ name: Aggiorna dati Eligendo
 on:
   push:
     branches: [main]
-    paths: ['scripts/**', 'sources.json', 'tests/**', '.github/workflows/**']
+    paths: ['scripts/**', 'sources.json', 'tests/**', 'config/**', 'public/symbols/**', '.github/workflows/**']
   workflow_dispatch:
   schedule:
     - cron: '37 4 * * *'

@@ -58,4 +58,12 @@ Gli output sono in `public/v1/`. Il catalogo viene pubblicato soltanto dopo i do
 
 ## Verifiche dei formati storici
 
-La suite comprende 17 test, inclusi controlli su tabelle territoriali e nazionali originali del 2018 e un estratto comunale originale del 2014. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
+La suite comprende 26 test, inclusi controlli su tabelle territoriali e nazionali originali del 2018 e un estratto comunale originale del 2014. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
+
+## Consultazioni politiche e identità visive
+
+I risultati Camera e Senato conservano file e identificativi separati. I campi opzionali `eventID` e `chamber` consentono all’app di presentarli nella stessa pagina Politiche: i sei risultati attuali corrispondono a cinque pagine, senza sommare conteggi o territori delle due camere.
+
+Il proprietario definisce simboli e colori comuni a tutti gli utenti in [`config/identities.json`](config/identities.json). Il registro iniziale è vuoto: nessun colore politico è assegnato arbitrariamente. Per configurarlo segui la [guida](config/README.md), usando il [catalogo dei nomi originali](https://ilmona98.github.io/electo-data/v1/identity-candidates.json). Le immagini PNG si caricano in `public/symbols/`. Modifiche al registro o ai simboli avviano la validazione e la pubblicazione automatica.
+
+Endpoint del registro compilato: `https://ilmona98.github.io/electo-data/v1/identities.json`. La pipeline verifica associazioni non ambigue, colori, percorsi, integrità e dimensioni dei PNG e genera gli hash delle immagini. Un registro non valido ferma la pubblicazione. Gli esempi sono illustrativi e non vengono applicati automaticamente.

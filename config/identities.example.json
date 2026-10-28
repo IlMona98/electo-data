@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "entities": [
+    {
+      "id": "partito-esempio",
+      "label": "Partito di esempio",
+      "shortLabel": "PE",
+      "kind": "party",
+      "colorHex": "123456",
+      "aliases": ["DENOMINAZIONE ESATTA NEL FILE MINISTERIALE"],
+      "bindings": []
+    },
+    {
+      "id": "coalizione-esempio",
+      "label": "Coalizione di esempio",
+      "shortLabel": "CE",
+      "kind": "coalition",
+      "colorHex": "654321",
+      "aliases": [],
+      "bindings": [
+        {"electionID": "camera-esempio", "resultID": "risultato-esempio"}
+      ]
+    }
+  ]
+}

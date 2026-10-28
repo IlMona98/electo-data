@@ -13,6 +13,7 @@ import urllib.parse
 import urllib.request
 import zipfile
 from aggregate import build, build_tables, require
+from identities import compile_registry, candidate_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_DOWNLOAD = 160_000_000
@@ -126,12 +127,15 @@ def main():
     parser.add_argument('--output',type=Path,default=ROOT/'public/v1')
     args=parser.parse_args()
     configs=json.loads((ROOT/'sources.json').read_text())
+    registry=compile_registry(json.loads((ROOT/'config/identities.json').read_text()), ROOT/'public')
     elections=[]
     for config in configs:
         print('Checking',config['id'],flush=True)
         elections.append(fetch(config,args.cache))
     # All sources must succeed before the deployable set is updated.
     archive=publish(elections,args.output)
+    atomic_write(args.output/'identities.json',encode(registry))
+    atomic_write(args.output/'identity-candidates.json',encode(candidate_catalog(elections)))
     print('Validated',len(archive['elections']),'elections; source checked:',archive['checkedAt'])
 
 if __name__=='__main__': main()

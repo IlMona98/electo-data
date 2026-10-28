@@ -53,6 +53,8 @@ def build(raw, config):
     if quality_notes:
         item['qualityNotes'] = sorted(quality_notes)
         item['note'] += ' ' + ' '.join(sorted(quality_notes))
+    for key in ['eventID','chamber']:
+        if config.get(key) is not None: item[key] = config[key]
     item.update(territories=records, sourceSHA256=hashlib.sha256(raw).hexdigest(), sourceUnits=len(units))
     return item
 
@@ -67,7 +69,7 @@ def count(value):
 
 def public_metadata(config):
     keys = ['id','title','category','year','dateLabel','coverage','note','sourceURL','sourceFile']
-    return {key: config[key] for key in keys}
+    return {key: config[key] for key in keys} | {key: config[key] for key in ['eventID','chamber'] if key in config}
 
 
 def build_tables(members, config):

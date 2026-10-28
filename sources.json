@@ -51,7 +51,9 @@
       "COMUNE"
     ],
     "level": "Circoscrizione",
-    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/catalogoagid/Camera_Italia_LivComune.csv"
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/catalogoagid/Camera_Italia_LivComune.csv",
+    "eventID": "politiche-20220925",
+    "chamber": "camera"
   },
   {
     "id": "europee-2019",
@@ -100,7 +102,9 @@
       "nationalLists": "Camera2018_Liste_Italia_Liv_Naz.txt",
       "statsKey": "CIRCOSCR",
       "listsKey": "CIRCOSCRIZIONE"
-    }
+    },
+    "eventID": "politiche-20180304",
+    "chamber": "camera"
   },
   {
     "id": "senato-2018",
@@ -122,7 +126,9 @@
       "nationalLists": "Senato2018_Liste_Italia_Liv_Naz.txt",
       "statsKey": "REGIONE",
       "listsKey": "REGIONE"
-    }
+    },
+    "eventID": "politiche-20180304",
+    "chamber": "senato"
   },
   {
     "id": "europee-2014",
