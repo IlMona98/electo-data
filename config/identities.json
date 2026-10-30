@@ -24,77 +24,13 @@
       "bindings": []
     },
     {
-      "id": "fratelli-d-italia",
-      "label": "Fratelli d'Italia",
-      "shortLabel": "FdI",
+      "id": "alleanza-nazionale",
+      "label": "Alleanza Nazionale",
+      "shortLabel": "AN",
       "kind": "party",
       "colorHex": "34478F",
       "aliases": [
-        "Fratelli d'Italia",
-        "Fratelli d'Italia con Giorgia Meloni",
-        "Fratelli d'Italia - Alleanza Nazionale"
-      ],
-      "bindings": []
-    },
-    {
-      "id": "partito-democratico",
-      "label": "Partito Democratico",
-      "shortLabel": "PD",
-      "kind": "party",
-      "colorHex": "E94F39",
-      "aliases": [
-        "Partito Democratico",
-        "Partito Democratico - Italia democratica e progressista"
-      ],
-      "bindings": []
-    },
-    {
-      "id": "movimento-5-stelle",
-      "label": "Movimento 5 Stelle",
-      "shortLabel": "M5S",
-      "kind": "party",
-      "colorHex": "E3B62F",
-      "aliases": [
-        "Movimento 5 Stelle",
-        "Movimento 5 Stelle beppegrillo.it"
-      ],
-      "bindings": []
-    },
-    {
-      "id": "forza-italia",
-      "label": "Forza Italia",
-      "shortLabel": "FI",
-      "kind": "party",
-      "colorHex": "299BD6",
-      "aliases": [
-        "Forza Italia",
-        "Forza Italia - Noi Moderati - PPE"
-      ],
-      "bindings": []
-    },
-    {
-      "id": "lega",
-      "label": "Lega",
-      "shortLabel": "L",
-      "kind": "party",
-      "colorHex": "168574",
-      "aliases": [
-        "Lega",
-        "Lega Salvini Premier",
-        "Lega per Salvini Premier",
-        "Lega - Salvini Premier"
-      ],
-      "bindings": []
-    },
-    {
-      "id": "lega-nord",
-      "label": "Lega Nord",
-      "shortLabel": "L",
-      "kind": "party",
-      "colorHex": "168574",
-      "aliases": [
-        "Lega Nord",
-        "Lega Nord-Die Freiheitlichen-Basta Euro"
+        "Alleanza Nazionale"
       ],
       "bindings": []
     },
@@ -134,6 +70,53 @@
       "bindings": []
     },
     {
+      "id": "europa-verde",
+      "label": "Europa Verde",
+      "shortLabel": "EV",
+      "kind": "party",
+      "colorHex": "439C58",
+      "aliases": [
+        "Europa Verde"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "federazione-dei-verdi",
+      "label": "Federazione dei Verdi",
+      "shortLabel": "FdV",
+      "kind": "party",
+      "colorHex": "439C58",
+      "aliases": [
+        "Federazione dei Verdi"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "forza-italia",
+      "label": "Forza Italia",
+      "shortLabel": "FI",
+      "kind": "party",
+      "colorHex": "299BD6",
+      "aliases": [
+        "Forza Italia",
+        "Forza Italia - Noi Moderati - PPE"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "fratelli-d-italia",
+      "label": "Fratelli d'Italia",
+      "shortLabel": "FdI",
+      "kind": "party",
+      "colorHex": "34478F",
+      "aliases": [
+        "Fratelli d'Italia",
+        "Fratelli d'Italia con Giorgia Meloni",
+        "Fratelli d'Italia - Alleanza Nazionale"
+      ],
+      "bindings": []
+    },
+    {
       "id": "italia-viva",
       "label": "Italia Viva",
       "shortLabel": "IV",
@@ -145,14 +128,51 @@
       "bindings": []
     },
     {
-      "id": "piu-europa",
-      "label": "+Europa",
-      "shortLabel": "+EU",
+      "id": "lega",
+      "label": "Lega",
+      "shortLabel": "L",
       "kind": "party",
-      "colorHex": "D5812B",
+      "colorHex": "168574",
       "aliases": [
-        "+Europa",
-        "+Europa - Italia in comune - PDE Italia"
+        "Lega",
+        "Lega Salvini Premier",
+        "Lega per Salvini Premier",
+        "Lega - Salvini Premier"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "lega-nord",
+      "label": "Lega Nord",
+      "shortLabel": "LN",
+      "kind": "party",
+      "colorHex": "168574",
+      "aliases": [
+        "Lega Nord",
+        "Lega Nord-Die Freiheitlichen-Basta Euro"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "liberi-e-uguali",
+      "label": "Liberi e Uguali",
+      "shortLabel": "LeU",
+      "kind": "party",
+      "colorHex": "B64764",
+      "aliases": [
+        "Liberi e Uguali"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "movimento-5-stelle",
+      "label": "Movimento 5 Stelle",
+      "shortLabel": "M5S",
+      "kind": "party",
+      "colorHex": "E3B62F",
+      "aliases": [
+        "Movimento 5 Stelle",
+        "Movimento 5 Stelle beppegrillo.it"
       ],
       "bindings": []
     },
@@ -169,13 +189,52 @@
       "bindings": []
     },
     {
-      "id": "liberi-e-uguali",
-      "label": "Liberi e Uguali",
-      "shortLabel": "LeU",
+      "id": "partito-democratico",
+      "label": "Partito Democratico",
+      "shortLabel": "PD",
       "kind": "party",
-      "colorHex": "B64764",
+      "colorHex": "E94F39",
       "aliases": [
-        "Liberi e Uguali"
+        "Partito Democratico",
+        "Partito Democratico - Italia democratica e progressista"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "partito-democratico-della-sinistra",
+      "label": "Partito Democratico della Sinistra",
+      "shortLabel": "PDS",
+      "kind": "party",
+      "colorHex": "E94F39",
+      "aliases": [
+        "Partito Democratico della Sinistra",
+        "PDS"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "piu-europa",
+      "label": "+Europa",
+      "shortLabel": "+EU",
+      "kind": "party",
+      "colorHex": "D5812B",
+      "aliases": [
+        "+Europa",
+        "+Europa - Italia in comune - PDE Italia"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "popolo-della-liberta",
+      "label": "Popolo della Libertà",
+      "shortLabel": "PDL",
+      "kind": "party",
+      "colorHex": "299BD6",
+      "aliases": [
+        "Popolo della Libertà",
+        "Popolo della Liberta'",
+        "Il Popolo della Libertà",
+        "Il Popolo della Liberta'"
       ],
       "bindings": []
     },
@@ -192,6 +251,17 @@
       "bindings": []
     },
     {
+      "id": "rifondazione-comunista",
+      "label": "Rifondazione Comunista",
+      "shortLabel": "RC",
+      "kind": "party",
+      "colorHex": "8F2333",
+      "aliases": [
+        "Rifondazione Comunista"
+      ],
+      "bindings": []
+    },
+    {
       "id": "stati-uniti-d-europa",
       "label": "Stati Uniti d'Europa",
       "shortLabel": "SUE",
@@ -199,6 +269,17 @@
       "colorHex": "D5812B",
       "aliases": [
         "Stati Uniti d'Europa"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "sud-chiama-nord",
+      "label": "Sud chiama Nord",
+      "shortLabel": "ScN",
+      "kind": "party",
+      "colorHex": "53A8A4",
+      "aliases": [
+        "Sud chiama Nord"
       ],
       "bindings": []
     },
