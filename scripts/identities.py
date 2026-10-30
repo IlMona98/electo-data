@@ -1,4 +1,4 @@
-"""Validate owner-defined global colors, exact aliases, bindings and PNG symbols."""
+"""Validate shared identities and prepare PNG or owner-supplied SVG symbols."""
 import hashlib
 import json
 from pathlib import Path
@@ -42,6 +42,47 @@ def validate_png(raw):
     require(len(pixels)<=maximum and decompressor.eof and not decompressor.unused_data,'Invalid PNG pixel stream')
 
 
+def render_svg(raw):
+    # Parse without entities, then render self-contained artwork with all I/O denied.
+    from defusedxml import ElementTree
+    from cairosvg.surface import PNGSurface
+    import tinycss2
+    from xml.etree.ElementTree import tostring
+    require(len(raw)<=2_000_000,'SVG exceeds 2 MB')
+    root=ElementTree.fromstring(raw,forbid_entities=True,forbid_external=True)
+    require(root.tag in ('svg','{http://www.w3.org/2000/svg}svg'),'Expected an SVG document')
+    nodes=list(root.iter())
+    require(len(nodes)<=10000,'SVG has too many elements')
+    def check_css(tokens):
+        for token in tokens:
+            require(not (token.type=='at-keyword' and token.lower_value=='import'),'SVG cannot import stylesheets')
+            if token.type=='url':
+                require(token.value.startswith('#'),'SVG resource URLs must be internal')
+            elif token.type=='function':
+                if token.lower_name=='url':
+                    value=tinycss2.serialize(token.arguments).strip().strip('\"\'')
+                    require(value.startswith('#'),'SVG resource URLs must be internal')
+                check_css(token.arguments)
+            elif hasattr(token,'content'):
+                check_css(token.content)
+    for node in nodes:
+        tag=node.tag.rsplit('}',1)[-1].lower()
+        require(tag not in ('script','foreignobject','animate','animatemotion','animatetransform','set'),'SVG must be static artwork')
+        if tag=='style':check_css(tinycss2.parse_component_value_list(node.text or ''))
+        for key,value in node.attrib.items():
+            attribute=key.rsplit('}',1)[-1].lower()
+            require(not attribute.startswith('on'),'SVG event handlers are not supported')
+            if attribute in ('href','src'):
+                require(value.startswith('#'),'SVG resources must be embedded as vector paths')
+            check_css(tinycss2.parse_component_value_list(value))
+    def deny_resource(url,resource_type):
+        raise ValueError('SVG cannot load external resources: use self-contained vector paths')
+    result=PNGSurface.convert(bytestring=tostring(root),output_width=512,output_height=512,
+        parent_width=512,parent_height=512,unsafe=False,url_fetcher=deny_resource)
+    validate_png(result)
+    return result
+
+
 def compile_registry(source, public):
     require(isinstance(source,dict) and source.get('schemaVersion')==1 and isinstance(source.get('entities'),list), 'Invalid identity registry')
     require(len(source['entities'])<=5000,'Too many identities')
@@ -68,9 +109,15 @@ def compile_registry(source, public):
             bindings.add(key)
         if item.get('symbolPath') is not None:
             path=item['symbolPath']
-            require(isinstance(path,str) and re.fullmatch(r'symbols/[a-zA-Z0-9_-]+\.png',path),'Symbol must be a PNG inside public/symbols')
+            require(isinstance(path,str) and re.fullmatch(r'symbols/[a-zA-Z0-9_-]+\.(png|svg)',path),'Symbol must be a PNG or SVG inside public/symbols')
             raw=(public/path).read_bytes()
-            validate_png(raw)
+            if path.endswith('.svg'):
+                raw=render_svg(raw)
+                # Immutable output keeps cached registries and existing iOS builds compatible.
+                path='symbols/rendered-'+hashlib.sha256(raw).hexdigest()+'.png'
+                (public/path).write_bytes(raw)
+            else:
+                validate_png(raw)
             entity['symbolPath']=path
             entity['symbolSHA256']=hashlib.sha256(raw).hexdigest()
         elif item.get('symbolSHA256') is not None:

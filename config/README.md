@@ -8,7 +8,7 @@ Il registro iniziale è vuoto: non sono stati inventati colori o attribuiti simb
 
 1. Cerca la denominazione originale in [identity-candidates.json](https://ilmona98.github.io/electo-data/v1/identity-candidates.json). Per ogni nome trovi gli identificativi dei risultati e delle schede da cui proviene.
 2. Modifica `config/identities.json` con l’editor GitHub e aggiungi una voce a `entities`, seguendo il modello sotto.
-3. Se vuoi un logo, carica il PNG in `public/symbols/` con un nome semplice, per esempio `mio-partito.png`, e aggiungi `symbolPath`.
+3. Se vuoi un logo, carica lo SVG in `public/symbols/` con un nome semplice, per esempio `mio-partito.svg`, e aggiungi `symbolPath`.
 4. Salva sul ramo `main`. GitHub Actions valida, genera l’hash dell’immagine e pubblica il registro. Nell’app premi Aggiorna o riaprila.
 
 ```json
@@ -23,7 +23,7 @@ Il registro iniziale è vuoto: non sono stati inventati colori o attribuiti simb
       "colorHex": "123456",
       "aliases": ["DENOMINAZIONE ESATTA NEL FILE MINISTERIALE"],
       "bindings": [],
-      "symbolPath": "symbols/mio-partito.png"
+      "symbolPath": "symbols/mio-partito.svg"
     }
   ]
 }
@@ -31,7 +31,11 @@ Il registro iniziale è vuoto: non sono stati inventati colori o attribuiti simb
 
 L’esempio non assegna un colore a un partito reale. Sostituisci i valori con le tue scelte. Per iniziare senza logo ometti `symbolPath`: verrà usata la sigla. `shortLabel` è obbligatorio e deve contenere da 1 a 12 caratteri. `colorHex` contiene esattamente sei cifre esadecimali, senza `#`. `id` è una chiave stabile con lettere minuscole, numeri e trattini: non cambiarla quando cambia il nome da mostrare.
 
-PNG supportati: massimo 2 MB, larghezza e altezza fino a 4096 pixel. Per il repository è preferibile un logo quadrato e leggero. SVG non è supportato dalla visualizzazione nativa attuale. Non inserire `symbolSHA256`: viene calcolato automaticamente dopo il controllo del PNG.
+Sono supportati **SVG** e PNG, entro 2 MB. Carica lo SVG originale in `public/symbols/` e indica, per esempio, `"symbolPath": "symbols/mio-partito.svg"`. Il file di configurazione conserva il riferimento allo SVG; GitHub genera automaticamente una versione PNG trasparente da 512 × 512 pixel, con proporzioni e colori del logo conservati, e inserisce nel registro pubblicato il percorso e l’hash di quella versione. Non occorre convertire il file manualmente né cambiare il formato del registro usato dall’app. Gli output generati hanno nomi immutabili: non modificarli a mano.
+
+Esporta SVG statici e autonomi, preferibilmente con `viewBox` e testi convertiti in tracciati. Collegamenti a immagini o font esterni, script e animazioni non sono supportati. I PNG già presenti restano compatibili (massimo 4096 pixel per lato). Non inserire `symbolSHA256`: viene calcolato automaticamente.
+
+Le sigle nei riquadri colorati dell’app sono sempre bianche. I loghi caricati conservano i colori del file originale.
 
 ## Nomi alternativi e regole di corrispondenza
 
