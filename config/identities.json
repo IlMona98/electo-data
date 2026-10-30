@@ -20,7 +20,8 @@
       "kind": "party",
       "colorHex": "E94F39",
       "aliases": [
-        "Partito Democratico"
+        "Partito Democratico",
+        "Partito Democratico - Italia democratica e progressista"
       ],
       "bindings": []
     },
@@ -42,7 +43,8 @@
       "kind": "party",
       "colorHex": "299BD6",
       "aliases": [
-        "Forza Italia"
+        "Forza Italia",
+        "Forza Italia - Noi Moderati - PPE"
       ],
       "bindings": []
     },
@@ -55,6 +57,7 @@
       "aliases": [
         "Lega",
         "Lega Salvini Premier",
+        "Lega per Salvini Premier",
         "Lega - Salvini Premier"
       ],
       "bindings": []
@@ -77,7 +80,20 @@
       "kind": "party",
       "colorHex": "7564C4",
       "aliases": [
-        "Azione"
+        "Azione",
+        "Azione - Siamo europei"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "azione-italia-viva",
+      "label": "Azione - Italia Viva",
+      "shortLabel": "A-IV",
+      "kind": "party",
+      "colorHex": "A859AB",
+      "aliases": [
+        "Azione - Italia Viva",
+        "Azione - Italia Viva - Calenda"
       ],
       "bindings": []
     },
@@ -127,13 +143,37 @@
     },
     {
       "id": "potere-al-popolo",
-      "label": "Potere al Popolo",
+      "label": "Potere al Popolo!",
       "shortLabel": "PaP",
       "kind": "party",
       "colorHex": "9E303E",
       "aliases": [
         "Potere al Popolo",
-        "POTERE AL POPOLO!"
+        "Potere al Popolo!"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "stati-uniti-d-europa",
+      "label": "Stati Uniti d'Europa",
+      "shortLabel": "SUE",
+      "kind": "party",
+      "colorHex": "D5812B",
+      "aliases": [
+        "Stati Uniti d'Europa"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "sudtiroler-volkspartei",
+      "label": "Südtiroler Volkspartei",
+      "shortLabel": "SVP",
+      "kind": "party",
+      "colorHex": "46694E",
+      "aliases": [
+        "Südtiroler Volkspartei",
+        "Südtiroler Volkspartei (SVP)",
+        "Südtiroler Volkspartei (SVP) - PATT"
       ],
       "bindings": []
     }
