@@ -59,7 +59,7 @@ Gli output sono in `public/v1/`. Il catalogo viene pubblicato soltanto dopo i do
 
 ## Verifiche dei formati storici
 
-La suite comprende 30 test, inclusi controlli su tabelle territoriali e nazionali originali del 2018 e un estratto comunale originale del 2014. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
+La suite comprende 34 test, inclusi controlli su tabelle territoriali e nazionali originali del 2018 e un estratto comunale originale del 2014. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
 
 ## Consultazioni politiche e identità visive
 
@@ -70,3 +70,11 @@ Il proprietario definisce simboli e colori comuni a tutti gli utenti in [`config
 Endpoint del registro compilato: `https://ilmona98.github.io/electo-data/v1/identities.json`. La pipeline verifica associazioni non ambigue, colori, percorsi, integrità dei simboli SVG/PNG e genera gli hash delle immagini. Un registro non valido ferma la pubblicazione. Gli esempi sono illustrativi e non vengono applicati automaticamente.
 
 I simboli SVG originali restano in `public/symbols/`. La pubblicazione genera PNG trasparenti da 512 × 512 pixel, con percorso immutabile basato sull’hash. Il registro compilato resta compatibile con l’app iOS esistente; per le sigle sempre bianche serve la nuova build. Gli SVG devono essere autonomi e statici, senza risorse esterne.
+
+## Seggi delle elezioni politiche
+
+`config/seats.json` contiene i riparti verificati IPU Parline di Camera 2018, Senato 2018 e Camera 2022. Sono trascrizioni revisionate delle tabelle citate, non stime dai voti né composizioni odierne dei gruppi. La pipeline controlla totali, camera, identificativi e attribuzione prima di allegarli allo storico con il campo opzionale `seats`.
+
+Sono inclusi Italia ed estero. Le aggregazioni per coalizione restano quelle della fonte; non si duplica il conteggio dei partiti componenti. Per il Senato 2018 la fotografia iniziale comprende 314 eletti e un seggio non assegnato, su 315 elettivi; senatori a vita esclusi. Eventuali revisioni storiche dei riparti richiedono una verifica della fonte e una modifica esplicita al file. I download automatici ministeriali restano relativi ai voti.
+
+Fonti: [Camera 2018](https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20180304/), [Senato 2018](https://data.ipu.org/parliament/IT/IT-UC01/election/IT-UC01-E20180304/), [Camera 2022](https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20220925/).

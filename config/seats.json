@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "elections": [
+    {
+      "electionID": "camera-2018",
+      "seats": {
+        "chamber": "camera",
+        "totalSeats": 630,
+        "unassignedSeats": 0,
+        "groups": [
+          {
+            "id": "seats-centrosinistra",
+            "name": "Centrosinistra",
+            "seats": 122
+          },
+          {
+            "id": "seats-leu",
+            "name": "LIBERI E UGUALI",
+            "seats": 14
+          },
+          {
+            "id": "seats-m5s",
+            "name": "MOVIMENTO 5 STELLE",
+            "seats": 227
+          },
+          {
+            "id": "seats-centrodestra",
+            "name": "Centrodestra",
+            "seats": 265
+          },
+          {
+            "id": "seats-maie",
+            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "seats": 1
+          },
+          {
+            "id": "seats-usei",
+            "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "seats": 1
+          }
+        ],
+        "sourceURL": "https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20180304/",
+        "sourceLabel": "IPU Parline",
+        "coverage": "Intera Camera · Italia ed estero",
+        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale. Situazione riportata dalla fonte al 23 marzo 2018."
+      }
+    },
+    {
+      "electionID": "senato-2018",
+      "seats": {
+        "chamber": "senato",
+        "totalSeats": 315,
+        "unassignedSeats": 1,
+        "groups": [
+          {
+            "id": "seats-centrosinistra",
+            "name": "Centrosinistra",
+            "seats": 60
+          },
+          {
+            "id": "seats-leu",
+            "name": "LIBERI E UGUALI",
+            "seats": 4
+          },
+          {
+            "id": "seats-m5s",
+            "name": "MOVIMENTO 5 STELLE",
+            "seats": 111
+          },
+          {
+            "id": "seats-centrodestra",
+            "name": "Centrodestra",
+            "seats": 137
+          },
+          {
+            "id": "seats-maie",
+            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "seats": 1
+          },
+          {
+            "id": "seats-usei",
+            "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "seats": 1
+          }
+        ],
+        "sourceURL": "https://data.ipu.org/parliament/IT/IT-UC01/election/IT-UC01-E20180304/",
+        "sourceLabel": "IPU Parline",
+        "coverage": "Senato elettivo · Italia ed estero",
+        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale. Sono esclusi i senatori a vita. Un seggio M5S risultava non assegnato all’inizio della legislatura per insufficienza di candidati: è rappresentato vuoto, come nella fonte del 23 marzo 2018."
+      }
+    },
+    {
+      "electionID": "camera-2022",
+      "seats": {
+        "chamber": "camera",
+        "totalSeats": 400,
+        "unassignedSeats": 0,
+        "groups": [
+          {
+            "id": "seats-centrosinistra",
+            "name": "Centrosinistra",
+            "seats": 84
+          },
+          {
+            "id": "seats-m5s",
+            "name": "MOVIMENTO 5 STELLE",
+            "seats": 52
+          },
+          {
+            "id": "seats-azione-iv",
+            "name": "AZIONE - ITALIA VIVA - CALENDA",
+            "seats": 21
+          },
+          {
+            "id": "seats-svp",
+            "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+            "seats": 3
+          },
+          {
+            "id": "seats-centrodestra",
+            "name": "Centrodestra",
+            "seats": 237
+          },
+          {
+            "id": "seats-sud-chiama-nord",
+            "name": "SUD CHIAMA NORD",
+            "seats": 1
+          },
+          {
+            "id": "seats-vda",
+            "name": "Vallée d’Aoste",
+            "seats": 1
+          },
+          {
+            "id": "seats-maie",
+            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "seats": 1
+          }
+        ],
+        "sourceURL": "https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20220925/",
+        "sourceLabel": "IPU Parline",
+        "coverage": "Intera Camera · Italia ed estero",
+        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale."
+      }
+    }
+  ]
+}

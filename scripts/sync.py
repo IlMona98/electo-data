@@ -14,6 +14,7 @@ import urllib.request
 import zipfile
 from aggregate import build, build_tables, require
 from identities import compile_registry, candidate_catalog
+from seats import apply_seats
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_DOWNLOAD = 160_000_000
@@ -133,6 +134,7 @@ def main():
         print('Checking',config['id'],flush=True)
         elections.append(fetch(config,args.cache))
     # All sources must succeed before the deployable set is updated.
+    apply_seats(elections,json.loads((ROOT/'config/seats.json').read_text()))
     archive=publish(elections,args.output)
     atomic_write(args.output/'identities.json',encode(registry))
     atomic_write(args.output/'identity-candidates.json',encode(candidate_catalog(elections)))
