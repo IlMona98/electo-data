@@ -97,6 +97,7 @@ def fetch(config, cache_dir):
         require(len(data) <= MAX_EXTRACTED, 'Extracted source too large')
         election = build(data, config)
     election['retrievedAt'] = metadata['acquiredAt']
+    require(all(t['electors'] > 0 and 0 <= t['voters'] <= t['electors'] for t in election['territories']), 'Invalid aggregate turnout')
     checked_at = now()
     election['checkedAt'] = checked_at
     # Cache only after normalization succeeds. Never replace public data on failure.

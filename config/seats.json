@@ -288,6 +288,156 @@
           ]
         }
       ]
+    },
+    {
+      "electionID": "senato-2022",
+      "chamber": "senato",
+      "type": "S",
+      "date": "25/09/2022",
+      "totalSeats": 200,
+      "unreportedSeats": 0,
+      "sources": [
+        {
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 25/09/2022 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 25/09/2022 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=2&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=201&lev1=1",
+          "heading": "Senato 25/09/2022 Area VALLE D'AOSTA Collegio U01 (AOSTA)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U01 (TRENTO)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=401&lev1=1",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U01 (TRENTO)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U02 (ROVERETO)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=402&lev1=2",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U02 (ROVERETO)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U03 (PERGINE VALSUGANA)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=403&lev1=3",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U03 (PERGINE VALSUGANA)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U04 (BOLZANO/BOZEN)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=404&lev1=4",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U04 (BOLZANO/BOZEN)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U05 (MERANO/MERAN)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=405&lev1=5",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U05 (MERANO/MERAN)"
+        },
+        {
+          "kind": "uninominale",
+          "label": "Trentino-Alto Adige · U06 (BRESSANONE/BRIXEN)",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/09/2022&tpa=G&tpe=L&lev0=4&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=406&lev1=6",
+          "heading": "Senato 25/09/2022 Area TRENTINO-ALTO ADIGE/SUDTIROL Collegio U06 (BRESSANONE/BRIXEN)"
+        }
+      ],
+      "groups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - +EUROPA - ALLEANZA VERDI E SINISTRA"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-azione-iv",
+          "name": "AZIONE - ITALIA VIVA - CALENDA",
+          "aliases": [
+            "AZIONE - ITALIA VIVA - CALENDA"
+          ]
+        },
+        {
+          "id": "seats-svp",
+          "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+          "aliases": [
+            "SUDTIROLER VOLKSPARTEI (SVP) - PATT"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA",
+            "LEGA PER SALVINI PREM.-FORZA IT.-NOI MODERATI-FRAT. D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-sud-chiama-nord",
+          "name": "SUD CHIAMA NORD",
+          "aliases": [
+            "SUD CHIAMA NORD"
+          ]
+        },
+        {
+          "id": "seats-vda",
+          "name": "Vallée d’Aoste",
+          "aliases": [
+            "Vallée d’Aoste",
+            "VALLÉE D’AOSTE – AUTONOMIE PROGRÈS FÉDÉRALISME"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        },
+        {
+          "id": "seats-campobase",
+          "name": "CAMPOBASE +EUROPA-ALL.VERDI E SIN.– PD-AZIONE-ITALIA VIVA",
+          "aliases": [
+            "CAMPOBASE +EUROPA-ALL.VERDI E SIN.– PD-AZIONE-ITALIA VIVA"
+          ]
+        }
+      ],
+      "specialCollegeCount": 6
     }
   ]
 }

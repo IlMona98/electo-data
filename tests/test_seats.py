@@ -5,6 +5,7 @@ import sys
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from seats import apply_seats, parse_page, official_page
+from urllib.parse import parse_qs,urlsplit
 
 ROOT=Path(__file__).resolve().parents[1]
 class SeatsTests(unittest.TestCase):
@@ -14,7 +15,9 @@ class SeatsTests(unittest.TestCase):
     def fixture(self,url):
         for r in self.document['elections']:
             for s in r['sources']:
-                if s['url']==url:return (ROOT/'tests/fixtures/seats'/f"{r['electionID']}-{s['kind']}.html").read_bytes()
+                if s['url']==url:
+                    suffix=s['kind']+('-'+parse_qs(urlsplit(url).query)['ne1'][0] if s['kind']=='uninominale' else '')
+                    return (ROOT/'tests/fixtures/seats'/f"{r['electionID']}-{suffix}.html").read_bytes()
         raise ValueError('Unexpected source')
     def test_real_ministerial_tables_reconcile_entire_chambers_and_reuse_bindings(self):
         result=apply_seats(self.elections,self.document,self.fixture)
@@ -24,7 +27,7 @@ class SeatsTests(unittest.TestCase):
             self.assertEqual(next(g for g in s['groups'] if g['name']=='MOVIMENTO 5 STELLE')['resultID'],'m5s-original')
             self.assertEqual(e['territories'][0]['results'][0]['votes'],123)
             self.assertEqual(s['sourceLabel'],'Eligendo · Archivio')
-            self.assertEqual(len(s['sourcePages']),3)
+            self.assertEqual(len(s['sourcePages']),9 if e['id']=='senato-2022' else 3)
         self.assertEqual(next(e['seats'] for e in result if e['id']=='senato-2018')['unassignedSeats'],1)
         camera=next(e['seats'] for e in result if e['id']=='camera-2022')
         self.assertEqual(next(g['seats'] for g in camera['groups'] if g['id']=='seats-centrodestra'),237)
@@ -78,3 +81,14 @@ class SeatsTests(unittest.TestCase):
             with self.assertRaises(ValueError):official_page(url)
         self.document['elections'][0]['electionID']='camera-2030'
         with self.assertRaises(ValueError):apply_seats(self.elections,self.document,self.fixture)
+
+    def test_senato_2022_includes_all_six_special_colleges(self):
+        result=apply_seats(self.elections,self.document,self.fixture)
+        senate=next(e['seats'] for e in result if e['id']=='senato-2022')
+        self.assertEqual(senate['totalSeats'],200)
+        self.assertEqual(sum(g['seats'] for g in senate['groups']),200)
+        self.assertNotIn('314',senate['note'])
+        self.assertEqual(next(g['seats'] for g in senate['groups'] if g['id']=='seats-campobase'),1)
+        changed=copy.deepcopy(self.document)
+        next(r for r in changed['elections'] if r['electionID']=='senato-2022')['sources'].pop()
+        with self.assertRaises(ValueError):apply_seats(self.elections,changed,self.fixture)

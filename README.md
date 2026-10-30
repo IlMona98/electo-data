@@ -28,16 +28,16 @@ I job hanno permessi limitati: scrittura dei contenuti per salvare i soli risult
 
 ## Copertura attuale
 
-- Europee 8–9 giugno 2024: Italia e 20 regioni, esclusi estero e fuori sede.
-- Camera 25 settembre 2022: Italia e 27 circoscrizioni del file proporzionale, esclusi Valle d’Aosta ed estero; sono sommati i VOTILISTA originali senza aggiungere i riparti dei voti ai soli candidati.
-- Europee 26 maggio 2019: Italia e 20 regioni, escluso estero.
-- Camera 4 marzo 2018: Italia e 27 circoscrizioni; Valle d’Aosta ed estero esclusi.
-- Senato 4 marzo 2018: Italia e 19 regioni del file; Valle d’Aosta ed estero esclusi.
-- Europee 25 maggio 2014: Italia e 20 regioni, escluso estero.
+**23 schede, 524 riepiloghi territoriali e 15 consultazioni nell’app**, dal 1994 al 2024:
 
-Totale: **6 consultazioni e 139 riepiloghi territoriali**. Per Camera e Senato 2018 i voti di ciascuna lista e l’affluenza sono verificati contro le tabelle nazionali pubblicate nello stesso ZIP. I conteggi con decimali a zero, per esempio `12345,00`, sono letti come interi esatti: valori frazionari vengono rifiutati.
+- Politiche, **Camera e Senato**: 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
+- Europee: 2024, 2019, 2014, 2009, 2004, 1999, 1994.
 
-Nel file Europee 2014 Montescano (Pavia) riporta 348 elettori e 352 votanti. Il convertitore conserva questi valori e pubblica una nota nel campo `note` e in `qualityNotes`. L’eccezione è limitata a quell’unità e a quei conteggi esatti; altre incoerenze continuano a fermare la pubblicazione. Se la fonte corregge i valori, la nota non viene più emessa.
+La Camera 1994–2001 riporta la scheda proporzionale; il Senato degli stessi anni riporta i gruppi/candidati. Il campo `resultKind` mantiene la distinzione nell’interfaccia. I file Senato di lista 2006, 2008, 2013 e 2022 escludono Valle d’Aosta, Trentino-Alto Adige ed estero; non si aggiungono voti uninominali a un denominatore di lista. Ogni record dichiara il perimetro in `coverage` e `note`.
+
+Il nazionale è la somma esatta dei territori del rispettivo file. Le unità dei comuni suddivisi includono i collegi, per evitare doppioni o perdite. Per Camera e Senato 2018 le tabelle territoriali si riconciliano anche con le nazionali originali dello ZIP. I decimali a zero, per esempio `12345,00`, sono letti come interi esatti nelle tabelle aggregate.
+
+Alcune fonti originali riportano più votanti che elettori per specifici comuni. I valori sono conservati tramite eccezioni revisionate per l’esatta unità e gli esatti conteggi; l’app li segnala nei pulsanti info. Camera 1994 contiene inoltre **-7 voti per RIN.SALENTINA** in `PUGLIA / Foggia - Lucera / Parte di Comune FOGGIA`: è conservata quella singola contribuzione nella somma, senza convertirla in positiva né azzerarla. Altre contribuzioni negative sono rifiutate. I risultati aggregati pubblicati sono sempre non negativi. Se la fonte corregge un’anomalia, la relativa nota non viene più emessa.
 
 Le percentuali si riferiscono al perimetro dei file. Non sono assegnazioni di seggi. Nuove consultazioni o formati richiedono un adattatore verificato e una voce in `sources.json`: la pipeline aggiorna automaticamente le fonti supportate, non promette di interpretare qualsiasi futuro file del Ministero.
 
@@ -59,7 +59,7 @@ Gli output sono in `public/v1/`. Il catalogo viene pubblicato soltanto dopo i do
 
 ## Verifiche dei formati storici
 
-La suite comprende 34 test, inclusi controlli su tabelle territoriali e nazionali originali del 2018 e un estratto comunale originale del 2014. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
+La suite comprende controlli sulle tabelle nazionali e territoriali del 2018, estratti comunali originali dal 1994, anomalie revisionate e collegi speciali del Senato 2022. Le fixture sono in `tests/fixtures/`; le stringhe sono state ricodificate in UTF-8, senza modificare nomi o conteggi. Non sono inclusi dati personali di candidati.
 
 ## Consultazioni politiche e identità visive
 
@@ -73,7 +73,7 @@ I simboli SVG originali restano in `public/symbols/`. La pubblicazione genera PN
 
 ## Seggi delle elezioni politiche
 
-`config/seats.json` configura il recupero automatico dei seggi da Eligendo Archivio per Camera 2018, Senato 2018 e Camera 2022: indirizzi di Italia, estero e Valle d’Aosta, capienza e associazioni tra liste e coalizioni. Non contiene conteggi dei partiti né dipende da IPU. La pipeline legge le celle ministeriali, somma uninominale e proporzionale senza duplicazioni, verifica i totali di ogni pagina e riconcilia l’intera camera prima di allegare `seats`. Le tre fonti, con impronta e controllo, sono incluse in `sourcePages` e `checkedAt`. Qualsiasi pagina mancante, data errata, coalizione ambigua o totale incoerente blocca la pubblicazione e conserva i dati precedenti. Il Senato 2018 riporta 314 dei 315 seggi elettivi: il seggio non riportato resta vuoto. Gli estratti originali utilizzati nei test sono in `tests/fixtures/seats/`.
+`config/seats.json` configura il recupero automatico dei seggi da Eligendo Archivio per Camera e Senato 2018 e 2022: indirizzi di Italia, estero e Valle d’Aosta, capienza e associazioni tra liste e coalizioni. Non contiene conteggi dei partiti né dipende da IPU. La pipeline legge le celle ministeriali, somma uninominale e proporzionale senza duplicazioni, verifica i totali di ogni pagina e riconcilia l’intera camera prima di allegare `seats`. Le fonti, con impronta e controllo, sono incluse in `sourcePages` e `checkedAt`. Qualsiasi pagina mancante, data errata, coalizione ambigua o totale incoerente blocca la pubblicazione e conserva i dati precedenti. Il Senato 2018 riporta 314 dei 315 seggi elettivi: il seggio non riportato resta vuoto. Gli estratti originali utilizzati nei test sono in `tests/fixtures/seats/`.
 
 Le associazioni tra liste e coalizioni sono dichiarate per denominazione ufficiale: i conteggi sono letti ogni volta dalle pagine, senza attribuire gli uninominali al partito maggiore. Nuove coalizioni o differenze rispetto alla capienza attesa richiedono una revisione della configurazione; non vengono completate con stime. I download automatici ministeriali comprendono sia voti sia seggi. Colori, simboli e label restano definiti separatamente in `config/identities.json`.
 
@@ -86,3 +86,10 @@ Le tabelle nazionali Eligendo arricchiscono i risultati con `coalitionID` e `coa
 `listSeats` indica **solo i seggi proporzionali di lista in Italia, esclusa Valle d’Aosta ed estero**, letti dalla colonna Seggi delle righe di lista. È pubblicato solo sul riepilogo nazionale; nei territori senza riparto verificato il campo resta assente. Non comprende gli uninominali della coalizione e non va sommato ai totali dell’emiciclo. Lo zero è un conteggio esplicito, l’assenza è un dato non disponibile.
 
 `sources.json` dichiara `previousElectionID`, `comparisonTerritories` (`national`, `regional`) ed eventuali `comparisonAliases`, da denominazione attuale a denominazione precedente. Le associazioni riguardano soltanto confronti verificati e non vengono dedotte da colori, label o somiglianza dei nomi. Camera 2022 si confronta con Camera 2018 solo a livello nazionale; non si equiparano le circoscrizioni dopo cambi di confine. Europee 2024/2019 si collegano rispettivamente a 2019/2014 nei perimetri domestici disponibili. Una lista mancante, un archivio precedente assente o un territorio non abilitato non produce una variazione pari a zero: il confronto resta assente.
+
+
+### Riparti disponibili e limiti dell’estensione
+
+I riparti completi dei seggi sono verificati per Camera e Senato 2018/2022. Senato 2022 controlla nove pagine, includendo i sei collegi speciali del Trentino-Alto Adige: il totale è 200, senza completamenti stimati. La formazione locale Campobase rimane una voce distinta: non viene forzata in una coalizione nazionale che non ne descrive tutti i componenti. Le politiche precedenti aggiungono voti e partecipazione: l’app non disegna un emiciclo quando manca il riparto completo verificato.
+
+I nuovi confronti con l’elezione precedente sono dichiarati esplicitamente e limitati al nazionale. Non si confronta il Senato 2022 con il perimetro diverso del 2018, né il voto di lista del Senato 2006 con i gruppi del 2001. Non si confrontano regioni storiche per somiglianza del nome. Il registro grafico del proprietario non viene modificato: le vecchie denominazioni senza associazione restano neutre e vengono incluse nel catalogo `identity-candidates.json`.

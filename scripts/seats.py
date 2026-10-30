@@ -85,8 +85,8 @@ def parse_page(raw, source):
     p=SeatTable(); p.feed(raw.decode('utf-8-sig'))
     require(p.tables==1 and source['heading'] in p.headings, 'Wrong election, area or missing results table')
     kind=source['kind']; blocks=[]; seen=set(); declared=[]; current=None; current_key=None
-    require(kind in ('italia','estero','valledaosta'), 'Unknown seat area')
-    if kind!='valledaosta':
+    require(kind in ('italia','estero','valledaosta','uninominale'), 'Unknown seat area')
+    if kind not in ('valledaosta','uninominale'):
         require(any(a.get('id')=='hseggi' and v=='Seggi' for row in p.rows for a,v in row), 'Missing seat column')
     for row in p.rows:
         candidates=[(a['id'],v) for a,v in row if re.fullmatch(r'candidato\d+',a.get('id',''))]
@@ -95,7 +95,7 @@ def parse_page(raw, source):
             key,name=candidates[0]
             require(len(candidates)==1 and key not in seen, 'Duplicate candidate block'); seen.add(key)
             current_key=key
-            if kind=='valledaosta':
+            if kind in ('valledaosta','uninominale'):
                 current={'seats': int(any(v=='Eletto' for a,v in row)), 'lists':[]}
             else:
                 require(kind=='italia' and name=='CANDIDATI UNINOMINALI', 'Unexpected candidate row')
@@ -111,16 +111,16 @@ def parse_page(raw, source):
                 require(kind=='italia' and current is not None, 'List without candidate block')
                 require(any(a.get('id')==key and current_key in a.get('headers','').split() for a,v in row), 'List belongs to another candidate block')
                 current['lists'].append(name); current['seats']+=cell_count(row)
-        elif kind=='valledaosta':
+        elif kind in ('valledaosta','uninominale'):
             names=[v for a,v in row if 'hlista' in a.get('headers','').split()]
             if names:
-                require(current is not None and all(names), 'Unlinked Valle d’Aosta list')
-                require(all(current_key in a.get('headers','').split() for a,v in row if 'hlista' in a.get('headers','').split()), 'Valle d’Aosta list belongs to another candidate')
+                require(current is not None and all(names), 'Unlinked special college list')
+                require(all(current_key in a.get('headers','').split() for a,v in row if 'hlista' in a.get('headers','').split()), 'Special college list belongs to another candidate')
                 current['lists'].extend(names)
         if any('hseggi' in a.get('headers','').split() and 'htotalecomplessivo' in a.get('headers','') for a,v in row):
             declared.append(cell_count(row))
     require(blocks and all(b['lists'] for b in blocks), 'Missing linked lists')
-    if kind=='valledaosta': require(sum(b['seats'] for b in blocks)==1, 'Valle d’Aosta elected candidate not declared')
+    if kind in ('valledaosta','uninominale'): require(sum(b['seats'] for b in blocks)==1, 'Special college elected candidate not declared')
     else:
         require(len(declared)==(2 if kind=='italia' else 1), 'Missing ministerial seat totals')
         require(sum(b['seats'] for b in blocks)==sum(declared), 'Ministerial rows do not reconcile with totals')
@@ -129,7 +129,11 @@ def parse_page(raw, source):
 
 def allocation(record, fetcher=download_page):
     sources=record['sources']
-    require(len(sources)==3 and {s['kind'] for s in sources}=={'italia','estero','valledaosta'}, 'Incomplete seat coverage')
+    special=record.get('specialCollegeCount',0)
+    require(type(special) is int and 0<=special<=6, 'Invalid special college count')
+    expected=Counter(italia=1,estero=1,valledaosta=1)
+    if special: expected['uninominale']=special
+    require(Counter(s['kind'] for s in sources)==expected and len({s['url'] for s in sources})==len(sources), 'Incomplete seat coverage')
     definitions={g['id']:g for g in record['groups']}; aliases={}
     require(len(definitions)==len(record['groups']), 'Duplicate seat group definitions')
     for g in definitions.values():
@@ -141,8 +145,10 @@ def allocation(record, fetcher=download_page):
     for source in sources:
         params=official_page(source['url'])
         require(params['tpel']==[record['type']] and params['dtel']==[record['date']], 'Seat URL belongs to another election')
-        expected_area={'italia':'I','estero':'E','valledaosta':'H' if record['type']=='C' else 'G'}[source['kind']]
+        expected_area={'italia':'I','estero':'E','valledaosta':'H' if record['type']=='C' else 'G','uninominale':'G'}[source['kind']]
         require(params.get('tpa')==[expected_area], 'Wrong seat area URL')
+        if source['kind']=='uninominale':
+            require(record['type']=='S' and params.get('lev0')==['4'] and params.get('tpe')==['L'], 'Wrong special college')
         raw=fetcher(source['url'])
         for block in parse_page(raw,source):
             # Every linked list must map to the same group; coalition wins cannot be attributed to its largest party.
@@ -173,7 +179,9 @@ def allocation(record, fetcher=download_page):
                 checkedAt=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                 coverage=('Intera Camera' if record['chamber']=='camera' else 'Senato elettivo')+' · Italia ed estero',
                 note='Seggi uninominali e di lista pubblicati da Eligendo, aggregati per coalizione/lista. Comprende Italia, Valle d’Aosta ed estero; non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo.'
-                + (' La fonte riporta 314 dei 315 seggi elettivi; il seggio non riportato è rappresentato vuoto. Senatori a vita esclusi.' if record['chamber']=='senato' else ''))
+                + (f" La fonte riporta {record['totalSeats']-record['unreportedSeats']} dei {record['totalSeats']} seggi elettivi; i seggi non riportati sono rappresentati vuoti." if record['unreportedSeats'] else '')
+                + (' Comprende i sei collegi uninominali del Trentino-Alto Adige.' if special else '')
+                + (' Senatori a vita esclusi.' if record['chamber']=='senato' else ''))
 
 
 def apply_seats(elections, document, fetcher=download_page):

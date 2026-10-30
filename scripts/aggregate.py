@@ -15,17 +15,22 @@ def build(raw, config):
     rows = csv.DictReader(io.StringIO(decode(raw)), delimiter=';')
     units, seen, territories = {}, set(), {}
     reviewed = {tuple(item["unit"]): item for item in config.get("reviewedTurnoutExceptions", [])}
+    reviewed_votes = {(tuple(item['unit']),item['list']):item for item in config.get('reviewedVoteExceptions',[])}
     quality_notes = set()
     group, place, party, votes, electors, voters = config['columns']
     for row in rows:
         scope = row[group].strip()
         key = tuple(row[field].strip() for field in config['unit'])
         name = row[party].strip()
+        require(name, 'Missing list or group denomination')
         count = int(row[votes])
         totals = (int(row[electors]), int(row[voters]))
         exception = reviewed.get(key)
         matches_reviewed = exception is not None and totals == (exception['electors'], exception['voters'])
-        require(count >= 0 and totals[0] >= 0 and totals[1] >= 0 and (totals[1] <= totals[0] or matches_reviewed), 'Invalid vote counts')
+        vote_exception=reviewed_votes.get((key,name))
+        matches_vote_exception=vote_exception is not None and count==vote_exception['votes'] and totals==(vote_exception['electors'],vote_exception['voters'])
+        require((count >= 0 or matches_vote_exception) and totals[0] >= 0 and totals[1] >= 0 and (totals[1] <= totals[0] or matches_reviewed), 'Invalid vote counts')
+        if count < 0: quality_notes.add(vote_exception['reason'])
         if totals[1] > totals[0]:
             quality_notes.add(exception['reason'])
         require((key, name) not in seen, 'Duplicate list/territory row')
@@ -43,13 +48,14 @@ def build(raw, config):
     records = []
     for target in sorted(territories.values(), key=lambda t:(t['id'] != 'italia',t['name'])):
         target['results'] = [dict(id=slug(name),name=name,votes=count) for name,count in sorted(target.pop('lists').items(),key=lambda x:(-x[1],x[0]))]
+        require(all(x['votes'] >= 0 for x in target['results']), 'Negative aggregate list votes')
         require(sum(x['votes'] for x in target['results']) <= target['voters'], 'Votes exceed voters')
         records.append(target)
     require(len(records) > 1 and records[0]['id'] == 'italia', 'Empty or incomplete source')
     # Every domestic aggregate is the exact sum of its territorial components.
     for field in ['electors','voters']:
         require(records and records[0][field] == sum(t[field] for t in records[1:]), 'National totals disagree with territories')
-    item = {k:v for k,v in config.items() if k not in ['columns','unit','level','downloadURL','zipMember','reviewedTurnoutExceptions']}
+    item = {k:v for k,v in config.items() if k not in ['columns','unit','level','downloadURL','zipMember','reviewedTurnoutExceptions','reviewedVoteExceptions']}
     if quality_notes:
         item['qualityNotes'] = sorted(quality_notes)
         item['note'] += ' ' + ' '.join(sorted(quality_notes))

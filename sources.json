@@ -68,6 +68,37 @@
     }
   },
   {
+    "id": "senato-2022",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2022,
+    "dateLabel": "25 settembre 2022",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20220925.zip",
+    "sourceFile": "Senato_Italia_LivComune.csv",
+    "columns": [
+      "CIRC-REG",
+      "COMUNE",
+      "DESCRLISTA",
+      "VOTILISTA",
+      "ELETTORITOT",
+      "VOTANTITOT"
+    ],
+    "unit": [
+      "CIRC-REG",
+      "COLLPLURI",
+      "COLLUNINOM",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20220925.zip",
+    "zipMember": "Senato_Italia_LivComune.csv",
+    "eventID": "politiche-20220925",
+    "chamber": "senato",
+    "resultKind": "lists"
+  },
+  {
     "id": "europee-2019",
     "title": "Europee",
     "category": "europee",
@@ -121,7 +152,11 @@
       "listsKey": "CIRCOSCRIZIONE"
     },
     "eventID": "politiche-20180304",
-    "chamber": "camera"
+    "chamber": "camera",
+    "previousElectionID": "camera-2013",
+    "comparisonTerritories": [
+      "national"
+    ]
   },
   {
     "id": "senato-2018",
@@ -183,6 +218,1208 @@
         "electors": 348,
         "voters": 352,
         "reason": "Nel file originale Montescano (Pavia) riporta 348 elettori e 352 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "europee-2009",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-2013",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 2013,
+    "dateLabel": "24 febbraio 2013",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20130224.zip",
+    "sourceFile": "camera_italia-20130224.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20130224.zip",
+    "zipMember": "camera_italia-20130224.txt",
+    "eventID": "politiche-20130224",
+    "chamber": "camera",
+    "resultKind": "lists",
+    "previousElectionID": "camera-2008",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "senato-2013",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2013,
+    "dateLabel": "24 febbraio 2013",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20130224.zip",
+    "sourceFile": "senato_italia-20130224.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20130224.zip",
+    "zipMember": "senato_italia-20130224.txt",
+    "eventID": "politiche-20130224",
+    "chamber": "senato",
+    "resultKind": "lists",
+    "previousElectionID": "senato-2008",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "europee-2009",
+    "title": "Europee",
+    "category": "europee",
+    "year": 2009,
+    "dateLabel": "7 giugno 2009",
+    "coverage": "Italia · voto sul territorio",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20090607.zip",
+    "sourceFile": "europee-20090607.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20090607.zip",
+    "zipMember": "europee-20090607.txt",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA",
+          "PAVIA",
+          "MONTESCANO"
+        ],
+        "electors": 347,
+        "voters": 365,
+        "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 347 elettori e 365 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "LECCO",
+          "MORTERONE"
+        ],
+        "electors": 33,
+        "voters": 35,
+        "reason": "Nel file originale LOMBARDIA / LECCO / MORTERONE riporta 33 elettori e 35 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "europee-2004",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-2008",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 2008,
+    "dateLabel": "13 aprile 2008",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20080413.zip",
+    "sourceFile": "camera_italia-20080413.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20080413.zip",
+    "zipMember": "camera_italia-20080413.txt",
+    "eventID": "politiche-20080413",
+    "chamber": "camera",
+    "resultKind": "lists",
+    "previousElectionID": "camera-2006",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "senato-2008",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2008,
+    "dateLabel": "13 aprile 2008",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20080413.zip",
+    "sourceFile": "senato_italia-20080413.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20080413.zip",
+    "zipMember": "senato_italia-20080413.txt",
+    "eventID": "politiche-20080413",
+    "chamber": "senato",
+    "resultKind": "lists",
+    "previousElectionID": "senato-2006",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-2006",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 2006,
+    "dateLabel": "9 aprile 2006",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20060409.zip",
+    "sourceFile": "camera_italia-20060409.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTILISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20060409.zip",
+    "zipMember": "camera_italia-20060409.txt",
+    "eventID": "politiche-20060409",
+    "chamber": "camera",
+    "resultKind": "lists",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA 2",
+          "COMO",
+          "RAMPONIO VERNA"
+        ],
+        "electors": 329,
+        "voters": 334,
+        "reason": "Nel file originale LOMBARDIA 2 / COMO / RAMPONIO VERNA riporta 329 elettori e 334 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA 3",
+          "MANTOVA",
+          "PIEVE DI CORIANO"
+        ],
+        "electors": 758,
+        "voters": 763,
+        "reason": "Nel file originale LOMBARDIA 3 / MANTOVA / PIEVE DI CORIANO riporta 758 elettori e 763 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA 3",
+          "PAVIA",
+          "MONTESCANO"
+        ],
+        "electors": 323,
+        "voters": 422,
+        "reason": "Nel file originale LOMBARDIA 3 / PAVIA / MONTESCANO riporta 323 elettori e 422 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "RIMINI",
+          "CORIANO"
+        ],
+        "electors": 7313,
+        "voters": 7337,
+        "reason": "Nel file originale EMILIA-ROMAGNA / RIMINI / CORIANO riporta 7313 elettori e 7337 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ]
+  },
+  {
+    "id": "senato-2006",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2006,
+    "dateLabel": "9 aprile 2006",
+    "coverage": "Italia · voto di lista",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20060409.zip",
+    "sourceFile": "senato_italia-20060409.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI_TOTALI",
+      "VOTANTI_TOTALI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20060409.zip",
+    "zipMember": "senato_italia-20060409.txt",
+    "eventID": "politiche-20060409",
+    "chamber": "senato",
+    "resultKind": "lists",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA",
+          "PAVIA",
+          "MONTESCANO"
+        ],
+        "electors": 297,
+        "voters": 398,
+        "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 297 elettori e 398 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "MANTOVA",
+          "PIEVE DI CORIANO"
+        ],
+        "electors": 711,
+        "voters": 719,
+        "reason": "Nel file originale LOMBARDIA / MANTOVA / PIEVE DI CORIANO riporta 711 elettori e 719 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "COMO",
+          "RAMPONIO VERNA"
+        ],
+        "electors": 314,
+        "voters": 321,
+        "reason": "Nel file originale LOMBARDIA / COMO / RAMPONIO VERNA riporta 314 elettori e 321 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ]
+  },
+  {
+    "id": "europee-2004",
+    "title": "Europee",
+    "category": "europee",
+    "year": 2004,
+    "dateLabel": "12 giugno 2004",
+    "coverage": "Italia · voto sul territorio",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20040612.zip",
+    "sourceFile": "europee-20040612.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTILISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20040612.zip",
+    "zipMember": "europee-20040612.txt",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "Emilia Romagna",
+          "Reggio Emilia",
+          "CARPINETI"
+        ],
+        "electors": 2805,
+        "voters": 3042,
+        "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CARPINETI riporta 2805 elettori e 3042 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "Emilia Romagna",
+          "Reggio Emilia",
+          "CASALGRANDE"
+        ],
+        "electors": 3543,
+        "voters": 10408,
+        "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASALGRANDE riporta 3543 elettori e 10408 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "Emilia Romagna",
+          "Reggio Emilia",
+          "CASTELLARANO"
+        ],
+        "electors": 3612,
+        "voters": 7959,
+        "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASTELLARANO riporta 3612 elettori e 7959 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "Emilia Romagna",
+          "Reggio Emilia",
+          "CASTELNOVO NE' MONTI"
+        ],
+        "electors": 6329,
+        "voters": 7059,
+        "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASTELNOVO NE' MONTI riporta 6329 elettori e 7059 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "Lombardia",
+          "Pavia",
+          "MONTESCANO"
+        ],
+        "electors": 344,
+        "voters": 351,
+        "reason": "Nel file originale Lombardia / Pavia / MONTESCANO riporta 344 elettori e 351 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "europee-1999",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-2001",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 2001,
+    "dateLabel": "13 maggio 2001",
+    "coverage": "Italia · voto proporzionale",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20010513.zip",
+    "sourceFile": "camera-20010513_Proporzionale.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20010513.zip",
+    "zipMember": "camera-20010513_Proporzionale.txt",
+    "eventID": "politiche-20010513",
+    "chamber": "camera",
+    "resultKind": "proportional-lists",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA 3",
+          "Voghera",
+          "MONTESCANO"
+        ],
+        "electors": 352,
+        "voters": 410,
+        "reason": "Nel file originale LOMBARDIA 3 / Voghera / MONTESCANO riporta 352 elettori e 410 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE 2",
+          "Canelli",
+          "BERGOLO"
+        ],
+        "electors": 70,
+        "voters": 71,
+        "reason": "Nel file originale PIEMONTE 2 / Canelli / BERGOLO riporta 70 elettori e 71 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "camera-1996",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "senato-2001",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 2001,
+    "dateLabel": "13 maggio 2001",
+    "coverage": "Italia · voto ai gruppi",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20010513.zip",
+    "sourceFile": "senato-20010513.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20010513.zip",
+    "zipMember": "senato-20010513.txt",
+    "eventID": "politiche-20010513",
+    "chamber": "senato",
+    "resultKind": "groups",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "PIEMONTE",
+          "Biella",
+          "VALDENGO"
+        ],
+        "electors": 1793,
+        "voters": 1797,
+        "reason": "Nel file originale PIEMONTE / Biella / VALDENGO riporta 1793 elettori e 1797 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "Pavia",
+          "MONTESCANO"
+        ],
+        "electors": 326,
+        "voters": 384,
+        "reason": "Nel file originale LOMBARDIA / Pavia / MONTESCANO riporta 326 elettori e 384 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "senato-1996",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "europee-1999",
+    "title": "Europee",
+    "category": "europee",
+    "year": 1999,
+    "dateLabel": "13 giugno 1999",
+    "coverage": "Italia · voto sul territorio",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19990613.zip",
+    "sourceFile": "europee-19990613.txt",
+    "columns": [
+      "DESCRREG",
+      "DESCRCOMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "DESCRREG",
+      "DESCRPROV",
+      "DESCRCOMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19990613.zip",
+    "zipMember": "europee-19990613.txt",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "PIEMONTE",
+          "ALESSANDRIA",
+          "GAVAZZANA"
+        ],
+        "electors": 92,
+        "voters": 108,
+        "reason": "Nel file originale PIEMONTE / ALESSANDRIA / GAVAZZANA riporta 92 elettori e 108 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "ASTI",
+          "SAN GIORGIO SCARAMPI"
+        ],
+        "electors": 130,
+        "voters": 131,
+        "reason": "Nel file originale PIEMONTE / ASTI / SAN GIORGIO SCARAMPI riporta 130 elettori e 131 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "VENETO",
+          "VICENZA",
+          "ROSA'"
+        ],
+        "electors": 552,
+        "voters": 7456,
+        "reason": "Nel file originale VENETO / VICENZA / ROSA' riporta 552 elettori e 7456 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "europee-1994",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-1996",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 1996,
+    "dateLabel": "21 aprile 1996",
+    "coverage": "Italia · voto proporzionale",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19960421.zip",
+    "sourceFile": "camera-19960421_Proporzionale.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19960421.zip",
+    "zipMember": "camera-19960421_Proporzionale.txt",
+    "eventID": "politiche-19960421",
+    "chamber": "camera",
+    "resultKind": "proportional-lists",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LIGURIA",
+          "Imperia",
+          "COSTARAINERA"
+        ],
+        "electors": 591,
+        "voters": 595,
+        "reason": "Nel file originale LIGURIA / Imperia / COSTARAINERA riporta 591 elettori e 595 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Rimini - Riccione",
+          "CORIANO"
+        ],
+        "electors": 6525,
+        "voters": 6786,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Rimini - Riccione / CORIANO riporta 6525 elettori e 6786 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "FRIULI VENEZIA GIULIA",
+          "Cervignano del Friuli",
+          "VISCO"
+        ],
+        "electors": 641,
+        "voters": 672,
+        "reason": "Nel file originale FRIULI VENEZIA GIULIA / Cervignano del Friuli / VISCO riporta 641 elettori e 672 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO 1",
+          "Velletri",
+          "NEMI"
+        ],
+        "electors": 1411,
+        "voters": 1447,
+        "reason": "Nel file originale LAZIO 1 / Velletri / NEMI riporta 1411 elettori e 1447 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "camera-1994",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "senato-1996",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 1996,
+    "dateLabel": "21 aprile 1996",
+    "coverage": "Italia · voto ai gruppi",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19960421.zip",
+    "sourceFile": "senato-19960421.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19960421.zip",
+    "zipMember": "senato-19960421.txt",
+    "eventID": "politiche-19960421",
+    "chamber": "senato",
+    "resultKind": "groups",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LIGURIA",
+          "San Remo",
+          "COSTARAINERA"
+        ],
+        "electors": 538,
+        "voters": 546,
+        "reason": "Nel file originale LIGURIA / San Remo / COSTARAINERA riporta 538 elettori e 546 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "Merano",
+          "SENALES"
+        ],
+        "electors": 491,
+        "voters": 814,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / Merano / SENALES riporta 491 elettori e 814 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "Bressanone",
+          "LAION"
+        ],
+        "electors": 760,
+        "voters": 1221,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / Bressanone / LAION riporta 760 elettori e 1221 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "SICILIA",
+          "Acireale",
+          "BRONTE"
+        ],
+        "electors": 15,
+        "voters": 9517,
+        "reason": "Nel file originale SICILIA / Acireale / BRONTE riporta 15 elettori e 9517 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Rimini",
+          "CORIANO"
+        ],
+        "electors": 5692,
+        "voters": 5805,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Rimini / CORIANO riporta 5692 elettori e 5805 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Velletri",
+          "NEMI"
+        ],
+        "electors": 1261,
+        "voters": 1305,
+        "reason": "Nel file originale LAZIO / Velletri / NEMI riporta 1261 elettori e 1305 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ],
+    "previousElectionID": "senato-1994",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "camera-1994",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 1994,
+    "dateLabel": "27 marzo 1994",
+    "coverage": "Italia · voto proporzionale",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19940327.zip",
+    "sourceFile": "camera-19940327_Proporzionale.txt",
+    "columns": [
+      "CIRCOSCRIZIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "CIRCOSCRIZIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Circoscrizione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19940327.zip",
+    "zipMember": "camera-19940327_Proporzionale.txt",
+    "eventID": "politiche-19940327",
+    "chamber": "camera",
+    "resultKind": "proportional-lists",
+    "reviewedVoteExceptions": [
+      {
+        "unit": [
+          "PUGLIA",
+          "Foggia - Lucera",
+          "Parte di Comune FOGGIA"
+        ],
+        "list": "RIN.SALENTINA",
+        "votes": -7,
+        "electors": 22939,
+        "voters": 19840,
+        "reason": "Il file originale riporta -7 voti per RIN.SALENTINA in PUGLIA / Foggia - Lucera / Parte di Comune FOGGIA. Il valore viene conservato nella somma territoriale, senza azzerarlo né convertirlo in positivo."
+      }
+    ]
+  },
+  {
+    "id": "europee-1994",
+    "title": "Europee",
+    "category": "europee",
+    "year": 1994,
+    "dateLabel": "12 giugno 1994",
+    "coverage": "Italia · voto sul territorio",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19940612.zip",
+    "sourceFile": "europee-19940612.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "PROVINCIA",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19940612.zip",
+    "zipMember": "europee-19940612.txt",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "LOMBARDIA",
+          "PAVIA",
+          "MONTESCANO"
+        ],
+        "electors": 337,
+        "voters": 392,
+        "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 337 elettori e 392 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "FORLI'-CESENA",
+          "CORIANO"
+        ],
+        "electors": 6215,
+        "voters": 6467,
+        "reason": "Nel file originale EMILIA-ROMAGNA / FORLI'-CESENA / CORIANO riporta 6215 elettori e 6467 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "TRENTO",
+          "LASINO"
+        ],
+        "electors": 159,
+        "voters": 705,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / TRENTO / LASINO riporta 159 elettori e 705 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "VITERBO",
+          "MONTE ROMANO"
+        ],
+        "electors": 1633,
+        "voters": 1635,
+        "reason": "Nel file originale LAZIO / VITERBO / MONTE ROMANO riporta 1633 elettori e 1635 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      }
+    ]
+  },
+  {
+    "id": "senato-1994",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 1994,
+    "dateLabel": "27 marzo 1994",
+    "coverage": "Italia · voto ai gruppi",
+    "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19940327.zip",
+    "sourceFile": "senato-19940327.txt",
+    "columns": [
+      "REGIONE",
+      "COMUNE",
+      "LISTA",
+      "VOTI_LISTA",
+      "ELETTORI",
+      "VOTANTI"
+    ],
+    "unit": [
+      "REGIONE",
+      "COLLEGIO",
+      "COMUNE"
+    ],
+    "level": "Regione",
+    "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19940327.zip",
+    "zipMember": "senato-19940327.txt",
+    "eventID": "politiche-19940327",
+    "chamber": "senato",
+    "resultKind": "groups",
+    "reviewedTurnoutExceptions": [
+      {
+        "unit": [
+          "VALLE D'AOSTA",
+          "Aosta",
+          "PRE'-SAINT-DIDIER"
+        ],
+        "electors": 333,
+        "voters": 633,
+        "reason": "Nel file originale VALLE D'AOSTA / Aosta / PRE'-SAINT-DIDIER riporta 333 elettori e 633 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "Merano",
+          "TIROLO"
+        ],
+        "electors": 1331,
+        "voters": 1371,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / Merano / TIROLO riporta 1331 elettori e 1371 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "SARDEGNA",
+          "Nuoro",
+          "NURAGUS"
+        ],
+        "electors": 625,
+        "voters": 655,
+        "reason": "Nel file originale SARDEGNA / Nuoro / NURAGUS riporta 625 elettori e 655 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "Bressanone",
+          "SESTO"
+        ],
+        "electors": 1012,
+        "voters": 1177,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / Bressanone / SESTO riporta 1012 elettori e 1177 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "UMBRIA",
+          "Foligno",
+          "CASCIA"
+        ],
+        "electors": 1927,
+        "voters": 1992,
+        "reason": "Nel file originale UMBRIA / Foligno / CASCIA riporta 1927 elettori e 1992 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TRENTINO-ALTO ADIGE",
+          "Trento",
+          "LASINO"
+        ],
+        "electors": 634,
+        "voters": 681,
+        "reason": "Nel file originale TRENTINO-ALTO ADIGE / Trento / LASINO riporta 634 elettori e 681 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Imola",
+          "CASTENASO"
+        ],
+        "electors": 9728,
+        "voters": 9757,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Imola / CASTENASO riporta 9728 elettori e 9757 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "TOSCANA",
+          "Pistoia",
+          "UZZANO"
+        ],
+        "electors": 2700,
+        "voters": 2758,
+        "reason": "Nel file originale TOSCANA / Pistoia / UZZANO riporta 2700 elettori e 2758 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "CALABRIA",
+          "Vibo Valentia",
+          "ZACCANOPOLI"
+        ],
+        "electors": 470,
+        "voters": 510,
+        "reason": "Nel file originale CALABRIA / Vibo Valentia / ZACCANOPOLI riporta 470 elettori e 510 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "Settimo Torinese",
+          "BRUSASCO"
+        ],
+        "electors": 783,
+        "voters": 1041,
+        "reason": "Nel file originale PIEMONTE / Settimo Torinese / BRUSASCO riporta 783 elettori e 1041 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "VENETO",
+          "Cittadella",
+          "LIMENA"
+        ],
+        "electors": 3709,
+        "voters": 4014,
+        "reason": "Nel file originale VENETO / Cittadella / LIMENA riporta 3709 elettori e 4014 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "SICILIA",
+          "Monreale",
+          "PALAZZO ADRIANO"
+        ],
+        "electors": 1400,
+        "voters": 1591,
+        "reason": "Nel file originale SICILIA / Monreale / PALAZZO ADRIANO riporta 1400 elettori e 1591 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "Verbania",
+          "CAMBIASCA"
+        ],
+        "electors": 1152,
+        "voters": 1194,
+        "reason": "Nel file originale PIEMONTE / Verbania / CAMBIASCA riporta 1152 elettori e 1194 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "Biella",
+          "SAN GIACOMO VERCELLESE"
+        ],
+        "electors": 227,
+        "voters": 284,
+        "reason": "Nel file originale PIEMONTE / Biella / SAN GIACOMO VERCELLESE riporta 227 elettori e 284 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Viterbo",
+          "SAN LORENZO NUOVO"
+        ],
+        "electors": 1067,
+        "voters": 1431,
+        "reason": "Nel file originale LAZIO / Viterbo / SAN LORENZO NUOVO riporta 1067 elettori e 1431 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Viterbo",
+          "VALLERANO"
+        ],
+        "electors": 1517,
+        "voters": 1670,
+        "reason": "Nel file originale LAZIO / Viterbo / VALLERANO riporta 1517 elettori e 1670 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Parma",
+          "FELINO"
+        ],
+        "electors": 4358,
+        "voters": 4550,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Parma / FELINO riporta 4358 elettori e 4550 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Piacenza",
+          "RIVERGARO"
+        ],
+        "electors": 3455,
+        "voters": 3582,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Piacenza / RIVERGARO riporta 3455 elettori e 3582 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Guidonia - Montecelio",
+          "CAMERATA NUOVA"
+        ],
+        "electors": 290,
+        "voters": 319,
+        "reason": "Nel file originale LAZIO / Guidonia - Montecelio / CAMERATA NUOVA riporta 290 elettori e 319 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Guidonia - Montecelio",
+          "CICILIANO"
+        ],
+        "electors": 696,
+        "voters": 731,
+        "reason": "Nel file originale LAZIO / Guidonia - Montecelio / CICILIANO riporta 696 elettori e 731 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "EMILIA-ROMAGNA",
+          "Rimini",
+          "CORIANO"
+        ],
+        "electors": 5364,
+        "voters": 6068,
+        "reason": "Nel file originale EMILIA-ROMAGNA / Rimini / CORIANO riporta 5364 elettori e 6068 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "Alba",
+          "SALE DELLE LANGHE"
+        ],
+        "electors": 284,
+        "voters": 334,
+        "reason": "Nel file originale PIEMONTE / Alba / SALE DELLE LANGHE riporta 284 elettori e 334 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "PIEMONTE",
+          "Alba",
+          "VERDUNO"
+        ],
+        "electors": 227,
+        "voters": 298,
+        "reason": "Nel file originale PIEMONTE / Alba / VERDUNO riporta 227 elettori e 298 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Cassino",
+          "CASTROCIELO"
+        ],
+        "electors": 2072,
+        "voters": 2218,
+        "reason": "Nel file originale LAZIO / Cassino / CASTROCIELO riporta 2072 elettori e 2218 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "VENETO",
+          "Villafranca di Verona",
+          "ISOLA DELLA SCALA"
+        ],
+        "electors": 6609,
+        "voters": 6730,
+        "reason": "Nel file originale VENETO / Villafranca di Verona / ISOLA DELLA SCALA riporta 6609 elettori e 6730 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "VENETO",
+          "Villafranca di Verona",
+          "ROVEREDO DI GUA'"
+        ],
+        "electors": 700,
+        "voters": 821,
+        "reason": "Nel file originale VENETO / Villafranca di Verona / ROVEREDO DI GUA' riporta 700 elettori e 821 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "CANTU'",
+          "FIGINO SERENZA"
+        ],
+        "electors": 2697,
+        "voters": 2900,
+        "reason": "Nel file originale LOMBARDIA / CANTU' / FIGINO SERENZA riporta 2697 elettori e 2900 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LAZIO",
+          "Marino",
+          "GALLICANO NEL LAZIO"
+        ],
+        "electors": 2177,
+        "voters": 2400,
+        "reason": "Nel file originale LAZIO / Marino / GALLICANO NEL LAZIO riporta 2177 elettori e 2400 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "CANTU'",
+          "COSTA MASNAGA"
+        ],
+        "electors": 2437,
+        "voters": 2847,
+        "reason": "Nel file originale LOMBARDIA / CANTU' / COSTA MASNAGA riporta 2437 elettori e 2847 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+      },
+      {
+        "unit": [
+          "LOMBARDIA",
+          "Chiari",
+          "OSPITALETTO"
+        ],
+        "electors": 6064,
+        "voters": 6257,
+        "reason": "Nel file originale LOMBARDIA / Chiari / OSPITALETTO riporta 6064 elettori e 6257 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
       }
     ]
   }
