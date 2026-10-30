@@ -6,6 +6,8 @@ from html.parser import HTMLParser
 import re
 from urllib.parse import urlsplit, parse_qs
 import urllib.request
+from urllib.error import HTTPError, URLError
+import time
 from aggregate import require
 from identities import normalize
 
@@ -34,11 +36,18 @@ class SeatRedirect(urllib.request.HTTPRedirectHandler):
 def download_page(url):
     official_page(url)
     request = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.build_opener(SeatRedirect()).open(request, timeout=45) as response:
-        require(response.url == url and response.status == 200, 'Seat source redirected or unavailable')
-        raw = response.read(MAX_PAGE+1)
-        require(len(raw)<=MAX_PAGE, 'Seat source too large')
-        return raw
+    for attempt in range(3):
+        try:
+            with urllib.request.build_opener(SeatRedirect()).open(request, timeout=45) as response:
+                require(response.url == url and response.status == 200, 'Seat source redirected or unavailable')
+                raw = response.read(MAX_PAGE+1)
+                require(len(raw)<=MAX_PAGE, 'Seat source too large')
+                return raw
+        except HTTPError as error:
+            if attempt==2 or error.code not in (500,502,503,504):raise
+        except (URLError,TimeoutError,ConnectionError):
+            if attempt==2:raise
+        time.sleep(attempt+1)
 
 
 class SeatTable(HTMLParser):
@@ -192,7 +201,11 @@ def apply_seats(elections, document, fetcher=download_page):
         require(key in known and key not in seen, 'Unknown or duplicate seat election'); seen.add(key)
         require(record['chamber']==known[key].get('chamber') and record['type']=={'camera':'C','senato':'S'}.get(record['chamber']), 'Wrong seat chamber')
         require(type(record['totalSeats']) is int and 1<=record['totalSeats']<=1000 and type(record['unreportedSeats']) is int and 0<=record['unreportedSeats']<record['totalSeats'], 'Invalid chamber capacity')
-        value=allocation(record,fetcher)
+        if record.get('adapter')=='historical-pages':
+            from historical_seats import allocation as historical_allocation
+            value=historical_allocation(record,fetcher)
+        else:
+            value=allocation(record,fetcher)
         details=value.pop('listResults')
         names={normalize(r['name']):r['id'] for r in known[key]['territories'][0]['results']}
         for group in value['groups']:

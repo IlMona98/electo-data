@@ -131,6 +131,10 @@ def compile_registry(source, public):
 def candidate_catalog(elections):
     names={}
     for election in elections:
+        for group in election.get('seats',{}).get('groups',[]):
+            key=group['name'];entry=names.setdefault(key,dict(sourceName=key,bindings=[]))
+            binding=dict(electionID=election['id'],resultID=group.get('resultID',group['id']))
+            if binding not in entry['bindings']:entry['bindings'].append(binding)
         for territory in election['territories']:
             for row in territory['results']:
                 key=row['name'];entry=names.setdefault(key,dict(sourceName=key,bindings=[]))

@@ -438,6 +438,412 @@
         }
       ],
       "specialCollegeCount": 6
+    },
+    {
+      "electionID": "camera-2013",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "24/02/2013",
+      "headingPrefix": "Camera 24/02/2013",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 617,
+          "listMetadata": true,
+          "heading": "Camera 24/02/2013 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 12,
+          "heading": "Camera 24/02/2013 Area ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+          "format": "tree",
+          "expectedSeats": 1
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "senato-2013",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "24/02/2013",
+      "headingPrefix": "Senato 24/02/2013",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 301,
+          "listMetadata": true,
+          "heading": "Senato 24/02/2013 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 6,
+          "heading": "Senato 24/02/2013 Area ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta e Trentino-Alto Adige",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+          "format": "tree",
+          "expectedSeats": 8
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "camera-2008",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "13/04/2008",
+      "headingPrefix": "Camera 13/04/2008",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 617,
+          "listMetadata": true,
+          "heading": "Camera 13/04/2008 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 12,
+          "heading": "Camera 13/04/2008 Area CIRCOSCRIZIONE ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+          "format": "tree",
+          "expectedSeats": 1
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "senato-2008",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "13/04/2008",
+      "headingPrefix": "Senato 13/04/2008",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 301,
+          "listMetadata": true,
+          "heading": "Senato 13/04/2008 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 6,
+          "heading": "Senato 13/04/2008 Area ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta e Trentino-Alto Adige",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+          "format": "tree",
+          "expectedSeats": 8
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "camera-2006",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "09/04/2006",
+      "headingPrefix": "Camera 09/04/2006",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 617,
+          "listMetadata": true,
+          "heading": "Camera 09/04/2006 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 12,
+          "heading": "Camera 09/04/2006 Area CIRCOSCRIZIONE ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+          "format": "tree",
+          "expectedSeats": 1
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "senato-2006",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "09/04/2006",
+      "headingPrefix": "Senato 09/04/2006",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Italia · liste e coalizioni",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "linked",
+          "expectedSeats": 301,
+          "listMetadata": true,
+          "heading": "Senato 09/04/2006 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+        },
+        {
+          "id": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 6,
+          "heading": "Senato 09/04/2006 Area ESTERO"
+        },
+        {
+          "id": "speciali",
+          "label": "Valle d’Aosta e Trentino-Alto Adige",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+          "format": "tree",
+          "expectedSeats": 8
+        }
+      ],
+      "coalitionLabels": {
+        "PIER LUIGI BERSANI": "Centrosinistra",
+        "WALTER VELTRONI": "Centrosinistra",
+        "PRODI ROMANO": "Centrosinistra",
+        "SILVIO BERLUSCONI": "Centrodestra",
+        "BERLUSCONI SILVIO": "Centrodestra"
+      }
+    },
+    {
+      "electionID": "camera-2001",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "13/05/2001",
+      "headingPrefix": "Camera 13/05/2001",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "proporzionale",
+          "label": "Quota proporzionale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 155,
+          "listMetadata": true,
+          "heading": "Camera 13/05/2001 Area ITALIA"
+        },
+        {
+          "id": "uninominale",
+          "label": "Quota uninominale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+          "format": "flat",
+          "expectedSeats": 475,
+          "heading": "Camera 13/05/2001 Area ITALIA"
+        }
+      ]
+    },
+    {
+      "electionID": "senato-2001",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "13/05/2001",
+      "headingPrefix": "Senato 13/05/2001",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "heading": "Senato 13/05/2001 Area ITALIA"
+        }
+      ]
+    },
+    {
+      "electionID": "camera-1996",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "21/04/1996",
+      "headingPrefix": "Camera 21/04/1996",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "proporzionale",
+          "label": "Quota proporzionale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 155,
+          "listMetadata": true,
+          "heading": "Camera 21/04/1996 Area ITALIA"
+        },
+        {
+          "id": "uninominale",
+          "label": "Quota uninominale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+          "format": "flat",
+          "expectedSeats": 475,
+          "heading": "Camera 21/04/1996 Area ITALIA"
+        }
+      ]
+    },
+    {
+      "electionID": "senato-1996",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "21/04/1996",
+      "headingPrefix": "Senato 21/04/1996",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "heading": "Senato 21/04/1996 Area ITALIA"
+        }
+      ]
+    },
+    {
+      "electionID": "camera-1994",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "27/03/1994",
+      "headingPrefix": "Camera 27/03/1994",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "proporzionale",
+          "label": "Quota proporzionale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 155,
+          "listMetadata": true,
+          "heading": "Camera 27/03/1994 Area ITALIA"
+        },
+        {
+          "id": "uninominale",
+          "label": "Quota uninominale",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+          "format": "tree",
+          "expectedSeats": 475,
+          "expectedColleges": 475,
+          "heading": "Camera 27/03/1994 Area ITALIA"
+        }
+      ]
+    },
+    {
+      "electionID": "senato-1994",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "27/03/1994",
+      "headingPrefix": "Senato 27/03/1994",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "heading": "Senato 27/03/1994 Area ITALIA"
+        }
+      ]
     }
   ]
 }

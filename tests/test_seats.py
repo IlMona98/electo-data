@@ -11,6 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class SeatsTests(unittest.TestCase):
     def setUp(self):
         self.document=json.loads((ROOT/'config/seats.json').read_text())
+        self.document['elections']=[r for r in self.document['elections'] if r.get('adapter')!='historical-pages']
         self.elections=[dict(id=r['electionID'],chamber=r['chamber'],territories=[dict(results=[dict(id='m5s-original',name='MOVIMENTO 5 STELLE',votes=123)])]) for r in self.document['elections']]
     def fixture(self,url):
         for r in self.document['elections']:
