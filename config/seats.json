@@ -1,147 +1,293 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "elections": [
     {
       "electionID": "camera-2018",
-      "seats": {
-        "chamber": "camera",
-        "totalSeats": 630,
-        "unassignedSeats": 0,
-        "groups": [
-          {
-            "id": "seats-centrosinistra",
-            "name": "Centrosinistra",
-            "seats": 122
-          },
-          {
-            "id": "seats-leu",
-            "name": "LIBERI E UGUALI",
-            "seats": 14
-          },
-          {
-            "id": "seats-m5s",
-            "name": "MOVIMENTO 5 STELLE",
-            "seats": 227
-          },
-          {
-            "id": "seats-centrodestra",
-            "name": "Centrodestra",
-            "seats": 265
-          },
-          {
-            "id": "seats-maie",
-            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
-            "seats": 1
-          },
-          {
-            "id": "seats-usei",
-            "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
-            "seats": 1
-          }
-        ],
-        "sourceURL": "https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20180304/",
-        "sourceLabel": "IPU Parline",
-        "coverage": "Intera Camera · Italia ed estero",
-        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale. Situazione riportata dalla fonte al 23 marzo 2018."
-      }
+      "chamber": "camera",
+      "type": "C",
+      "date": "04/03/2018",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "sources": [
+        {
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 04/03/2018 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 04/03/2018 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&tpa=H&tpe=L&lev0=27&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=2701&lev1=1",
+          "heading": "Camera 04/03/2018 Area VALLE D'AOSTA Collegio VALLE D'AOSTA - 01"
+        }
+      ],
+      "groups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "SVP - PATT",
+            "PD-UV-UVP-EPAV"
+          ]
+        },
+        {
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "aliases": [
+            "LIBERI E UGUALI"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        },
+        {
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "aliases": [
+            "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "USEI"
+          ]
+        }
+      ]
     },
     {
       "electionID": "senato-2018",
-      "seats": {
-        "chamber": "senato",
-        "totalSeats": 315,
-        "unassignedSeats": 1,
-        "groups": [
-          {
-            "id": "seats-centrosinistra",
-            "name": "Centrosinistra",
-            "seats": 60
-          },
-          {
-            "id": "seats-leu",
-            "name": "LIBERI E UGUALI",
-            "seats": 4
-          },
-          {
-            "id": "seats-m5s",
-            "name": "MOVIMENTO 5 STELLE",
-            "seats": 111
-          },
-          {
-            "id": "seats-centrodestra",
-            "name": "Centrodestra",
-            "seats": 137
-          },
-          {
-            "id": "seats-maie",
-            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
-            "seats": 1
-          },
-          {
-            "id": "seats-usei",
-            "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
-            "seats": 1
-          }
-        ],
-        "sourceURL": "https://data.ipu.org/parliament/IT/IT-UC01/election/IT-UC01-E20180304/",
-        "sourceLabel": "IPU Parline",
-        "coverage": "Senato elettivo · Italia ed estero",
-        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale. Sono esclusi i senatori a vita. Un seggio M5S risultava non assegnato all’inizio della legislatura per insufficienza di candidati: è rappresentato vuoto, come nella fonte del 23 marzo 2018."
-      }
+      "chamber": "senato",
+      "type": "S",
+      "date": "04/03/2018",
+      "totalSeats": 315,
+      "unreportedSeats": 1,
+      "sources": [
+        {
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 04/03/2018 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 04/03/2018 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=G&tpe=L&lev0=2&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=201&lev1=1",
+          "heading": "Senato 04/03/2018 Area VALLE D'AOSTA Collegio VALLE D'AOSTA - 01"
+        }
+      ],
+      "groups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "SVP - PATT",
+            "PD-UV-UVP-EPAV"
+          ]
+        },
+        {
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "aliases": [
+            "LIBERI E UGUALI"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        },
+        {
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "aliases": [
+            "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "USEI"
+          ]
+        }
+      ]
     },
     {
       "electionID": "camera-2022",
-      "seats": {
-        "chamber": "camera",
-        "totalSeats": 400,
-        "unassignedSeats": 0,
-        "groups": [
-          {
-            "id": "seats-centrosinistra",
-            "name": "Centrosinistra",
-            "seats": 84
-          },
-          {
-            "id": "seats-m5s",
-            "name": "MOVIMENTO 5 STELLE",
-            "seats": 52
-          },
-          {
-            "id": "seats-azione-iv",
-            "name": "AZIONE - ITALIA VIVA - CALENDA",
-            "seats": 21
-          },
-          {
-            "id": "seats-svp",
-            "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
-            "seats": 3
-          },
-          {
-            "id": "seats-centrodestra",
-            "name": "Centrodestra",
-            "seats": 237
-          },
-          {
-            "id": "seats-sud-chiama-nord",
-            "name": "SUD CHIAMA NORD",
-            "seats": 1
-          },
-          {
-            "id": "seats-vda",
-            "name": "Vallée d’Aoste",
-            "seats": 1
-          },
-          {
-            "id": "seats-maie",
-            "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
-            "seats": 1
-          }
-        ],
-        "sourceURL": "https://data.ipu.org/parliament/IT/IT-LC01/election/IT-LC01-E20220925/",
-        "sourceLabel": "IPU Parline",
-        "coverage": "Intera Camera · Italia ed estero",
-        "note": "Riparto elettorale per coalizioni e liste secondo IPU Parline, comprendente Italia ed estero. Non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo nazionale."
-      }
+      "chamber": "camera",
+      "type": "C",
+      "date": "25/09/2022",
+      "totalSeats": 400,
+      "unreportedSeats": 0,
+      "sources": [
+        {
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/09/2022&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 25/09/2022 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/09/2022&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 25/09/2022 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/09/2022&tpa=H&tpe=L&lev0=27&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=2701&lev1=1",
+          "heading": "Camera 25/09/2022 Area VALLE D'AOSTA Collegio U01 (AOSTA)"
+        }
+      ],
+      "groups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-azione-iv",
+          "name": "AZIONE - ITALIA VIVA - CALENDA",
+          "aliases": [
+            "AZIONE - ITALIA VIVA - CALENDA"
+          ]
+        },
+        {
+          "id": "seats-svp",
+          "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+          "aliases": [
+            "SUDTIROLER VOLKSPARTEI (SVP) - PATT"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-sud-chiama-nord",
+          "name": "SUD CHIAMA NORD",
+          "aliases": [
+            "SUD CHIAMA NORD"
+          ]
+        },
+        {
+          "id": "seats-vda",
+          "name": "Vallée d’Aoste",
+          "aliases": [
+            "Vallée d’Aoste",
+            "VALLÉE D’AOSTE – AUTONOMIE PROGRÈS FÉDÉRALISME"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        }
+      ]
     }
   ]
 }
