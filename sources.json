@@ -24,7 +24,12 @@
     ],
     "level": "Regione",
     "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20240609.zip",
-    "zipMember": "EUROPEE_SCRUTINI&LISTE_ITALIA_LivComune.csv"
+    "zipMember": "EUROPEE_SCRUTINI&LISTE_ITALIA_LivComune.csv",
+    "previousElectionID": "europee-2019",
+    "comparisonTerritories": [
+      "national",
+      "regional"
+    ]
   },
   {
     "id": "camera-2022",
@@ -53,7 +58,14 @@
     "level": "Circoscrizione",
     "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/catalogoagid/Camera_Italia_LivComune.csv",
     "eventID": "politiche-20220925",
-    "chamber": "camera"
+    "chamber": "camera",
+    "previousElectionID": "camera-2018",
+    "comparisonTerritories": [
+      "national"
+    ],
+    "comparisonAliases": {
+      "LEGA PER SALVINI PREMIER": "LEGA"
+    }
   },
   {
     "id": "europee-2019",
@@ -80,7 +92,12 @@
     ],
     "level": "Regione",
     "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20190526.zip",
-    "zipMember": "europee-20190526.txt"
+    "zipMember": "europee-20190526.txt",
+    "previousElectionID": "europee-2014",
+    "comparisonTerritories": [
+      "national",
+      "regional"
+    ]
   },
   {
     "id": "camera-2018",

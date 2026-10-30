@@ -137,7 +137,7 @@ def allocation(record, fetcher=download_page):
         for alias in g['aliases']:
             key=normalize(alias)
             require(key not in aliases, 'Ambiguous seat membership'); aliases[key]=g['id']
-    counts=Counter(); provenance=[]
+    counts=Counter(); provenance=[]; list_results={}
     for source in sources:
         params=official_page(source['url'])
         require(params['tpel']==[record['type']] and params['dtel']==[record['date']], 'Seat URL belongs to another election')
@@ -149,11 +149,27 @@ def allocation(record, fetcher=download_page):
             resolved={aliases.get(normalize(n)) for n in block['lists']}
             require(len(resolved)==1 and None not in resolved, 'Unconfigured or mixed seat coalition: '+repr(block['lists']))
             counts[resolved.pop()]+=block['seats']
+        if source['kind']=='italia':
+            table=SeatTable(); table.feed(raw.decode('utf-8-sig'))
+            linked={}
+            for row in table.rows:
+                for attrs,name in row:
+                    if re.fullmatch(r'lista\d+_\d+',attrs.get('id','')):
+                        parent=next(k for k in attrs['headers'].split() if k.startswith('candidato'))
+                        linked.setdefault(parent,[]).append((name,cell_count(row)))
+            for members in linked.values():
+                resolved={aliases.get(normalize(name)) for name,seats in members}
+                coalition=next(iter(resolved)) if len(members)>1 and len(resolved)==1 and None not in resolved else None
+                for name,seats in members:
+                    detail=dict(listSeats=seats)
+                    if coalition: detail.update(coalitionID=coalition,coalitionName=definitions[coalition]['name'])
+                    require(normalize(name) not in list_results,'Duplicate list seat metadata')
+                    list_results[normalize(name)]=detail
         provenance.append(dict(label=source['label'],url=source['url'],sha256=sha256(raw).hexdigest()))
     require(sum(counts.values())+record['unreportedSeats']==record['totalSeats'], 'Incomplete parliamentary seat allocation')
     return dict(chamber=record['chamber'],totalSeats=record['totalSeats'],unassignedSeats=record['unreportedSeats'],
                 groups=[dict(id=g['id'],name=g['name'],seats=counts[g['id']]) for g in record['groups'] if counts[g['id']]],
-                sourceURL=sources[0]['url'],sourceLabel='Eligendo · Archivio',sourcePages=provenance,unassignedLabel='Non riportati dalla fonte',
+                sourceURL=sources[0]['url'],sourceLabel='Eligendo · Archivio',sourcePages=provenance,unassignedLabel='Non riportati dalla fonte',listResults=list_results,
                 checkedAt=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                 coverage=('Intera Camera' if record['chamber']=='camera' else 'Senato elettivo')+' · Italia ed estero',
                 note='Seggi uninominali e di lista pubblicati da Eligendo, aggregati per coalizione/lista. Comprende Italia, Valle d’Aosta ed estero; non indica i gruppi parlamentari attuali. Il territorio selezionato non modifica il riepilogo.'
@@ -169,10 +185,19 @@ def apply_seats(elections, document, fetcher=download_page):
         require(record['chamber']==known[key].get('chamber') and record['type']=={'camera':'C','senato':'S'}.get(record['chamber']), 'Wrong seat chamber')
         require(type(record['totalSeats']) is int and 1<=record['totalSeats']<=1000 and type(record['unreportedSeats']) is int and 0<=record['unreportedSeats']<record['totalSeats'], 'Invalid chamber capacity')
         value=allocation(record,fetcher)
+        details=value.pop('listResults')
         names={normalize(r['name']):r['id'] for r in known[key]['territories'][0]['results']}
         for group in value['groups']:
             if normalize(group['name']) in names: group['resultID']=names[normalize(group['name'])]
-        prepared.append((known[key],value))
+        prepared.append((known[key],value,details))
     # Do not mutate any election until every page has passed reconciliation.
-    for election,value in prepared: election['seats']=value
+    for election,value,details in prepared:
+        election['seats']=value
+        for territory in election['territories']:
+            for result in territory['results']:
+                detail=details.get(normalize(result['name']))
+                if detail:
+                    for field in ('coalitionID','coalitionName'):
+                        if field in detail: result[field]=detail[field]
+                    if territory.get('id')=='italia': result['listSeats']=detail['listSeats']
     return elections

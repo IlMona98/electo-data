@@ -33,6 +33,17 @@ class SeatsTests(unittest.TestCase):
         r=self.document['elections'][0];s=r['sources'][0]
         self.assertEqual(sum(b['seats'] for b in parse_page(self.fixture(s['url']),s)),617)
         self.assertNotEqual(617,r['totalSeats'])
+    def test_list_metadata_separates_proportional_from_coalition_totals(self):
+        for election in self.elections:
+            election['territories'][0]['id']='italia'
+            election['territories'][0]['results'].append(dict(id='fdi',name="FRATELLI D'ITALIA CON GIORGIA MELONI",votes=12))
+        apply_seats(self.elections,self.document,self.fixture)
+        current=next(e for e in self.elections if e['id']=='camera-2022')
+        fdi=current['territories'][0]['results'][1]
+        self.assertEqual(fdi['votes'],12)
+        self.assertEqual(fdi['listSeats'],69)
+        self.assertEqual(fdi['coalitionID'],'seats-centrodestra')
+        self.assertEqual(next(g['seats'] for g in current['seats']['groups'] if g['id']==fdi['coalitionID']),237)
     def test_valle_daosta_uses_elected_marker_not_largest_vote_count(self):
         s=self.document['elections'][0]['sources'][2];raw=self.fixture(s['url'])
         self.assertEqual(parse_page(raw,s),[dict(seats=1,lists=['MOVIMENTO 5 STELLE'])])

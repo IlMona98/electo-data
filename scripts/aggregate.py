@@ -69,7 +69,7 @@ def count(value):
 
 def public_metadata(config):
     keys = ['id','title','category','year','dateLabel','coverage','note','sourceURL','sourceFile']
-    return {key: config[key] for key in keys} | {key: config[key] for key in ['eventID','chamber'] if key in config}
+    return {key: config[key] for key in keys} | {key: config[key] for key in ['eventID','chamber','previousElectionID','comparisonTerritories','comparisonAliases'] if key in config}
 
 
 def build_tables(members, config):
