@@ -2,6 +2,28 @@
   "schemaVersion": 1,
   "entities": [
     {
+      "id": "centrodestra",
+      "label": "Centrodestra",
+      "shortLabel": "CDX",
+      "kind": "coalition",
+      "colorHex": "299BD6",
+      "aliases": [
+        "Centrodestra"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "centrosinistra",
+      "label": "Centrosinistra",
+      "shortLabel": "CSX",
+      "kind": "coalition",
+      "colorHex": "E94F39",
+      "aliases": [
+        "Centrosinistra"
+      ],
+      "bindings": []
+    },
+    {
       "id": "fratelli-d-italia",
       "label": "Fratelli d'Italia",
       "shortLabel": "FdI",
