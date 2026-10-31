@@ -219,14 +219,14 @@
       "groups": [
         {
           "id": "seats-centrosinistra",
-          "name": "Centrosinistra e alleati",
+          "name": "Centrosinistra",
           "members": [
             "Centrosinistra",
             "CAMPOBASE +EUROPA-ALL.VERDI E SIN.– PD-AZIONE-ITALIA VIVA"
           ]
         }
       ],
-      "note": "La coalizione locale Campobase è inclusa nel riepilogo Centrosinistra e alleati; la candidatura locale comprendeva anche formazioni non presenti nella coalizione nazionale. Non viene attribuita a un singolo partito."
+      "note": "La coalizione locale Campobase è inclusa nel riepilogo Centrosinistra; la candidatura locale comprendeva anche formazioni non presenti nella coalizione nazionale. Non viene attribuita a un singolo partito."
     },
     {
       "electionID": "senato-1996",

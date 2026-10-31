@@ -27,7 +27,7 @@ class SeatGroupingTests(unittest.TestCase):
             self.assertEqual(election['territories'],old['territories'])
     def test_old_mixed_ballots_and_foreign_lists_use_one_coalition_row(self):
         consolidate_seats(self.elections,self.config)
-        expected={'camera-1994':{'Centrodestra':366,'Progressisti':213,'Patto per l’Italia':46},'camera-1996':{"L’Ulivo":284,'Polo per le Libertà':246},'camera-2001':{'Casa delle Libertà':368},'camera-2008':{'Centrosinistra':246,'Centrodestra':344},'camera-2013':{'Centrosinistra':345,'Centrodestra':125},'senato-2022':{'Centrosinistra e alleati':44}}
+        expected={'camera-1994':{'Centrodestra':366,'Progressisti':213,'Patto per l’Italia':46},'camera-1996':{"L’Ulivo":284,'Polo per le Libertà':246},'camera-2001':{'Casa delle Libertà':368},'camera-2008':{'Centrosinistra':246,'Centrodestra':344},'camera-2013':{'Centrosinistra':345,'Centrodestra':125},'senato-2022':{'Centrosinistra':44}}
         for key,groups in expected.items():
             actual={g['name']:g['seats']for g in next(e for e in self.elections if e['id']==key)['seats']['groups']}
             for name,count in groups.items():self.assertEqual(actual.get(name),count,(key,name,actual))

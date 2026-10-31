@@ -107,6 +107,9 @@ def compile_registry(source, public):
             key=(binding.get('electionID'),binding.get('resultID'))
             require(all(isinstance(v,str) and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,199}',v) for v in key) and key not in bindings,'Duplicate or invalid result binding')
             bindings.add(key)
+        if 'hemicycleOrder' in item:
+            require(type(item['hemicycleOrder']) is int and 0<=item['hemicycleOrder']<=100,'Hemicycle order must be an integer from 0 to 100')
+            entity['hemicycleOrder']=item['hemicycleOrder']
         if item.get('symbolPath') is not None:
             path=item['symbolPath']
             require(isinstance(path,str) and re.fullmatch(r'symbols/[a-zA-Z0-9_-]+\.(png|svg)',path),'Symbol must be a PNG or SVG inside public/symbols')
@@ -141,3 +144,29 @@ def candidate_catalog(elections):
                 binding=dict(electionID=election['id'],resultID=row['id'])
                 if binding not in entry['bindings']:entry['bindings'].append(binding)
     return dict(schemaVersion=1,candidates=[names[k] for k in sorted(names)])
+
+
+def apply_identity_links(elections, registry):
+    """Stamp owner-controlled canonical IDs; electoral result/group IDs remain intact."""
+    bindings = {(b['electionID'],b['resultID']):e for e in registry['entities'] for b in e['bindings']}
+    aliases = {normalize(a):e for e in registry['entities'] for a in e['aliases']}
+    def resolve(election_id, result_id, name):
+        return bindings.get((election_id,result_id)) or aliases.get(normalize(name))
+    for election in elections:
+        groups={g['id']:g for g in election.get('seats',{}).get('groups',[])}
+        for group in groups.values():
+            group.pop('entityID',None)
+            identity=resolve(election['id'],group.get('resultID',group['id']),group['name'])
+            if identity:group['entityID']=identity['id']
+        for territory in election['territories']:
+            for row in territory['results']:
+                row.pop('entityID',None);row.pop('coalitionEntityID',None)
+                identity=resolve(election['id'],row['id'],row['name'])
+                if identity:row['entityID']=identity['id']
+                if row.get('coalitionID'):
+                    group=groups.get(row['coalitionID'],{})
+                    if group.get('entityID'):row['coalitionEntityID']=group['entityID']
+                    else:
+                        coalition=resolve(election['id'],row['coalitionID'],row.get('coalitionName',''))
+                        if coalition:row['coalitionEntityID']=coalition['id']
+    return elections

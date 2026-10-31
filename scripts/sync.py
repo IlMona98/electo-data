@@ -13,7 +13,7 @@ import urllib.parse
 import urllib.request
 import zipfile
 from aggregate import build, build_tables, require
-from identities import compile_registry, candidate_catalog
+from identities import compile_registry, candidate_catalog, apply_identity_links
 from seats import apply_seats
 from party_seats import apply_party_seats
 from seat_groups import consolidate_seats
@@ -140,6 +140,7 @@ def main():
     apply_seats(elections,json.loads((ROOT/'config/seats.json').read_text()))
     apply_party_seats(elections,json.loads((ROOT/'config/party-seats.json').read_text()))
     consolidate_seats(elections,json.loads((ROOT/'config/seat-groups.json').read_text()))
+    apply_identity_links(elections,registry)
     archive=publish(elections,args.output)
     atomic_write(args.output/'identities.json',encode(registry))
     atomic_write(args.output/'identity-candidates.json',encode(candidate_catalog(elections)))

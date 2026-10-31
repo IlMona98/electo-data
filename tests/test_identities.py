@@ -104,3 +104,25 @@ class IdentityTests(unittest.TestCase):
         self.assertEqual(len(entries),1)
         self.assertEqual(len(entries[0]['bindings']),2)
 if __name__=='__main__':unittest.main()
+
+class IdentityLinkTests(unittest.TestCase):
+    def test_position_is_preserved_and_invalid_positions_are_rejected(self):
+        value=entity();value['hemicycleOrder']=25
+        self.assertEqual(compile_registry(registry(value),Path('.'))['entities'][0]['hemicycleOrder'],25)
+        for invalid in [-1,101,True,2.5,'left',None]:
+            value['hemicycleOrder']=invalid
+            with self.assertRaises(ValueError):compile_registry(registry(value),Path('.'))
+    def test_canonical_links_use_binding_before_alias_and_keep_electoral_ids(self):
+        from identities import apply_identity_links
+        party=entity('m5s');party['aliases']=['Old ballot','New ballot']
+        coalition=entity('left');coalition.update(kind='coalition',aliases=['Centrosinistra'])
+        bound=entity('special');bound.update(aliases=[],bindings=[dict(electionID='new',resultID='other')])
+        elections=[dict(id='old',territories=[dict(results=[dict(id='a',name='Old ballot')])]),dict(id='new',seats=dict(groups=[dict(id='local-group',name='Centrosinistra',seats=10)]),territories=[dict(results=[dict(id='b',name='New ballot',coalitionID='local-group',coalitionName='Original coalition'),dict(id='other',name='New ballot'),dict(id='unknown',name='Unconfigured')])])]
+        apply_identity_links(elections,compile_registry(registry(party,coalition,bound),Path('.')))
+        rows=elections[1]['territories'][0]['results']
+        self.assertEqual(elections[0]['territories'][0]['results'][0]['entityID'],rows[0]['entityID'])
+        self.assertEqual(rows[0]['coalitionEntityID'],'left')
+        self.assertEqual(rows[0]['coalitionID'],'local-group')
+        self.assertEqual(rows[1]['entityID'],'special')
+        self.assertNotIn('entityID',rows[2])
+        self.assertEqual(elections[1]['seats']['groups'][0]['entityID'],'left')
