@@ -73,6 +73,18 @@
       "bindings": []
     },
     {
+      "id": "blocco-nazionale",
+      "label": "Blocco Nazionale",
+      "shortLabel": "PLI",
+      "kind": "party",
+      "colorHex": "3D6386",
+      "aliases": [
+        "Blocco Nazionale"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 80
+    },
+    {
       "id": "casapound",
       "label": "CasaPound",
       "shortLabel": "CP",
@@ -105,6 +117,19 @@
         "Civica Popolare Lorenzin"
       ],
       "bindings": []
+    },
+    {
+      "id": "democrazia-cristiana",
+      "label": "Democrazia Cristiana",
+      "shortLabel": "DC",
+      "kind": "party",
+      "colorHex": "80A9C1",
+      "aliases": [
+        "Democrazia Cristiana",
+        "DC"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 60
     },
     {
       "id": "europa-verde",
@@ -153,6 +178,21 @@
       ],
       "bindings": [],
       "hemicycleOrder": 90
+    },
+    {
+      "id": "fronte-democratico-popolare",
+      "label": "Fronte Democratico Popolare",
+      "shortLabel": "FDP",
+      "kind": "party",
+      "colorHex": "439C58",
+      "aliases": [
+        "Fronte Democratico Popolare",
+        "Fr. Democratico Popolare",
+        "Fr.DemocraticoPopolare",
+        "FDP"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 10
     },
     {
       "id": "impegno-civico",
@@ -280,6 +320,19 @@
       "hemicycleOrder": 45
     },
     {
+      "id": "movimento-sociale-italiano",
+      "label": "Movimento Sociale Italiano",
+      "shortLabel": "MSI",
+      "kind": "party",
+      "colorHex": "34478F",
+      "aliases": [
+        "Movimento Sociale Italiano",
+        "MSI"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 90
+    },
+    {
       "id": "noi-con-l-italia",
       "label": "Noi con l'Italia",
       "shortLabel": "NcI",
@@ -342,6 +395,18 @@
       "hemicycleOrder": 10
     },
     {
+      "id": "partito-cristiano-sociale",
+      "label": "Partito Cristiano Sociale",
+      "shortLabel": "PCS",
+      "kind": "party",
+      "colorHex": "8B4B4B",
+      "aliases": [
+        "Partito Cristiano Sociale"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 30
+    },
+    {
       "id": "partito-democratico",
       "label": "Partito Democratico",
       "shortLabel": "PD",
@@ -353,6 +418,20 @@
       ],
       "bindings": [],
       "hemicycleOrder": 20
+    },
+    {
+      "id": "partito-dei-contadini-d-italia",
+      "label": "Partito dei Contadini d'Italia",
+      "shortLabel": "PCdI",
+      "kind": "party",
+      "colorHex": "E94F39",
+      "aliases": [
+        "Partito dei Contadini d'Italia",
+        "Partito Contadini d'Italia",
+        "PCdI",
+        "P.Contadini d'Italia"
+      ],
+      "bindings": []
     },
     {
       "id": "partito-democratico-della-sinistra",
@@ -367,6 +446,19 @@
       "bindings": []
     },
     {
+      "id": "partito-nazionale-monarchico",
+      "label": "Partito Nazionale Monarchico",
+      "shortLabel": "PNM",
+      "kind": "party",
+      "colorHex": "34478F",
+      "aliases": [
+        "Partito Nazionale Monarchico",
+        "P.Naz.Mon.All.D.Lav."
+      ],
+      "bindings": [],
+      "hemicycleOrder": 75
+    },
+    {
       "id": "partito-repubblicano-italiano",
       "label": "Partito Repubblicano Italiano",
       "shortLabel": "PRI",
@@ -374,9 +466,25 @@
       "colorHex": "477C74",
       "aliases": [
         "Partito Repubblicano Italiano",
-        "Partito Repubblicano Italiano - ALA"
+        "Partito Repubblicano Italiano - ALA",
+        "PRI"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 55
+    },
+    {
+      "id": "partito-sardo-d-azione",
+      "label": "Partito Sardo d'Azione",
+      "shortLabel": "PSd'Az",
+      "kind": "party",
+      "colorHex": "5E5E5E",
+      "aliases": [
+        "Partito Sardo d'Azione",
+        "PSd'Az",
+        "PS d'Az."
+      ],
+      "bindings": [],
+      "hemicycleOrder": 45
     },
     {
       "id": "piu-europa",
@@ -485,7 +593,9 @@
         "Südtiroler Volkspartei (SVP)",
         "Südtiroler Volkspartei (SVP) - PATT",
         "SVP",
-        "SVP - PATT"
+        "SVP - PATT",
+        "PPST",
+        "Partito Popolare Sudtirolese"
       ],
       "bindings": []
     },
@@ -511,6 +621,20 @@
         "Unione Popolare con De Magistris"
       ],
       "bindings": []
+    },
+    {
+      "id": "unita-socialista",
+      "label": "Unità Socialista",
+      "shortLabel": "US",
+      "kind": "party",
+      "colorHex": "D5812B",
+      "aliases": [
+        "Unità Socialista",
+        "Unita' Socialista",
+        "US"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 20
     },
     {
       "id": "vita",
