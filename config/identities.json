@@ -117,6 +117,18 @@
       "bindings": []
     },
     {
+      "id": "italexit-per-l-italia",
+      "label": "Italexit per l'Italia",
+      "shortLabel": "IpI",
+      "kind": "party",
+      "colorHex": "3D6386",
+      "aliases": [
+        "Italexit",
+        "Italexit per l'Italia"
+      ],
+      "bindings": []
+    },
+    {
       "id": "italia-viva",
       "label": "Italia Viva",
       "shortLabel": "IV",
@@ -185,6 +197,29 @@
       "aliases": [
         "Noi Moderati",
         "Noi Moderati/Lupi - Toti - Brugnaro - UDC"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "partito-animalista",
+      "label": "Partito Animalista",
+      "shortLabel": "PA",
+      "kind": "party",
+      "colorHex": "8C9F62",
+      "aliases": [
+        "Partito Animalista",
+        "Partito Animalista - UCDL - 10 volte meglio"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "partito-comunista-italiano",
+      "label": "Partito Comunista Italiano",
+      "shortLabel": "PCI",
+      "kind": "party",
+      "colorHex": "8F2333",
+      "aliases": [
+        "Partito Comunista Italiano"
       ],
       "bindings": []
     },
@@ -295,6 +330,29 @@
         "Südtiroler Volkspartei (SVP) - PATT",
         "SVP",
         "SVP - PATT"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "unione-popolare",
+      "label": "Unione Popolare",
+      "shortLabel": "UP",
+      "kind": "party",
+      "colorHex": "C24552",
+      "aliases": [
+        "Unione Popolare",
+        "Unione Popolare con De Magistris"
+      ],
+      "bindings": []
+    },
+    {
+      "id": "vita",
+      "label": "Vita",
+      "shortLabel": "V",
+      "kind": "party",
+      "colorHex": "B884AE",
+      "aliases": [
+        "Vita"
       ],
       "bindings": []
     }
