@@ -28,9 +28,9 @@ I job hanno permessi limitati: scrittura dei contenuti per salvare i soli risult
 
 ## Copertura attuale
 
-**23 schede, 524 riepiloghi territoriali e 15 consultazioni nell’app**, dal 1994 al 2024:
+**25 schede, 577 riepiloghi territoriali e 16 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
 
-- Politiche, **Camera e Senato**: 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
+- Politiche, **Camera e Senato**: 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
 - Europee: 2024, 2019, 2014, 2009, 2004, 1999, 1994.
 
 La Camera 1994–2001 riporta la scheda proporzionale; il Senato degli stessi anni riporta i gruppi/candidati. Il campo `resultKind` mantiene la distinzione nell’interfaccia. I file Senato di lista 2006, 2008, 2013 e 2022 escludono Valle d’Aosta, Trentino-Alto Adige ed estero; non si aggiungono voti uninominali a un denominatore di lista. Ogni record dichiara il perimetro in `coverage` e `note`.
@@ -63,7 +63,7 @@ La suite comprende controlli sulle tabelle nazionali e territoriali del 2018, es
 
 ## Consultazioni politiche e identità visive
 
-I risultati Camera e Senato conservano file e identificativi separati. I campi opzionali `eventID` e `chamber` consentono all’app di presentarli nella stessa pagina Politiche: i 23 risultati attuali corrispondono a 15 consultazioni, senza sommare conteggi o territori delle due camere.
+I risultati Camera e Senato conservano file e identificativi separati. I campi opzionali `eventID` e `chamber` consentono all’app di presentarli nella stessa pagina Politiche: i 25 risultati attuali corrispondono a 16 consultazioni, senza sommare conteggi o territori delle due camere.
 
 Il proprietario definisce simboli e colori comuni a tutti gli utenti in [`config/identities.json`](config/identities.json). Il registro iniziale è vuoto: nessun colore politico è assegnato arbitrariamente. Per configurarlo segui la [guida](config/README.md), usando il [catalogo dei nomi originali](https://ilmona98.github.io/electo-data/v1/identity-candidates.json). Le immagini SVG o PNG si caricano in `public/symbols/`. Modifiche al registro o ai simboli avviano la validazione e la pubblicazione automatica.
 
@@ -90,7 +90,7 @@ Le tabelle nazionali Eligendo arricchiscono i risultati con `coalitionID` e `coa
 
 ### Riparti disponibili e limiti dell’estensione
 
-I riparti completi dei seggi sono verificati per tutte le **16 schede Camera/Senato del 1994, 1996, 2001, 2006, 2008, 2013, 2018 e 2022**. Senato 2022 controlla nove pagine, includendo i sei collegi speciali del Trentino-Alto Adige: il totale è 200, senza completamenti stimati. Campobase è sommata al raggruppamento «Centrosinistra» nell’emiciclo; la composizione locale, comprendente anche Azione/Italia Viva, resta esplicita nelle note di verifica e non attribuisce il seggio a un singolo partito. Per la Camera 1994–2001 le quote proporzionale (155) e uninominale (475) sono sommate per coalizione/lista nella legenda: sommano esattamente 630 senza attribuire le vittorie di coalizione al suo partito maggiore. Camera 1994 verifica esplicitamente l’eletto di tutti i 475 collegi. Il Senato 2006 include le indicazioni di eletto da recupero nei collegi speciali, senza dedurre vincitori dalle percentuali.
+I riparti completi dei seggi sono verificati per tutte le **18 schede Camera/Senato del 1948, 1994, 1996, 2001, 2006, 2008, 2013, 2018 e 2022**. Senato 2022 controlla nove pagine, includendo i sei collegi speciali del Trentino-Alto Adige: il totale è 200, senza completamenti stimati. Campobase è sommata al raggruppamento «Centrosinistra» nell’emiciclo; la composizione locale, comprendente anche Azione/Italia Viva, resta esplicita nelle note di verifica e non attribuisce il seggio a un singolo partito. Per la Camera 1994–2001 le quote proporzionale (155) e uninominale (475) sono sommate per coalizione/lista nella legenda: sommano esattamente 630 senza attribuire le vittorie di coalizione al suo partito maggiore. Camera 1994 verifica esplicitamente l’eletto di tutti i 475 collegi. Il Senato 2006 include le indicazioni di eletto da recupero nei collegi speciali, senza dedurre vincitori dalle percentuali.
 
 I nuovi confronti con l’elezione precedente sono dichiarati esplicitamente e limitati al nazionale. Non si confronta il Senato 2022 con il perimetro diverso del 2018, né il voto di lista del Senato 2006 con i gruppi del 2001. Non si confrontano regioni storiche per somiglianza del nome. Il registro grafico del proprietario non viene modificato: le vecchie denominazioni senza associazione restano neutre e vengono incluse nel catalogo `identity-candidates.json`.
 
@@ -126,3 +126,14 @@ Riscontri finali 2018: Camera PD 112, FI 104, Lega 125, FdI 32, M5S 227; Senato 
 ### Identità canoniche, confronti ed emiciclo
 
 Dopo l’accorpamento dei seggi, `apply_identity_links` collega liste e gruppi ai medesimi ID del registro del proprietario. Pubblica `entityID` e `coalitionEntityID`, mantenendo gli identificativi e i conteggi elettorali. Il client confronta solo ID comuni in elezioni e territori già abilitati; omonimie, assenze e associazioni multiple non producono variazioni inventate. La pubblicazione del registro conserva il campo opzionale `hemicycleOrder` (intero 0–100), usato dal client per l’ordine dei blocchi da sinistra a destra. Senza configurazione vale 50; i pareggi sono risolti con seggi decrescenti e ID. La legenda mantiene l’ordinamento per seggi. Istruzioni in [config/README.md](config/README.md).
+
+
+### Politiche 1948: tabelle nazionali e territoriali
+
+`vote_pages.py` legge direttamente le tabelle pubbliche Eligendo del 18/04/1948. `sources.json` configura il nazionale e le 31 circoscrizioni Camera / 20 regioni Senato. I file comunali ZIP del 1948 non sono usati: contengono totali inferiori ai riepiloghi nazionali e, nel Senato, righe ripetute. Non si colmano queste differenze con stime.
+
+Ogni tabella deve avere intestazione, data, camera, area e celle semantiche corrette. Le righe di voto devono coincidere con il totale pubblicato; elettori e votanti sono verificati. Tutte le circoscrizioni/regioni devono essere presenti e riconciliarsi esattamente con il nazionale, anche per ogni lista. Le sole associazioni territoriali/nazionali revisionate sono dichiarate in `listAliases`: Camera PPST-PPTT → PPST e dieci piccole liste → ALTRE LISTE. Le denominazioni territoriali originali restano intatte; `nationalResultID` indica esclusivamente la voce di aggregazione nazionale e non sostituisce l’identità politica di `identities.json`. Il Senato si riconcilia senza alias aggiuntivi.
+
+Le 53 pagine controllate sono tracciate in `sourceDocuments`; l’impronta nazionale è in `sourceSHA256`. Il riparto elettivo è letto dalle colonne Seggi nazionali: Camera **574**, Senato **237**, con senatori di diritto e a vita esclusi. Le capacità diverse dal 1994–2013 sono autorizzate soltanto per la data 18/04/1948. I totali di lista, inclusi gli zeri espliciti delle tabelle complete, sono mostrabili come totali; non vengono scambiati per sole quote proporzionali. Fixture semantiche compresse in `tests/fixtures/votes-1948/`.
+
+La copertura complessiva è ora di **25 schede / 16 consultazioni**, di cui 18 schede politiche con seggi. L’aggiunta del 1948 non aggiunge automaticamente le elezioni intermedie del 1953–1992. La pipeline conserva l’ultima pubblicazione su qualsiasi errore di fonte o riconciliazione.

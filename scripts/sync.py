@@ -51,6 +51,9 @@ def encode(value):
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':'))+'\n').encode()
 
 def fetch(config, cache_dir):
+    if config.get('adapter') == 'historical-vote-pages':
+        from vote_pages import build as build_vote_pages
+        return build_vote_pages(config)
     url = config['downloadURL']
     official_url(url)
     cache_dir.mkdir(parents=True,exist_ok=True)

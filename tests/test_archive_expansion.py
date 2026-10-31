@@ -8,7 +8,7 @@ CONFIGS={c['id']:c for c in json.loads((ROOT/'sources.json').read_text())}
 
 class ArchiveExpansionTests(unittest.TestCase):
     def test_catalog_has_every_election_from_1994_in_both_chambers(self):
-        years=[1994,1996,2001,2006,2008,2013,2018,2022]
+        years=[1948,1994,1996,2001,2006,2008,2013,2018,2022]
         expected={f'{c}-{y}' for c in ['camera','senato'] for y in years}|{f'europee-{y}' for y in [1994,1999,2004,2009,2014,2019,2024]}
         self.assertEqual(set(CONFIGS),expected)
         for y in years:self.assertEqual(CONFIGS[f'camera-{y}']['eventID'],CONFIGS[f'senato-{y}']['eventID'])

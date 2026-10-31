@@ -844,6 +844,50 @@
           "heading": "Senato 27/03/1994 Area ITALIA"
         }
       ]
+    },
+    {
+      "electionID": "camera-1948",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "18/04/1948",
+      "headingPrefix": "Camera 18/04/1948",
+      "totalSeats": 574,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 574,
+          "listMetadata": true,
+          "heading": "Camera 18/04/1948 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati i 574 seggi elettivi del 1948."
+    },
+    {
+      "electionID": "senato-1948",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "18/04/1948",
+      "headingPrefix": "Senato 18/04/1948",
+      "totalSeats": 237,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 237,
+          "listMetadata": true,
+          "heading": "Senato 18/04/1948 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati soltanto i 237 seggi elettivi del 1948, escludendo i senatori di diritto previsti dalla III disposizione transitoria e i senatori a vita."
     }
   ]
 }

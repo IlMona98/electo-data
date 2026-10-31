@@ -1422,5 +1422,60 @@
         "reason": "Nel file originale LOMBARDIA / Chiari / OSPITALETTO riporta 6064 elettori e 6257 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
       }
     ]
+  },
+  {
+    "id": "camera-1948",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 1948,
+    "dateLabel": "18 aprile 1948",
+    "coverage": "Italia · voto di lista",
+    "note": "Risultati nazionali e territoriali letti dalle tabelle ufficiali di Eligendo, riconciliati per voti, elettori e votanti. Sono incluse le unità territoriali pubblicate per il 1948, compresa la Valle d’Aosta. I file comunali scaricabili presentano differenze rispetto ai riepiloghi e non sono utilizzati per costruire questi totali. Le denominazioni territoriali sono conservate: PPST-PPTT confluisce nel riepilogo nazionale PPST e dieci piccole liste sono comprese nella voce nazionale ALTRE LISTE; la riconciliazione mantiene i loro nomi e voti originali.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "sourceFile": "Tabelle Eligendo nazionali e circoscrizionali del 18 aprile 1948",
+    "adapter": "historical-vote-pages",
+    "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "type": "C",
+    "date": "18/04/1948",
+    "headingPrefix": "Camera 18/04/1948",
+    "level": "Circoscrizione",
+    "expectedTerritories": 31,
+    "eventID": "politiche-19480418",
+    "chamber": "camera",
+    "resultKind": "lists",
+    "listAliases": {
+      "PPST-PPTT": "PPST",
+      "CONC.NAZ.DEM.SOCIAL.": "ALTRE LISTE",
+      "FR.NAZ.PROGRES.": "ALTRE LISTE",
+      "P.MAZZINIANO IT.": "ALTRE LISTE",
+      "MOV.IT.FED.EUROPEA": "ALTRE LISTE",
+      "UNIONE NAZIONALE": "ALTRE LISTE",
+      "PART.MON.MEZZOGIORNO": "ALTRE LISTE",
+      "ENTE NAZ.RIS.SOC.": "ALTRE LISTE",
+      "GRUPPO INDIP.": "ALTRE LISTE",
+      "BLOC.LAV.TEC.RIC.MEZ": "ALTRE LISTE",
+      "MOV.UNITA'D'IT.": "ALTRE LISTE"
+    }
+  },
+  {
+    "id": "senato-1948",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 1948,
+    "dateLabel": "18 aprile 1948",
+    "coverage": "Italia · voto ai gruppi",
+    "note": "Risultati nazionali e territoriali letti dalle tabelle ufficiali di Eligendo, riconciliati per voti, elettori e votanti. Sono incluse le unità territoriali pubblicate per il 1948, compresa la Valle d’Aosta. I file comunali scaricabili presentano differenze rispetto ai riepiloghi e non sono utilizzati per costruire questi totali. Il riparto rappresenta soltanto i 237 senatori elettivi; i senatori di diritto della prima legislatura e quelli a vita sono esclusi.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "sourceFile": "Tabelle Eligendo nazionali e regionali del 18 aprile 1948",
+    "adapter": "historical-vote-pages",
+    "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=18/04/1948&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "type": "S",
+    "date": "18/04/1948",
+    "headingPrefix": "Senato 18/04/1948",
+    "level": "Regione",
+    "expectedTerritories": 20,
+    "eventID": "politiche-19480418",
+    "chamber": "senato",
+    "resultKind": "groups"
   }
 ]

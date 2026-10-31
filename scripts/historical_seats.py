@@ -109,7 +109,8 @@ def read_table(raw,record,source,url):
 
 
 def allocation(record,fetcher=download_page):
-    require(record['chamber'] in ('camera','senato') and record['totalSeats']==(630 if record['chamber']=='camera' else 315),'Wrong historical chamber capacity')
+    capacities={'camera':574,'senato':237} if record['date']=='18/04/1948' else {'camera':630,'senato':315}
+    require(record['chamber'] in capacities and record['totalSeats']==capacities[record['chamber']],'Wrong historical chamber capacity')
     require(record['parts'] and len({s['id'] for s in record['parts']})==len(record['parts']),'Duplicate historical seat component')
     totals=Counter();names={};details={};audit=[];pages=[]
     for source in record['parts']:
@@ -151,4 +152,4 @@ def allocation(record,fetcher=download_page):
                 sourceURL=record['parts'][0]['url'],sourceLabel='Eligendo · Archivio',sourcePages=pages,sourceDocuments=audit,
                 coverage=('Intera Camera' if record['chamber']=='camera' else 'Senato elettivo')+' · riparto storico',
                 checkedAt=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),listResults=details,
-                note='Riparto dei seggi pubblicato da Eligendo, distinto per componenti e perimetri indicati in legenda. Le quote proporzionali e uninominali non sono sovrapposte. I conteggi provengono dalle colonne Seggi o dalle indicazioni ministeriali esplicite di eletto, senza dedurli dai voti. I collegamenti uninominali restano quelli della fonte: non sono attribuiti arbitrariamente ai singoli partiti. Non rappresenta i gruppi parlamentari attuali.'+(' Senatori a vita esclusi.' if record['chamber']=='senato' else ''))
+                note='Riparto dei seggi pubblicato da Eligendo, distinto per componenti e perimetri indicati in legenda. Le quote proporzionali e uninominali non sono sovrapposte. I conteggi provengono dalle colonne Seggi o dalle indicazioni ministeriali esplicite di eletto, senza dedurli dai voti. I collegamenti uninominali restano quelli della fonte: non sono attribuiti arbitrariamente ai singoli partiti. Non rappresenta i gruppi parlamentari attuali.'+(' Senatori a vita esclusi.' if record['chamber']=='senato' else '')+record.get('note',''))
