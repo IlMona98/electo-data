@@ -222,7 +222,7 @@
         "Europa Verde"
       ],
       "bindings": [],
-      "hemicycleOrder": 28
+      "hemicycleOrder": 32
     },
     {
       "id": "federazione-dei-verdi",
@@ -233,7 +233,8 @@
       "aliases": [
         "Federazione dei Verdi"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 32
     },
     {
       "id": "forza-italia",
@@ -301,7 +302,8 @@
         "Impegno Civico - Centro Democratico",
         "Impegno Civico Luigi Di Maio - Centro Democratico"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 38
     },
     {
       "id": "italexit-per-l-italia",
@@ -362,7 +364,8 @@
       "aliases": [
         "Italia Viva"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 50
     },
     {
       "id": "l-ulivo",
@@ -414,7 +417,7 @@
         "Liberi e Uguali"
       ],
       "bindings": [],
-      "hemicycleOrder": 85
+      "hemicycleOrder": 18
     },
     {
       "id": "movimento-5-stelle",
@@ -554,7 +557,8 @@
         "Partito Democratico della Sinistra",
         "PDS"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 30
     },
     {
       "id": "partito-liberale-italiano",
@@ -661,7 +665,8 @@
         "+Europa",
         "+Europa - Italia in comune - PDE Italia"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 35
     },
     {
       "id": "popolo-della-liberta",
@@ -712,7 +717,8 @@
         "Scelta Civica",
         "Scleta Civica con Monti per l'Italia"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 45
     },
     {
       "id": "sinistra-ecologia-liberta",
@@ -786,9 +792,11 @@
       "kind": "party",
       "colorHex": "55A2CC",
       "aliases": [
-        "Unione di Centro"
+        "Unione di Centro",
+        "UDC"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 52
     },
     {
       "id": "union-valdotaine",
