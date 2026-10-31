@@ -11,7 +11,20 @@
         "Centrodestra"
       ],
       "bindings": [],
-      "hemicycleOrder": 80
+      "hemicycleOrder": 60
+    },
+    {
+      "id": "polo-delle-liberta",
+      "label": "Polo delle Libertà",
+      "shortLabel": "PDL",
+      "kind": "coalition",
+      "colorHex": "299BD6",
+      "aliases": [
+        "Polo delle Libertà",
+        "Polo delle Liberta'"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 60
     },
     {
       "id": "centrosinistra",
@@ -23,7 +36,7 @@
         "Centrosinistra"
       ],
       "bindings": [],
-      "hemicycleOrder": 20
+      "hemicycleOrder": 30
     },
     {
       "id": "alleanza-nazionale",
@@ -46,7 +59,8 @@
       "aliases": [
         "Alleanza Verdi e Sinistra"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 25
     },
     {
       "id": "azione",
@@ -58,7 +72,8 @@
         "Azione",
         "Azione - Siamo europei"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 45
     },
     {
       "id": "azione-italia-viva",
@@ -70,19 +85,20 @@
         "Azione - Italia Viva",
         "Azione - Italia Viva - Calenda"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 48
     },
     {
-      "id": "blocco-nazionale",
-      "label": "Blocco Nazionale",
-      "shortLabel": "PLI",
+      "id": "casa-delle-liberta",
+      "label": "Casa delle Libertà",
+      "shortLabel": "CdL",
       "kind": "party",
-      "colorHex": "3D6386",
+      "colorHex": "299BD6",
       "aliases": [
-        "Blocco Nazionale"
+        "Casa delle Libertà"
       ],
       "bindings": [],
-      "hemicycleOrder": 80
+      "hemicycleOrder": 60
     },
     {
       "id": "casapound",
@@ -105,7 +121,8 @@
       "aliases": [
         "Centro Democratico"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 38
     },
     {
       "id": "civica-popolare-lorenzin",
@@ -129,7 +146,7 @@
         "DC"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 55
     },
     {
       "id": "europa-verde",
@@ -140,7 +157,8 @@
       "aliases": [
         "Europa Verde"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 28
     },
     {
       "id": "federazione-dei-verdi",
@@ -163,7 +181,8 @@
         "Forza Italia",
         "Forza Italia - Noi Moderati - PPE"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 60
     },
     {
       "id": "fratelli-d-italia",
@@ -184,7 +203,7 @@
       "label": "Fronte Democratico Popolare",
       "shortLabel": "FDP",
       "kind": "party",
-      "colorHex": "439C58",
+      "colorHex": "B52536",
       "aliases": [
         "Fronte Democratico Popolare",
         "Fr. Democratico Popolare",
@@ -193,7 +212,19 @@
         "FR.DEMOCR.POPOLARE"
       ],
       "bindings": [],
-      "hemicycleOrder": 10
+      "hemicycleOrder": 15
+    },
+    {
+      "id": "futuro-nazionale",
+      "label": "Futuro Nazionale",
+      "shortLabel": "FN",
+      "kind": "party",
+      "colorHex": "212121",
+      "aliases": [
+        "Futuro Nazionale"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 95
     },
     {
       "id": "impegno-civico",
@@ -218,7 +249,8 @@
         "Italexit",
         "Italexit per l'Italia"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 80
     },
     {
       "id": "italia-dei-valori",
@@ -231,7 +263,8 @@
         "Italia dei Valori - Lista Di Pietro",
         "Di Pietro Italia dei Valori"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 58
     },
     {
       "id": "italia-europa-insieme",
@@ -265,12 +298,12 @@
         "L'Ulivo"
       ],
       "bindings": [],
-      "hemicycleOrder": 20
+      "hemicycleOrder": 30
     },
     {
       "id": "lega",
       "label": "Lega",
-      "shortLabel": "L",
+      "shortLabel": "LSP",
       "kind": "party",
       "colorHex": "168574",
       "aliases": [
@@ -280,7 +313,7 @@
         "Lega - Salvini Premier"
       ],
       "bindings": [],
-      "hemicycleOrder": 85
+      "hemicycleOrder": 75
     },
     {
       "id": "lega-nord",
@@ -293,7 +326,7 @@
         "Lega Nord-Die Freiheitlichen-Basta Euro"
       ],
       "bindings": [],
-      "hemicycleOrder": 75
+      "hemicycleOrder": 50
     },
     {
       "id": "liberi-e-uguali",
@@ -318,20 +351,20 @@
         "Movimento 5 Stelle beppegrillo.it"
       ],
       "bindings": [],
-      "hemicycleOrder": 45
+      "hemicycleOrder": 40
     },
     {
       "id": "movimento-sociale-italiano",
       "label": "Movimento Sociale Italiano",
       "shortLabel": "MSI",
       "kind": "party",
-      "colorHex": "34478F",
+      "colorHex": "212121",
       "aliases": [
         "Movimento Sociale Italiano",
         "MSI"
       ],
       "bindings": [],
-      "hemicycleOrder": 90
+      "hemicycleOrder": 95
     },
     {
       "id": "noi-con-l-italia",
@@ -344,7 +377,7 @@
         "Noi con l'Italia - UDC"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 55
     },
     {
       "id": "noi-moderati",
@@ -357,7 +390,7 @@
         "Noi Moderati/Lupi - Toti - Brugnaro - UDC"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 55
     },
     {
       "id": "partito-animalista",
@@ -381,7 +414,7 @@
         "Partito Comunista"
       ],
       "bindings": [],
-      "hemicycleOrder": 12
+      "hemicycleOrder": 15
     },
     {
       "id": "partito-comunista-italiano",
@@ -405,7 +438,7 @@
         "Partito Cristiano Sociale"
       ],
       "bindings": [],
-      "hemicycleOrder": 30
+      "hemicycleOrder": 28
     },
     {
       "id": "partito-democratico",
@@ -418,21 +451,22 @@
         "Partito Democratico - Italia democratica e progressista"
       ],
       "bindings": [],
-      "hemicycleOrder": 20
+      "hemicycleOrder": 30
     },
     {
       "id": "partito-dei-contadini-d-italia",
       "label": "Partito dei Contadini d'Italia",
       "shortLabel": "PCdI",
       "kind": "party",
-      "colorHex": "E94F39",
+      "colorHex": "78A83F",
       "aliases": [
         "Partito dei Contadini d'Italia",
         "Partito Contadini d'Italia",
         "PCdI",
         "P.Contadini d'Italia"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 45
     },
     {
       "id": "partito-democratico-della-sinistra",
@@ -447,6 +481,20 @@
       "bindings": []
     },
     {
+      "id": "partito-liberale-italiano",
+      "label": "Partito Liberale Italiano",
+      "shortLabel": "PLI",
+      "kind": "party",
+      "colorHex": "3D6386",
+      "aliases": [
+        "Partito Liberale Italiano",
+        "PLI",
+        "Blocco Nazionale"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 80
+    },
+    {
       "id": "partito-nazionale-monarchico",
       "label": "Partito Nazionale Monarchico",
       "shortLabel": "PNM",
@@ -458,7 +506,7 @@
         "P.NAZ.MONARCHICO"
       ],
       "bindings": [],
-      "hemicycleOrder": 75
+      "hemicycleOrder": 90
     },
     {
       "id": "partito-repubblicano-italiano",
@@ -472,7 +520,7 @@
         "PRI"
       ],
       "bindings": [],
-      "hemicycleOrder": 55
+      "hemicycleOrder": 48
     },
     {
       "id": "partito-sardo-d-azione",
@@ -489,6 +537,32 @@
       "hemicycleOrder": 45
     },
     {
+      "id": "partito-socialista-italiano",
+      "label": "Partito Socialista Italiano",
+      "shortLabel": "PSI",
+      "kind": "party",
+      "colorHex": "C24552",
+      "aliases": [
+        "Partito Socialista Italiano",
+        "PSI"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 20
+    },
+    {
+      "id": "partito-socialista-democratico-italiano",
+      "label": "Partito Socialista Democratico Italiano",
+      "shortLabel": "PSDI",
+      "kind": "party",
+      "colorHex": "D5812B",
+      "aliases": [
+        "Partito Socialista Democratico Italiano",
+        "PSDI"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 35
+    },
+    {
       "id": "piu-europa",
       "label": "+Europa",
       "shortLabel": "+EU",
@@ -503,7 +577,7 @@
     {
       "id": "popolo-della-liberta",
       "label": "Popolo della Libertà",
-      "shortLabel": "PDL",
+      "shortLabel": "PdL",
       "kind": "party",
       "colorHex": "299BD6",
       "aliases": [
@@ -512,7 +586,8 @@
         "Il Popolo della Libertà",
         "Il Popolo della Liberta'"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 60
     },
     {
       "id": "potere-al-popolo",
@@ -560,7 +635,20 @@
         "Sinistra Ecologia Libertà",
         "Sinistra Ecologia Liberta'"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 25
+    },
+    {
+      "id": "sinistra-italiana",
+      "label": "Sinistra Italiana",
+      "shortLabel": "SI",
+      "kind": "party",
+      "colorHex": "C24552",
+      "aliases": [
+        "Sinistra Italiana"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 20
     },
     {
       "id": "stati-uniti-d-europa",
@@ -599,7 +687,8 @@
         "PPST",
         "Partito Popolare Sudtirolese"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 45
     },
     {
       "id": "unione-di-centro",
@@ -622,7 +711,8 @@
         "Unione Popolare",
         "Unione Popolare con De Magistris"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 20
     },
     {
       "id": "unita-socialista",
@@ -636,7 +726,7 @@
         "US"
       ],
       "bindings": [],
-      "hemicycleOrder": 20
+      "hemicycleOrder": 35
     },
     {
       "id": "vita",
@@ -647,7 +737,8 @@
       "aliases": [
         "Vita"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 85
     }
   ]
 }
