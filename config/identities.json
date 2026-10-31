@@ -14,14 +14,40 @@
       "hemicycleOrder": 60
     },
     {
+      "id": "la-casa-delle-liberta",
+      "label": "La Casa delle Libertà",
+      "shortLabel": "CDX",
+      "kind": "coalition",
+      "colorHex": "299BD6",
+      "aliases": [
+        "La Casa delle Libertà",
+        "La Casa delle Liberta'"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 60
+    },
+    {
       "id": "polo-delle-liberta",
       "label": "Polo delle Libertà",
-      "shortLabel": "PDL",
+      "shortLabel": "CDX",
       "kind": "coalition",
       "colorHex": "299BD6",
       "aliases": [
         "Polo delle Libertà",
         "Polo delle Liberta'"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 60
+    },
+    {
+      "id": "polo-per-le-liberta",
+      "label": "Polo per le Libertà",
+      "shortLabel": "CDX",
+      "kind": "coalition",
+      "colorHex": "299BD6",
+      "aliases": [
+        "Polo per le Libertà",
+        "Polo per le Liberta'"
       ],
       "bindings": [],
       "hemicycleOrder": 60
@@ -34,6 +60,43 @@
       "colorHex": "E94F39",
       "aliases": [
         "Centrosinistra"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 30
+    },
+    {
+      "id": "alleanza-dei-progressisti",
+      "label": "Alleanza dei Progressisti",
+      "shortLabel": "CSX",
+      "kind": "coalition",
+      "colorHex": "8F2333",
+      "aliases": [
+        "Alleanza dei Progressisti",
+        "Progressisti"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 30
+    },
+    {
+      "id": "italia-bene-comune",
+      "label": "Italia. Bene Comune",
+      "shortLabel": "CSX",
+      "kind": "coalition",
+      "colorHex": "E94F39",
+      "aliases": [
+        "Italia. Bene Comune"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 30
+    },
+    {
+      "id": "l-unione",
+      "label": "L'Unione",
+      "shortLabel": "CSX",
+      "kind": "coalition",
+      "colorHex": "E94F39",
+      "aliases": [
+        "L'Unione"
       ],
       "bindings": [],
       "hemicycleOrder": 30
@@ -110,7 +173,8 @@
         "CasaPound",
         "CasaPound Italia"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 95
     },
     {
       "id": "centro-democratico",
@@ -276,6 +340,18 @@
         "Italia Europa Insieme"
       ],
       "bindings": []
+    },
+    {
+      "id": "italia-sovrana-e-popolare",
+      "label": "Italia Sovrana e Popolare",
+      "shortLabel": "ISP",
+      "kind": "party",
+      "colorHex": "8B4B4B",
+      "aliases": [
+        "Italia Sovrana e Popolare"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 50
     },
     {
       "id": "italia-viva",
@@ -495,6 +571,19 @@
       "hemicycleOrder": 80
     },
     {
+      "id": "partito-monarchico-popolare",
+      "label": "Partito Monarchico Popolare",
+      "shortLabel": "PMP",
+      "kind": "party",
+      "colorHex": "5A78A8",
+      "aliases": [
+        "Partito Monarchico Popolare",
+        "PMP"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 85
+    },
+    {
       "id": "partito-nazionale-monarchico",
       "label": "Partito Nazionale Monarchico",
       "shortLabel": "PNM",
@@ -700,6 +789,18 @@
         "Unione di Centro"
       ],
       "bindings": []
+    },
+    {
+      "id": "union-valdotaine",
+      "label": "Union Valdôtaine",
+      "shortLabel": "Uv",
+      "kind": "party",
+      "colorHex": "C0D4E0",
+      "aliases": [
+        "Union Valdôtaine"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 50
     },
     {
       "id": "unione-popolare",
