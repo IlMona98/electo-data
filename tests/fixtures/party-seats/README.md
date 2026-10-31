@@ -1,0 +1,1 @@
+Estratti originali usati per i controlli: rapporto OSCE/ODIHR 2022, pagine PDF 25–26 (numerate 23–24); rapporto 2018, pagina PDF 23 (numerata 21); risposta SPARQL della Camera XIX legislatura per tre mandati iniziali e un subentro successivo. Testi estratti con pypdf senza modificare le celle. Date e URI dei mandati sono conservate; non sono inclusi dati anagrafici.

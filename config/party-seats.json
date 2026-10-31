@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "elections": [
+    {
+      "electionID": "camera-2006",
+      "chamber": "camera",
+      "totalSeats": 630,
+      "adapter": "camera-lists",
+      "legislature": 15,
+      "snapshot": "20060428",
+      "date": "20060409",
+      "expectedMembers": 630,
+      "unlistedMembers": 1,
+      "foreignAreas": [
+        "europa",
+        "america meridionale",
+        "america settentrionale e centrale",
+        "africa asia oceania e antartide"
+      ],
+      "aliases": {
+        "ULIVO": "L'ULIVO",
+        "PARTITO DELLA RIFONDAZIONE COMUNISTA": "RIFONDAZIONE COMUNISTA",
+        "LEGA NORD - MOVIMENTO PER L'AUTONOMIA": "LEGA NORD",
+        "ROSA NEL PUGNO": "LA ROSA NEL PUGNO",
+        "PARTITO DEI COMUNISTI ITALIANI": "COMUNISTI ITALIANI",
+        "ITALIA DEI VALORI": "DI PIETRO ITALIA DEI VALORI",
+        "ITALIA DEI VALORI ESTERO": "DI PIETRO ITALIA DEI VALORI",
+        "POPOLARI UDEUR": "U.D.EUR POPOLARI",
+        "DEMOCRAZIA CRISTIANA E PARTITO SOCIALISTA NUOVO PSI": "DEM.CRIST.-NUOVO PSI"
+      },
+      "outsideLists": [
+        "L'UNIONE",
+        "PER ITALIA NEL MONDO",
+        "ASS.ITAL.SUD AMERICA"
+      ],
+      "referenceDate": "2006-04-28",
+      "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+    },
+    {
+      "electionID": "camera-2008",
+      "chamber": "camera",
+      "totalSeats": 630,
+      "adapter": "camera-lists",
+      "legislature": 16,
+      "snapshot": "20080429",
+      "date": "20080413",
+      "expectedMembers": 630,
+      "unlistedMembers": 1,
+      "foreignAreas": [
+        "europa",
+        "america meridionale",
+        "america settentrionale e centrale",
+        "africa asia oceania e antartide"
+      ],
+      "aliases": {
+        "MOVIMENTO PER L'AUTONOMIA ALLEANZA PER IL SUD": "MOVIMENTO PER L'AUTONOMIA ALL.PER IL SUD",
+        "SUDTIROLER VOLKSPARTEI": "SVP"
+      },
+      "outsideLists": [
+        "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO"
+      ],
+      "referenceDate": "2008-04-29",
+      "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+    },
+    {
+      "electionID": "camera-2013",
+      "chamber": "camera",
+      "totalSeats": 630,
+      "adapter": "camera-lists",
+      "legislature": 17,
+      "snapshot": "20130315",
+      "date": "20130224",
+      "expectedMembers": 630,
+      "unlistedMembers": 1,
+      "foreignAreas": [
+        "europa",
+        "america meridionale",
+        "america settentrionale e centrale",
+        "africa asia oceania e antartide"
+      ],
+      "aliases": {},
+      "outsideLists": [
+        "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+        "CON MONTI PER L'ITALIA",
+        "USEI"
+      ],
+      "referenceDate": "2013-03-15",
+      "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+    },
+    {
+      "electionID": "camera-2022",
+      "chamber": "camera",
+      "totalSeats": 400,
+      "adapter": "osce-2022",
+      "aliases": {
+        "Brothers of Italy": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+        "Democratic Party": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+        "Five Star Movement": "MOVIMENTO 5 STELLE",
+        "The League": "LEGA PER SALVINI PREMIER",
+        "Forward Italy": "FORZA ITALIA",
+        "Action – Italia Viva": "AZIONE - ITALIA VIVA - CALENDA",
+        "Green and Left Alliance": "ALLEANZA VERDI E SINISTRA",
+        "+ Europa": "+EUROPA",
+        "Italexit per l’Italia": "ITALEXIT PER L'ITALIA",
+        "Unione popolare con De Magistris": "UNIONE POPOLARE CON DE MAGISTRIS",
+        "Italia Sovrana e Popolare": "ITALIA SOVRANA E POPOLARE",
+        "Noi Moderati": "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+        "Sud chiama Nord": "SUD CHIAMA NORD",
+        "Vita": "VITA",
+        "Impegno Civico": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+        "Südtiroler Volkspartei (SVP) -PATT": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+        "Mastella Noi di centro europeisti": "MASTELLA NOI DI CENTRO EUROPEISTI",
+        "Brambilla Michela Vittoria": null,
+        "Partito Comunista Italiano": "PARTITO COMUNISTA ITALIANO",
+        "Vallée d’Aoste": null,
+        "Partito animalista-UCDL-10 volte meglio": "PARTITO ANIMALISTA - UCDL - 10 VOLTE MEGLIO",
+        "Alternativa per l’Italia-No green pass": "ALTERNATIVA PER L'ITALIA - NO GREEN PASS",
+        "Partito comunista dei lavoratori": "PARTITO COMUNISTA DEI LAVORATORI",
+        "Destre Unite": "DESTRE UNITE",
+        "Partito della follia creative": "PARTITO DELLA FOLLIA CREATIVA",
+        "Free": "FREE",
+        "Forza del popolo": "FORZA DEL POPOLO",
+        "The League-Brothers of Italy- Forza Italia": null,
+        "Associative Movement of Italians Abroad": null,
+        "Unione Sudamericana Emigrati Italiani": null,
+        "Azione Italia Viva": "AZIONE - ITALIA VIVA - CALENDA",
+        "Piu’ Europa": "+EUROPA",
+        "Movimento delle liberta’": null,
+        "L’Italia del meridione": null,
+        "Civic commitment": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO"
+      },
+      "outsideLists": [
+        "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+        "PARTITO COMUNISTA DEI LAVORATORI",
+        "DESTRE UNITE"
+      ],
+      "centreRightRows": [
+        "Brothers of Italy",
+        "The League",
+        "Forward Italy",
+        "Noi Moderati",
+        "Brambilla Michela Vittoria"
+      ],
+      "expectedCentreRight": 237,
+      "referenceDate": "2023-01-13",
+      "note": "Totale secondo la classificazione del rapporto finale OSCE/ODIHR del 13 gennaio 2023, che riporta i risultati per partito e mantiene distinti gli indipendenti. Questa classificazione può differire da quella dei gruppi parlamentari. Le voci dell’emiciclo conservano il raggruppamento ministeriale per coalizione. I due eletti della lista estera congiunta sono attribuiti alla prima appartenenza parlamentare documentata dalla Camera al 27 ottobre 2022.",
+      "legislature": 19,
+      "snapshot": "20221027",
+      "date": "20220925",
+      "expectedMembers": 400,
+      "jointForeignList": "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA",
+      "foreignGroupAliases": {
+        "FRATELLI D'ITALIA": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+        "LEGA - SALVINI PREMIER": "LEGA PER SALVINI PREMIER"
+      }
+    },
+    {
+      "electionID": "senato-2022",
+      "chamber": "senato",
+      "totalSeats": 200,
+      "adapter": "osce-2022",
+      "aliases": {
+        "Brothers of Italy": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+        "Democratic Party": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+        "Five Star Movement": "MOVIMENTO 5 STELLE",
+        "The League": "LEGA PER SALVINI PREMIER",
+        "Forward Italy": "FORZA ITALIA",
+        "Action – Italia Viva": "AZIONE - ITALIA VIVA - CALENDA",
+        "Green and Left Alliance": "ALLEANZA VERDI E SINISTRA",
+        "+ Europa": "+EUROPA",
+        "Italexit per l’Italia": "ITALEXIT PER L'ITALIA",
+        "Unione popolare con De Magistris": "UNIONE POPOLARE CON DE MAGISTRIS",
+        "Italia Sovrana e Popolare": "ITALIA SOVRANA E POPOLARE",
+        "Noi Moderati": "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+        "Sud chiama Nord": "SUD CHIAMA NORD",
+        "Vita": "VITA",
+        "Impegno Civico": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+        "Südtiroler Volkspartei (SVP) -PATT": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+        "Mastella Noi di centro europeisti": "MASTELLA NOI DI CENTRO EUROPEISTI",
+        "Brambilla Michela Vittoria": null,
+        "Partito Comunista Italiano": "PARTITO COMUNISTA ITALIANO",
+        "Vallée d’Aoste": null,
+        "Partito animalista-UCDL-10 volte meglio": "PARTITO ANIMALISTA - UCDL - 10 VOLTE MEGLIO",
+        "Alternativa per l’Italia-No green pass": "ALTERNATIVA PER L'ITALIA - NO GREEN PASS",
+        "Partito comunista dei lavoratori": "PARTITO COMUNISTA DEI LAVORATORI",
+        "Destre Unite": "DESTRE UNITE",
+        "Partito della follia creative": "PARTITO DELLA FOLLIA CREATIVA",
+        "Free": "FREE",
+        "Forza del popolo": "FORZA DEL POPOLO",
+        "The League-Brothers of Italy- Forza Italia": null,
+        "Associative Movement of Italians Abroad": null,
+        "Unione Sudamericana Emigrati Italiani": null,
+        "Azione Italia Viva": "AZIONE - ITALIA VIVA - CALENDA",
+        "Piu’ Europa": "+EUROPA",
+        "Movimento delle liberta’": null,
+        "L’Italia del meridione": null,
+        "Civic commitment": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO"
+      },
+      "outsideLists": [
+        "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+        "PARTITO DELLA FOLLIA CREATIVA",
+        "FREE"
+      ],
+      "centreRightRows": [
+        "Brothers of Italy",
+        "The League",
+        "Forward Italy",
+        "Noi Moderati",
+        "Brambilla Michela Vittoria"
+      ],
+      "expectedCentreRight": 115,
+      "referenceDate": "2023-01-13",
+      "note": "Totale secondo la classificazione del rapporto finale OSCE/ODIHR del 13 gennaio 2023, che riporta i risultati per partito e mantiene distinti gli indipendenti. Questa classificazione può differire da quella dei gruppi parlamentari. Le voci dell’emiciclo conservano il raggruppamento ministeriale per coalizione."
+    },
+    {
+      "electionID": "camera-2018",
+      "chamber": "camera",
+      "totalSeats": 630,
+      "adapter": "osce-2018-reviewed",
+      "legislature": 18,
+      "snapshot": "20180410",
+      "date": "20180304",
+      "expectedMembers": 630,
+      "jointForeignList": "LEGA-FI-FR. D'ITALIA CON G.MELONI",
+      "reviewedParties": [
+        {
+          "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+          "reportName": "Brothers of Italy",
+          "groupName": "FRATELLI D'ITALIA",
+          "listAliases": [
+            "FRATELLI D'ITALIA CON GIORGIA MELONI"
+          ]
+        },
+        {
+          "name": "LEGA",
+          "reportName": "League",
+          "groupName": "LEGA - SALVINI PREMIER",
+          "listAliases": [
+            "LEGA"
+          ]
+        }
+      ],
+      "referenceDate": "2018-06-06",
+      "note": "Ricostruzione delle sole voci che coincidono tra i risultati del rapporto OSCE/ODIHR e i dati individuali della Camera nella fase iniziale della legislatura (10 aprile 2018). Per i seggi esteri di lista congiunta si usa l’appartenenza iniziale documentata; i passaggi successivi sono esclusi. Le altre voci discordanti del rapporto non vengono usate come totali."
+    }
+  ]
+}

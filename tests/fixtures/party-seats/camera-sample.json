@@ -1,0 +1,203 @@
+{
+  "head": {
+    "link": [],
+    "vars": [
+      "member",
+      "mandate",
+      "start",
+      "end",
+      "date",
+      "kind",
+      "list",
+      "coverage",
+      "group",
+      "groupLabel",
+      "groupStart",
+      "groupEnd"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d309220_19"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc19_309220_20250107"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20250107"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20220925"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "LIGURIA - P01"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr4136"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA (07.01.2025)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20250107"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d307804_19"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc19_307804_20221008"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20221008"
+        },
+        "end": {
+          "type": "literal",
+          "value": "20250722"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20220925"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "MOVIMENTO 5 STELLE"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "SARDEGNA - P01"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr4131"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "MOVIMENTO 5 STELLE (18.10.2022-22.07.2025)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20221018"
+        },
+        "groupEnd": {
+          "type": "literal",
+          "value": "20250722"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d308784_19"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc19_308784_20221004"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20221004"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20220925"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "AMERICA SETTENTRIONALE E CENTRALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr4133"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "FRATELLI D'ITALIA (18.10.2022)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20221018"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d307151_19"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc19_307151_20221004"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20221004"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20220925"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr4132"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "LEGA - SALVINI PREMIER (18.10.2022)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20221018"
+        }
+      }
+    ]
+  }
+}
