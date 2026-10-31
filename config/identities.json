@@ -89,7 +89,7 @@
       "label": "Centro Democratico",
       "shortLabel": "CD",
       "kind": "party",
-      "colorHex": "548DC0",
+      "colorHex": "DC9C2D",
       "aliases": [
         "Centro Democratico"
       ],
@@ -155,6 +155,19 @@
       "hemicycleOrder": 90
     },
     {
+      "id": "impegno-civico",
+      "label": "Impegno Civico",
+      "shortLabel": "IC",
+      "kind": "party",
+      "colorHex": "DC9C2D",
+      "aliases": [
+        "Impegno Civico",
+        "Impegno Civico - Centro Democratico",
+        "Impegno Civico Luigi Di Maio - Centro Democratico"
+      ],
+      "bindings": []
+    },
+    {
       "id": "italexit-per-l-italia",
       "label": "Italexit per l'Italia",
       "shortLabel": "IpI",
@@ -174,7 +187,8 @@
       "colorHex": "548DC0",
       "aliases": [
         "Italia dei Valori",
-        "Italia dei Valori - Lista Di Pietro"
+        "Italia dei Valori - Lista Di Pietro",
+        "Di Pietro Italia dei Valori"
       ],
       "bindings": []
     },
@@ -199,6 +213,18 @@
         "Italia Viva"
       ],
       "bindings": []
+    },
+    {
+      "id": "l-ulivo",
+      "label": "L'Ulivo",
+      "shortLabel": "U",
+      "kind": "party",
+      "colorHex": "E94F39",
+      "aliases": [
+        "L'Ulivo"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 20
     },
     {
       "id": "lega",
@@ -237,7 +263,8 @@
       "aliases": [
         "Liberi e Uguali"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 85
     },
     {
       "id": "movimento-5-stelle",
