@@ -150,9 +150,9 @@
         },
         {
           "id": "seats-progressisti",
-          "name": "Progressisti",
+          "name": "Alleanza dei Progressisti",
           "members": [
-            "PROGRESSISTI (1996)",
+            "PROGRESSISTI",
             "RIFONDAZIONE COMUNISTA"
           ]
         }
@@ -164,7 +164,7 @@
       "groups": [
         {
           "id": "seats-centrodestra",
-          "name": "Centrodestra",
+          "name": "Polo delle Libertà",
           "members": [
             "FORZA ITALIA",
             "ALLEANZA NAZIONALE",
@@ -179,7 +179,7 @@
         },
         {
           "id": "seats-centrosinistra",
-          "name": "Progressisti",
+          "name": "Alleanza dei Progressisti",
           "members": [
             "PROGRESSISTI",
             "PDS",
@@ -203,7 +203,7 @@
       "groups": [
         {
           "id": "seats-centrodestra",
-          "name": "Centrodestra",
+          "name": "Polo delle Libertà",
           "members": [
             "POLO DELLE LIBERTA'",
             "POLO BUON GOVERNO",
