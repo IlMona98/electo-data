@@ -33,6 +33,20 @@ class SeatsTests(unittest.TestCase):
         camera=next(e['seats'] for e in result if e['id']=='camera-2022')
         self.assertEqual(next(g['seats'] for g in camera['groups'] if g['id']=='seats-centrodestra'),237)
         self.assertEqual(next(g['seats'] for g in camera['groups'] if g['id']=='seats-centrosinistra'),84)
+    def test_mixed_components_reconcile_each_coalition_and_single_list(self):
+        apply_seats(self.elections,self.document,self.fixture)
+        for election in self.elections:
+            for group in election['seats']['groups']:
+                self.assertEqual(sum(p['seats'] for p in group['components']),group['seats'])
+                self.assertTrue(all(p['seats']>0 for p in group['components']))
+        current=next(e['seats'] for e in self.elections if e['id']=='camera-2022')
+        m5s=next(g for g in current['groups'] if g['id']=='seats-m5s')
+        self.assertEqual(m5s['seats'],52)
+        self.assertEqual({p['label']:p['seats'] for p in m5s['components']},{'Italia · proporzionale':41,'Italia · uninominale':10,'Estero':1})
+        cdx=next(g for g in current['groups'] if g['id']=='seats-centrodestra')
+        self.assertEqual(cdx['seats'],237)
+        self.assertEqual({p['label']:p['seats'] for p in cdx['components']},{'Italia · proporzionale':114,'Italia · uninominale':121,'Estero':2})
+
     def test_italia_excludes_valle_daosta_and_estero(self):
         r=self.document['elections'][0];s=r['sources'][0]
         self.assertEqual(sum(b['seats'] for b in parse_page(self.fixture(s['url']),s)),617)

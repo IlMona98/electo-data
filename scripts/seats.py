@@ -89,7 +89,7 @@ def cell_count(row):
     return count(cells[0]) if cells and cells[0] else 0
 
 
-def parse_page(raw, source):
+def parse_page(raw, source, with_components=False):
     require(len(raw)<=MAX_PAGE, 'Seat source too large')
     p=SeatTable(); p.feed(raw.decode('utf-8-sig'))
     require(p.tables==1 and source['heading'] in p.headings, 'Wrong election, area or missing results table')
@@ -106,20 +106,23 @@ def parse_page(raw, source):
             current_key=key
             if kind in ('valledaosta','uninominale'):
                 current={'seats': int(any(v=='Eletto' for a,v in row)), 'lists':[]}
+                current['components']=Counter({source['label']+' · uninominale':current['seats']})
             else:
                 require(kind=='italia' and name=='CANDIDATI UNINOMINALI', 'Unexpected candidate row')
                 current={'seats':cell_count(row), 'lists':[]}
+                current['components']=Counter({'Italia · uninominale':current['seats']})
             blocks.append(current)
         elif lists:
             key,name=lists[0]
             require(len(lists)==1 and key not in seen and name, 'Duplicate or empty list'); seen.add(key)
             if kind=='estero':
                 require(any('hseggi' in a.get('headers','').split() for a,v in row), 'Missing foreign list seats')
-                blocks.append({'seats':cell_count(row), 'lists':[name]})
+                blocks.append({'seats':cell_count(row), 'lists':[name], 'components':Counter({'Estero':cell_count(row)})})
             else:
                 require(kind=='italia' and current is not None, 'List without candidate block')
                 require(any(a.get('id')==key and current_key in a.get('headers','').split() for a,v in row), 'List belongs to another candidate block')
                 current['lists'].append(name); current['seats']+=cell_count(row)
+                current['components']['Italia · proporzionale']+=cell_count(row)
         elif kind in ('valledaosta','uninominale'):
             names=[v for a,v in row if 'hlista' in a.get('headers','').split()]
             if names:
@@ -133,6 +136,8 @@ def parse_page(raw, source):
     else:
         require(len(declared)==(2 if kind=='italia' else 1), 'Missing ministerial seat totals')
         require(sum(b['seats'] for b in blocks)==sum(declared), 'Ministerial rows do not reconcile with totals')
+    if not with_components:
+        for block in blocks:block.pop('components')
     return [b for b in blocks if b['seats']>0]
 
 
@@ -150,7 +155,7 @@ def allocation(record, fetcher=download_page):
         for alias in g['aliases']:
             key=normalize(alias)
             require(key not in aliases, 'Ambiguous seat membership'); aliases[key]=g['id']
-    counts=Counter(); provenance=[]; list_results={}
+    counts=Counter(); provenance=[]; list_results={}; components={key:Counter() for key in definitions}
     for source in sources:
         params=official_page(source['url'])
         require(params['tpel']==[record['type']] and params['dtel']==[record['date']], 'Seat URL belongs to another election')
@@ -159,11 +164,12 @@ def allocation(record, fetcher=download_page):
         if source['kind']=='uninominale':
             require(record['type']=='S' and params.get('lev0')==['4'] and params.get('tpe')==['L'], 'Wrong special college')
         raw=fetcher(source['url'])
-        for block in parse_page(raw,source):
+        for block in parse_page(raw,source,with_components=True):
             # Every linked list must map to the same group; coalition wins cannot be attributed to its largest party.
             resolved={aliases.get(normalize(n)) for n in block['lists']}
             require(len(resolved)==1 and None not in resolved, 'Unconfigured or mixed seat coalition: '+repr(block['lists']))
-            counts[resolved.pop()]+=block['seats']
+            group_id=resolved.pop();counts[group_id]+=block['seats']
+            components[group_id].update(block['components'])
         if source['kind']=='italia':
             table=SeatTable(); table.feed(raw.decode('utf-8-sig'))
             linked={}
@@ -181,9 +187,10 @@ def allocation(record, fetcher=download_page):
                     require(normalize(name) not in list_results,'Duplicate list seat metadata')
                     list_results[normalize(name)]=detail
         provenance.append(dict(label=source['label'],url=source['url'],sha256=sha256(raw).hexdigest()))
+    require(all(sum(components[key].values())==counts[key] for key in definitions),'Seat components do not reconcile')
     require(sum(counts.values())+record['unreportedSeats']==record['totalSeats'], 'Incomplete parliamentary seat allocation')
     return dict(chamber=record['chamber'],totalSeats=record['totalSeats'],unassignedSeats=record['unreportedSeats'],
-                groups=[dict(id=g['id'],name=g['name'],seats=counts[g['id']]) for g in record['groups'] if counts[g['id']]],
+                groups=[dict(id=g['id'],name=g['name'],seats=counts[g['id']],components=[dict(label=label,seats=n) for label,n in components[g['id']].items() if n]) for g in record['groups'] if counts[g['id']]],
                 sourceURL=sources[0]['url'],sourceLabel='Eligendo · Archivio',sourcePages=provenance,unassignedLabel='Non riportati dalla fonte',listResults=list_results,
                 checkedAt=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                 coverage=('Intera Camera' if record['chamber']=='camera' else 'Senato elettivo')+' · Italia ed estero',
