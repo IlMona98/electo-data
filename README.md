@@ -137,3 +137,8 @@ Ogni tabella deve avere intestazione, data, camera, area e celle semantiche corr
 Le 53 pagine controllate sono tracciate in `sourceDocuments`; l’impronta nazionale è in `sourceSHA256`. Il riparto elettivo è letto dalle colonne Seggi nazionali: Camera **574**, Senato **237**, con senatori di diritto e a vita esclusi. Le capacità diverse dal 1994–2013 sono autorizzate soltanto per la data 18/04/1948. I totali di lista, inclusi gli zeri espliciti delle tabelle complete, sono mostrabili come totali; non vengono scambiati per sole quote proporzionali. Fixture semantiche compresse in `tests/fixtures/votes-1948/`.
 
 La copertura complessiva è ora di **25 schede / 16 consultazioni**, di cui 18 schede politiche con seggi. L’aggiunta del 1948 non aggiunge automaticamente le elezioni intermedie del 1953–1992. La pipeline conserva l’ultima pubblicazione su qualsiasi errore di fonte o riconciliazione.
+
+
+### Registro grafico senza dipendenza dalle fonti elettorali
+
+`publish-identities.yml` gestisce le modifiche al registro e ai simboli separatamente dal recupero dei dati. `scripts/publish_identities.py` compila il registro, ricalcola soltanto i collegamenti canonici sull’ultimo archivio verificato e usa lo stesso formato di pubblicazione immutabile. Voti, seggi, perimetri e timestamp delle fonti sono conservati; nessuna fonte elettorale viene scaricata. I test verificano anche la pubblicazione con la rete elettorale indisponibile, i collegamenti precedentemente obsoleti, la conservazione del registro su errore e la coerenza del catalogo. Entrambi i workflow condividono la concorrenza `electo-data` e fanno checkout dell’ultima `main`. Le modifiche al solo registro non avviano più il recupero completo delle fonti.

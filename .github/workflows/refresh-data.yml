@@ -3,7 +3,7 @@ name: Aggiorna dati Eligendo
 on:
   push:
     branches: [main]
-    paths: ['scripts/**', 'requirements.txt', 'sources.json', 'tests/**', 'config/**', 'public/symbols/**', '.github/workflows/**']
+    paths: ['scripts/**', 'requirements.txt', 'sources.json', 'tests/**', 'config/seats.json', 'config/seat-groups.json', 'config/party-seats.json', '.github/workflows/refresh-data.yml']
   workflow_dispatch:
   schedule:
     - cron: '37 4 * * *'
@@ -23,6 +23,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'

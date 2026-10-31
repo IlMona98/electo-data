@@ -189,7 +189,8 @@
         "Fronte Democratico Popolare",
         "Fr. Democratico Popolare",
         "Fr.DemocraticoPopolare",
-        "FDP"
+        "FDP",
+        "FR.DEMOCR.POPOLARE"
       ],
       "bindings": [],
       "hemicycleOrder": 10
@@ -453,7 +454,8 @@
       "colorHex": "34478F",
       "aliases": [
         "Partito Nazionale Monarchico",
-        "P.Naz.Mon.All.D.Lav."
+        "P.Naz.Mon.All.D.Lav.",
+        "P.NAZ.MONARCHICO"
       ],
       "bindings": [],
       "hemicycleOrder": 75

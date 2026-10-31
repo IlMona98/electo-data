@@ -9,7 +9,7 @@ Il registro contiene le identità configurate dal proprietario. Un risultato non
 1. Cerca la denominazione originale in [identity-candidates.json](https://ilmona98.github.io/electo-data/v1/identity-candidates.json). Per ogni nome trovi gli identificativi dei risultati e delle schede da cui proviene.
 2. Modifica `config/identities.json` con l’editor GitHub e aggiungi una voce a `entities`, seguendo il modello sotto.
 3. Se vuoi un logo, carica lo SVG in `public/symbols/` con un nome semplice, per esempio `mio-partito.svg`, e aggiungi `symbolPath`.
-4. Salva sul ramo `main`. GitHub Actions valida, genera l’hash dell’immagine e pubblica il registro. Nell’app premi Aggiorna o riaprila.
+4. Salva sul ramo `main`. Il workflow «Pubblica identità grafiche» valida, genera l’hash dell’immagine e pubblica il registro sugli ultimi risultati verificati, senza scaricare di nuovo i dati elettorali. Nell’app premi Aggiorna o riaprila.
 
 ```json
 {
@@ -98,3 +98,12 @@ Puoi aggiungere **un solo campo opzionale** a una voce di `identities.json`:
 Usa un intero da **0 a 100**: i valori più bassi precedono gli altri da sinistra, quelli più alti da destra. Per esempio, 10, 50 e 90 stabiliscono tre posizioni relative nell’ordine sinistra → centro → destra. È un ordine relativo fra blocchi, non una percentuale dell’angolo o una stima dell’orientamento politico. Le dimensioni dei blocchi dipendono sempre dai seggi.
 
 Impostalo sull’identità della coalizione quando il blocco dell’emiciclo rappresenta una coalizione; sull’identità del partito quando rappresenta una lista autonoma. I valori non configurati usano 50; a parità si ordinano per seggi decrescenti e poi per ID, in modo stabile. La legenda rimane ordinata per numero di seggi. Nessuna posizione politica viene assegnata automaticamente: le scelte restano del proprietario. Il campo raggiunge tutte le elezioni associate allo stesso ID dopo la pubblicazione del registro. Colori, simboli, voti e totali non cambiano.
+
+
+## Pubblicazione grafica indipendente dai dati elettorali
+
+Una modifica a `config/identities.json` o a `public/symbols/` avvia **Pubblica identità grafiche**. Il job aggiorna il registro e ricollega gli ID nei risultati già verificati, rigenerando catalogo e documenti con hash coerenti. Non contatta le fonti dei voti e dei seggi: un errore temporaneo di Camera o Ministero non blocca più colori, nomi e ordinamento. Voti, seggi, nomi ministeriali e date di verifica dei risultati restano quelli dell’ultimo archivio valido.
+
+Il workflow **Aggiorna dati Eligendo** continua a controllare le fonti per gli aggiornamenti dei risultati. I due flussi condividono lo stesso blocco di pubblicazione e partono dall’ultima versione di `main`, per conservare gli aggiornamenti già pubblicati.
+
+Le abbreviazioni originali devono essere presenti negli alias o nei binding: `FR.DEMOCR.POPOLARE` è diverso da `Fr.DemocraticoPopolare`. Nel 1948 sono associate le sigle documentate delle identità configurate, fra cui DC, PRI, MSI, PPST e P.NAZ.MONARCHICO. Una lista congiunta come `UNITA' SOC.-PRI` richiede una propria identità o una tua associazione esplicita; non viene assegnata automaticamente a uno solo dei componenti. Dopo il completamento del workflow usa Aggiorna nell’Archivio oppure Aggiorna registro grafico nella scheda Info. Non occorre una nuova build per modificare il registro.
