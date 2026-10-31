@@ -2,7 +2,6 @@
 Never substitute a parliamentary group's size for an electoral list's seats.
 """
 from collections import Counter, defaultdict
-from datetime import datetime, timezone
 from hashlib import sha256
 from io import BytesIO
 import json
@@ -40,12 +39,18 @@ def official_url(url):
     p = urlsplit(url)
     require(p.scheme == 'https' and not p.username and not p.password and p.port in (None, 443) and not p.fragment,
             'Invalid supplementary source URL')
-    require((p.hostname == 'dati.camera.it' and p.path == '/sparql') or url in (OSCE, OSCE_2018),
+    if p.hostname == 'elezionistorico.interno.gov.it':
+        from seats import official_page
+        official_page(url); return
+    require((p.hostname in ('dati.camera.it','dati.senato.it') and p.path == '/sparql') or url in (OSCE, OSCE_2018),
             'Unapproved supplementary source')
 
 
 def download(url):
     official_url(url)
+    if urlsplit(url).hostname == 'elezionistorico.interno.gov.it':
+        from seats import download_page
+        return download_page(url)
     request = urllib.request.Request(url, headers={'User-Agent': 'Electo/1.0 (+https://github.com/IlMona98/electo-data)'})
     for attempt in range(3):
         try:
@@ -137,33 +142,6 @@ def pdf_text(raw):
     return '\n'.join(p.extract_text() for p in pages)
 
 
-def reviewed_2018_counts(raw, members, record):
-    from pypdf import PdfReader
-    require(raw.startswith(b'%PDF-'), 'HTML instead of institutional PDF')
-    reader = PdfReader(BytesIO(raw))
-    require(len(reader.pages) == 24, 'Wrong 2018 institutional report')
-    require('6 June 2018' in ' '.join(reader.pages[0].extract_text().split()), 'Wrong 2018 institutional reference date')
-    text = reader.pages[22].extract_text()
-    require('4 March 2018' in text and 'OFFICIAL ELECTION RESULTS' in text, 'Wrong 2018 results annex')
-    camera = text.split('Chamber of Deputies', 1)[1].split('Senate', 1)[0]
-    counts = Counter(); parts = defaultdict(Counter)
-    for definition in record['reviewedParties']:
-        match = re.findall(r'\b\d+\s+'+re.escape(definition['reportName'])+r'\s+[\d,]+\s+(\d+)\b', camera)
-        require(len(match) == 1, 'Missing or duplicate reviewed institutional row')
-        selected = []
-        for member in members:
-            if member['groups'] == {definition['groupName']}: selected.append(member)
-        abroad = [m for m in selected if m['name'] == record['jointForeignList']]
-        domestic = len(selected) - len(abroad)
-        require(domestic == int(match[0]), 'Institutional report and initial parliamentary affiliation disagree')
-        require(all(m['kind'] == 'maggioritario' or m['name'] in definition['listAliases'] or m in abroad for m in selected),
-                'Initial parliamentary group contains another electoral list')
-        target = normalize(definition['name']); counts[target] = len(selected)
-        parts[target]['Italia · riscontro istituzionale'] = domestic
-        parts[target]['Estero · appartenenza iniziale'] = len(abroad)
-    return counts, parts
-
-
 def report_counts(rows, members, record):
     index = 0 if record['chamber'] == 'camera' else 1
     counts = Counter(); parts = defaultdict(Counter); ledger = Counter()
@@ -204,15 +182,21 @@ def apply_party_seats(elections, document, fetcher=download):
         require(int(record['referenceDate'][:4]) >= election['year'], 'Supplementary reference predates election')
         if record['chamber'] == 'camera':
             require(record['expectedMembers'] == record['totalSeats'] and int(record['date'][:4]) == election['year'], 'Wrong supplementary parliamentary cohort')
-        sources = []; members = []
+        sources = []; members = []; reconciliation = None
         if record['adapter'] == 'camera-lists' or record['chamber'] == 'camera':
             url = camera_url(record['legislature']); raw = get(url); members = camera_members(raw, record)
             sources.append(dict(label='Camera dei deputati · dati elettorali storici', url=url, sha256=sha256(raw).hexdigest()))
         if record['adapter'] == 'camera-lists':
             counts, parts = list_counts(members, record)
-        elif record['adapter'] == 'osce-2018-reviewed':
-            raw = get(OSCE_2018); counts, parts = reviewed_2018_counts(raw, members, record)
-            sources.append(dict(label='OSCE/ODIHR · risultati 2018, p. 21',url=OSCE_2018,sha256=sha256(raw).hexdigest()))
+        elif record['adapter'] == 'reconciled-2018':
+            from reconcile_2018 import reconcile, senato_url, senato_members
+            if record['chamber'] == 'senato':
+                url = senato_url(); raw = get(url)
+                members = senato_members(raw,record['snapshot'],record['expectedMembers'])
+                sources.append(dict(label='Senato · mandati e prime appartenenze',url=url,sha256=sha256(raw).hexdigest()))
+            raw=get(OSCE_2018)
+            counts,parts,reconciliation,ministerial=reconcile(election,record,raw,members,get)
+            sources.append(dict(label='OSCE/ODIHR · allegato 2018 riconciliato',url=OSCE_2018,sha256=sha256(raw).hexdigest()))
         else:
             require(record['adapter'] == 'osce-2022', 'Unknown supplementary adapter')
             raw = get(OSCE); counts, parts = report_counts(osce_rows(pdf_text(raw)), members, record)
@@ -229,7 +213,11 @@ def apply_party_seats(elections, document, fetcher=download):
             totals.append(dict(resultID=row['id'], name=row['name'], seats=n, components=components,
                                sourcePages=sources, note=record['note'], referenceDate=record['referenceDate']))
         require(totals, 'No verified supplementary totals')
-        prepared.append((election, totals))
+        prepared.append((election, totals, reconciliation))
     # No publication is mutated until every configured source passes.
-    for election, totals in prepared: election['seats']['partyTotals'] = totals
+    for election, totals, reconciliation in prepared:
+        election['seats']['partyTotals'] = totals
+        if reconciliation is not None:
+            election['seats']['partyReconciliation'] = reconciliation
+            if election['id']=='senato-2018': election['seats']['unassignedLabel']='Non assegnato · Sicilia'
     return elections

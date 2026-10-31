@@ -216,32 +216,231 @@
       "electionID": "camera-2018",
       "chamber": "camera",
       "totalSeats": 630,
-      "adapter": "osce-2018-reviewed",
+      "adapter": "reconciled-2018",
       "legislature": 18,
-      "snapshot": "20180410",
       "date": "20180304",
+      "snapshot": "20180410",
       "expectedMembers": 630,
-      "jointForeignList": "LEGA-FI-FR. D'ITALIA CON G.MELONI",
-      "reviewedParties": [
+      "referenceDate": "2018-06-06",
+      "aliases": {},
+      "ministerialSources": [
         {
-          "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
-          "reportName": "Brothers of Italy",
-          "groupName": "FRATELLI D'ITALIA",
-          "listAliases": [
-            "FRATELLI D'ITALIA CON GIORGIA MELONI"
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 04/03/2018 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Camera 04/03/2018 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=04/03/2018&tpa=H&tpe=L&lev0=27&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=2701&lev1=1",
+          "heading": "Camera 04/03/2018 Area VALLE D'AOSTA Collegio VALLE D'AOSTA - 01"
+        }
+      ],
+      "ministerialGroups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "SVP - PATT",
+            "PD-UV-UVP-EPAV"
           ]
         },
         {
-          "name": "LEGA",
-          "reportName": "League",
-          "groupName": "LEGA - SALVINI PREMIER",
-          "listAliases": [
-            "LEGA"
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "aliases": [
+            "LIBERI E UGUALI"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        },
+        {
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "aliases": [
+            "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "USEI"
           ]
         }
       ],
+      "jointForeignList": "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+      "note": "Totale comprendente Italia, estero e Valle d’Aosta. Le etichette invertite nel rapporto OSCE sono corrette tramite i riscontri ministeriali; tutti i totali di coalizione coincidono con Eligendo. Per la lista estera congiunta è verificata la prima appartenenza parlamentare.",
+      "parliamentaryJointList": "LEGA-FI-FR. D'ITALIA CON G.MELONI",
+      "foreignGroupAliases": {
+        "LEGA - SALVINI PREMIER": "LEGA",
+        "FORZA ITALIA - BERLUSCONI PRESIDENTE": "FORZA ITALIA"
+      },
+      "reviewedReportNames": {
+        "Brothers of Italy": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+        "Democratic Party": "FORZA ITALIA",
+        "Five Star Movement": "MOVIMENTO 5 STELLE",
+        "Forza Italia": "PARTITO DEMOCRATICO",
+        "Free and Equal": "LIBERI E UGUALI",
+        "Italia Europa Together": "ITALIA EUROPA INSIEME",
+        "League": "LEGA",
+        "Piu Europa": "CIVICA POPOLARE LORENZIN",
+        "Popular Civic": "+EUROPA",
+        "Sudtiroler People’s Party": "SVP - PATT",
+        "Us with Italy": "NOI CON L'ITALIA - UDC"
+      }
+    },
+    {
+      "electionID": "senato-2018",
+      "chamber": "senato",
+      "totalSeats": 315,
+      "adapter": "reconciled-2018",
+      "legislature": 18,
+      "date": "20180304",
+      "snapshot": "20180410",
+      "expectedMembers": 314,
       "referenceDate": "2018-06-06",
-      "note": "Ricostruzione delle sole voci che coincidono tra i risultati del rapporto OSCE/ODIHR e i dati individuali della Camera nella fase iniziale della legislatura (10 aprile 2018). Per i seggi esteri di lista congiunta si usa l’appartenenza iniziale documentata; i passaggi successivi sono esclusi. Le altre voci discordanti del rapporto non vengono usate come totali."
+      "aliases": {},
+      "ministerialSources": [
+        {
+          "kind": "italia",
+          "label": "Italia",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 04/03/2018 Area ITALIA (escl. Valle d'Aosta)"
+        },
+        {
+          "kind": "estero",
+          "label": "Estero",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+          "heading": "Senato 04/03/2018 Area ESTERO"
+        },
+        {
+          "kind": "valledaosta",
+          "label": "Valle d’Aosta",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=04/03/2018&tpa=G&tpe=L&lev0=2&levsut0=1&levsut1=2&es0=S&es1=S&ms=S&ne1=201&lev1=1",
+          "heading": "Senato 04/03/2018 Area VALLE D'AOSTA Collegio VALLE D'AOSTA - 01"
+        }
+      ],
+      "ministerialGroups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "aliases": [
+            "Centrosinistra",
+            "PARTITO DEMOCRATICO",
+            "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "+EUROPA",
+            "ITALIA EUROPA INSIEME",
+            "CIVICA POPOLARE LORENZIN",
+            "ALLEANZA VERDI E SINISTRA",
+            "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "SVP - PATT",
+            "PD-UV-UVP-EPAV"
+          ]
+        },
+        {
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "aliases": [
+            "LIBERI E UGUALI"
+          ]
+        },
+        {
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "aliases": [
+            "MOVIMENTO 5 STELLE"
+          ]
+        },
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "aliases": [
+            "Centrodestra",
+            "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA",
+            "LEGA PER SALVINI PREMIER",
+            "FORZA ITALIA",
+            "NOI CON L'ITALIA - UDC",
+            "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "LEGA PER SALVINI PREMIER - FORZA ITALIA - FRATELLI D'ITALIA"
+          ]
+        },
+        {
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "aliases": [
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+            "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO - MAIE"
+          ]
+        },
+        {
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "aliases": [
+            "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+            "USEI"
+          ]
+        }
+      ],
+      "jointForeignList": "LEGA - FORZA ITALIA - FRATELLI D'ITALIA CON GIORGIA MELONI",
+      "note": "Totale dei seggi effettivamente assegnati, incluse le quote estere. Il seggio M5S siciliano rimasto vacante non viene conteggiato. La lista autonoma valdostana resta distinta dai partiti nazionali. I totali delle coalizioni coincidono con Eligendo; per i due eletti della lista estera di centrodestra è verificata la prima appartenenza parlamentare.",
+      "foreignGroupAliases": {
+        "http://dati.senato.it/gruppo/56": "FORZA ITALIA"
+      },
+      "reviewedReportNames": {
+        "Brothers of Italy": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+        "Democratic Party": "PARTITO DEMOCRATICO",
+        "Five Star Movement": "MOVIMENTO 5 STELLE",
+        "Forza Italia": "FORZA ITALIA",
+        "Free and Equal": "LIBERI E UGUALI",
+        "Italia Europa Together": "ITALIA EUROPA INSIEME",
+        "League": "LEGA",
+        "Piu Europa": "+EUROPA",
+        "Popular Civic": "CIVICA POPOLARE LORENZIN",
+        "Sudtiroler People’s Party": "SVP - PATT",
+        "Us with Italy": "NOI CON L'ITALIA - UDC"
+      }
     }
   ]
 }

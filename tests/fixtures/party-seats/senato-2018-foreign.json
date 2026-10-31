@@ -1,0 +1,696 @@
+{
+  "head": {
+    "link": [],
+    "vars": [
+      "member",
+      "start",
+      "end",
+      "type",
+      "region",
+      "group",
+      "groupStart",
+      "groupEnd"
+    ]
+  },
+  "results": {
+    "distinct": false,
+    "ordered": true,
+    "bindings": [
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/32742"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA SETTENTRIONALE E CENTRALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/56"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/27476"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/56"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2020-10-11"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/27476"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2020-10-12"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-25"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/27476"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/87"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-26"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-29"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/27476"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-30"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/32745"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-12-02"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-25"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/32745"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-12-02"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/87"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-26"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-28"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/32745"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-12-02"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-29"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-12-02"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/25498"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/49"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-09-17"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/25498"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/86"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-09-18"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-09-25"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/25498"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/86"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-09-25"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/23007"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-25"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/23007"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/87"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-01-26"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-28"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/23007"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2021-03-29"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/29105"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "AFRICA ASIA OCEANIA ANTARTIDE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/49"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/28543"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-23"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "a vita, di nomina del Presidente della Repubblica"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/9"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2018-03-27"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.senato.it/senatore/34617"
+        },
+        "start": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-06-19"
+        },
+        "end": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        },
+        "type": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "elettivo"
+        },
+        "region": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "Sardegna"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.senato.it/gruppo/33"
+        },
+        "groupStart": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2019-06-19"
+        },
+        "groupEnd": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date",
+          "value": "2022-10-12"
+        }
+      }
+    ]
+  }
+}

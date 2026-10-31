@@ -1,0 +1,178 @@
+{
+  "head": {
+    "link": [],
+    "vars": [
+      "member",
+      "mandate",
+      "start",
+      "end",
+      "date",
+      "kind",
+      "list",
+      "coverage",
+      "group",
+      "groupLabel",
+      "groupStart",
+      "groupEnd"
+    ]
+  },
+  "results": {
+    "distinct": false,
+    "ordered": true,
+    "bindings": [
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d307151_18"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc18_307151_20180316"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20180316"
+        },
+        "end": {
+          "type": "literal",
+          "value": "20221012"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20180304"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "LEGA-FI-FR. D'ITALIA CON G.MELONI"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "EUROPA"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr3055"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "LEGA - SALVINI PREMIER (27.03.2018-12.10.2022)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20180327"
+        },
+        "groupEnd": {
+          "type": "literal",
+          "value": "20221012"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d306251_18"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc18_306251_20180316"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20180316"
+        },
+        "end": {
+          "type": "literal",
+          "value": "20221012"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20180304"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "LEGA-FI-FR. D'ITALIA CON G.MELONI"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "AMERICA SETTENTRIONALE E CENTRALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr3053"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "FORZA ITALIA - BERLUSCONI PRESIDENTE (27.03.2018-12.10.2022)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20180327"
+        },
+        "groupEnd": {
+          "type": "literal",
+          "value": "20221012"
+        }
+      },
+      {
+        "member": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/deputato.rdf/d307159_18"
+        },
+        "mandate": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/mandatoCamera.rdf/mc18_307159_20180316"
+        },
+        "start": {
+          "type": "literal",
+          "value": "20180316"
+        },
+        "end": {
+          "type": "literal",
+          "value": "20221012"
+        },
+        "date": {
+          "type": "literal",
+          "value": "20180304"
+        },
+        "kind": {
+          "type": "literal",
+          "value": "proporzionale"
+        },
+        "list": {
+          "type": "literal",
+          "value": "LEGA-FI-FR. D'ITALIA CON G.MELONI"
+        },
+        "coverage": {
+          "type": "literal",
+          "value": "AMERICA MERIDIONALE"
+        },
+        "group": {
+          "type": "uri",
+          "value": "http://dati.camera.it/ocd/gruppoParlamentare.rdf/gr3055"
+        },
+        "groupLabel": {
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "value": "LEGA - SALVINI PREMIER (27.03.2018-12.10.2022)"
+        },
+        "groupStart": {
+          "type": "literal",
+          "value": "20180327"
+        },
+        "groupEnd": {
+          "type": "literal",
+          "value": "20221012"
+        }
+      }
+    ]
+  }
+}

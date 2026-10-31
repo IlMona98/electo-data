@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "elections": [
+    {
+      "electionID": "camera-2006",
+      "groups": [
+        {
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "members": [
+            "Centrosinistra",
+            "L'UNIONE"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "senato-2006",
+      "groups": [
+        {
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "members": [
+            "Centrosinistra",
+            "L'UNIONE",
+            "L'UNIONE SVP",
+            "SVP"
+          ]
+        },
+        {
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "members": [
+            "Centrodestra",
+            "CASA DELLE LIBERTA'"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "camera-2008",
+      "groups": [],
+      "note": ""
+    },
+    {
+      "electionID": "senato-2008",
+      "groups": [
+        {
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "members": [
+            "Centrosinistra",
+            "SVP - INSIEME PER LE AUTONOMIE",
+            "SVP"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "camera-2013",
+      "groups": [
+        {
+          "id": "seats-66d853b59b85e3bb",
+          "name": "Coalizione MARIO MONTI",
+          "members": [
+            "Coalizione MARIO MONTI",
+            "CON MONTI PER L'ITALIA"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "senato-2013",
+      "groups": [
+        {
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "members": [
+            "Centrosinistra",
+            "SVP - PATT - PD - UPT",
+            "PD - SVP",
+            "SVP"
+          ]
+        },
+        {
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "members": [
+            "Centrodestra",
+            "IL POPOLO DELLA LIBERTA' - LEGA NORD"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "camera-2001",
+      "groups": [
+        {
+          "id": "seats-centrodestra",
+          "name": "Casa delle Libertà",
+          "members": [
+            "CASA DELLE LIBERTA'",
+            "FORZA ITALIA",
+            "ALLEANZA NAZIONALE"
+          ]
+        },
+        {
+          "id": "seats-centrosinistra",
+          "name": "L’Ulivo",
+          "members": [
+            "L'ULIVO",
+            "DEMOCRATICI SINISTRA",
+            "LA MARGHERITA",
+            "L'ULIVO - SVP",
+            "L'ULIVO - CON ILLY PER TRIESTE"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "camera-1996",
+      "groups": [
+        {
+          "id": "seats-centrodestra",
+          "name": "Polo per le Libertà",
+          "members": [
+            "POLO PER LE LIBERTA'",
+            "FORZA ITALIA",
+            "ALLEANZA NAZIONALE",
+            "CCD-CDU"
+          ]
+        },
+        {
+          "id": "seats-centrosinistra",
+          "name": "L’Ulivo",
+          "members": [
+            "L'ULIVO",
+            "PDS",
+            "POP-SVP-PRI-UD-PRODI",
+            "RINNOVAMENTO IT-DINI",
+            "L'ULIVO-LEGA AUT.VENETA",
+            "L'ULIVO-PS.D'AZ."
+          ]
+        },
+        {
+          "id": "seats-progressisti",
+          "name": "Progressisti",
+          "members": [
+            "PROGRESSISTI (1996)",
+            "RIFONDAZIONE COMUNISTA"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "electionID": "camera-1994",
+      "groups": [
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "members": [
+            "FORZA ITALIA",
+            "ALLEANZA NAZIONALE",
+            "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM.",
+            "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, RIFORMATORI, CENTRO CRIST.DEM.",
+            "LEGA NORD, FORZA ITALIA",
+            "UNIONE DI CENTRO, FORZA ITALIA, ALLEANZA NAZIONALE, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+            "FORZA ITALIA, ALLEANZA NAZIONALE",
+            "UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+            "LEGA NORD"
+          ]
+        },
+        {
+          "id": "seats-centrosinistra",
+          "name": "Progressisti",
+          "members": [
+            "PROGRESSISTI",
+            "PDS",
+            "RIFONDAZIONE COMUNISTA"
+          ]
+        },
+        {
+          "id": "seats-patto-italia",
+          "name": "Patto per l’Italia",
+          "members": [
+            "PATTO PER L'ITALIA",
+            "P.POPOLARE ITALIANO",
+            "PATTO SEGNI"
+          ]
+        }
+      ],
+      "note": "Nel 1994 i due Poli di centrodestra, con candidature territoriali differenti, sono presentati insieme; le rispettive componenti restano verificabili nei dati originari."
+    },
+    {
+      "electionID": "senato-1994",
+      "groups": [
+        {
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "members": [
+            "POLO DELLE LIBERTA'",
+            "POLO BUON GOVERNO",
+            "ALLEANZA NAZIONALE",
+            "FI-CCD"
+          ]
+        }
+      ],
+      "note": "I due Poli di centrodestra del 1994 sono accorpati nella visualizzazione, mantenendo la composizione originaria nelle fonti."
+    },
+    {
+      "electionID": "senato-2022",
+      "groups": [
+        {
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra e alleati",
+          "members": [
+            "Centrosinistra",
+            "CAMPOBASE +EUROPA-ALL.VERDI E SIN.– PD-AZIONE-ITALIA VIVA"
+          ]
+        }
+      ],
+      "note": "La coalizione locale Campobase è inclusa nel riepilogo Centrosinistra e alleati; la candidatura locale comprendeva anche formazioni non presenti nella coalizione nazionale. Non viene attribuita a un singolo partito."
+    },
+    {
+      "electionID": "senato-1996",
+      "groups": [
+        {
+          "id": "seats-d2410c2842855c10",
+          "name": "L’Ulivo",
+          "members": [
+            "L'ULIVO",
+            "L'ULIVO-PS.D'AZ."
+          ]
+        }
+      ],
+      "note": "Le candidature territoriali collegate all’Ulivo sono accorpate nella stessa voce."
+    },
+    {
+      "electionID": "senato-2001",
+      "groups": [
+        {
+          "id": "seats-d2410c2842855c10",
+          "name": "L’Ulivo",
+          "members": [
+            "L'ULIVO",
+            "SVP-L'ULIVO"
+          ]
+        }
+      ],
+      "note": "Le candidature territoriali collegate all’Ulivo sono accorpate nella stessa voce."
+    }
+  ]
+}

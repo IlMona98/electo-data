@@ -50,7 +50,7 @@ class PartySeatsTests(unittest.TestCase):
             with self.assertRaises(ValueError): official_url(url)
         with self.assertRaises(ValueError): camera_url(99)
     def test_configuration_contains_dates_aliases_and_no_handwritten_totals(self):
-        self.assertEqual(len(self.config['elections']), 6)
+        self.assertEqual(len(self.config['elections']), 7)
         for record in self.config['elections']:
             self.assertNotIn('partyTotals', record)
             self.assertIn('referenceDate', record)

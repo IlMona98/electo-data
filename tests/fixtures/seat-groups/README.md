@@ -1,0 +1,1 @@
+Riparti originali aggregati dalle tabelle Eligendo per i 16 risultati Camera/Senato 1994–2022, prima dell’accorpamento della legenda. Conservano soltanto denominazioni, identificativi, seggi, componenti e collegamenti ai risultati, senza anagrafiche di candidati. Le fonti dei riparti sono in config/seats.json.

@@ -1,0 +1,4329 @@
+[
+  {
+    "id": "camera-2022",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "4f8893baa82b3344",
+            "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "f64e5130dd228df2",
+            "name": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "5f4c452c77cc07db",
+            "name": "MOVIMENTO 5 STELLE"
+          },
+          {
+            "id": "6b2324c0f8701870",
+            "name": "LEGA PER SALVINI PREMIER",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "d4e9f25a53984e86",
+            "name": "AZIONE - ITALIA VIVA - CALENDA"
+          },
+          {
+            "id": "ca10f0ad1d46bc42",
+            "name": "ALLEANZA VERDI E SINISTRA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "120ed7ec162cd041",
+            "name": "+EUROPA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "a92de12467b6c31e",
+            "name": "ITALEXIT PER L'ITALIA"
+          },
+          {
+            "id": "3481ee7eda619a67",
+            "name": "UNIONE POPOLARE CON DE MAGISTRIS"
+          },
+          {
+            "id": "03951d120bd081c2",
+            "name": "ITALIA SOVRANA E POPOLARE"
+          },
+          {
+            "id": "805d384ae326195d",
+            "name": "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "85f7b48f98a7a046",
+            "name": "SUD CHIAMA NORD"
+          },
+          {
+            "id": "0431501957fefa14",
+            "name": "VITA"
+          },
+          {
+            "id": "2f6f2b43c0881e3c",
+            "name": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "2b71fc0cc3e4c28d",
+            "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT"
+          },
+          {
+            "id": "6e013445c43bf1b1",
+            "name": "MASTELLA NOI DI CENTRO EUROPEISTI"
+          },
+          {
+            "id": "edca6f4eb1309561",
+            "name": "PARTITO COMUNISTA ITALIANO"
+          },
+          {
+            "id": "e93dfec1038c5f41",
+            "name": "PARTITO ANIMALISTA - UCDL - 10 VOLTE MEGLIO"
+          },
+          {
+            "id": "4bafe5580be09ced",
+            "name": "ALTERNATIVA PER L'ITALIA - NO GREEN PASS"
+          },
+          {
+            "id": "acd16b86b8303c29",
+            "name": "PARTITO DELLA FOLLIA CREATIVA"
+          },
+          {
+            "id": "53bd593ef3d86ced",
+            "name": "FORZA DEL POPOLO"
+          },
+          {
+            "id": "19f1fa5ec989d121",
+            "name": "FREE"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 12
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 68
+            },
+            {
+              "label": "Estero",
+              "seats": 4
+            }
+          ],
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "seats": 84
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 10
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 41
+            },
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "resultID": "5f4c452c77cc07db",
+          "seats": 52
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · proporzionale",
+              "seats": 21
+            }
+          ],
+          "id": "seats-azione-iv",
+          "name": "AZIONE - ITALIA VIVA - CALENDA",
+          "resultID": "d4e9f25a53984e86",
+          "seats": 21
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 2
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-svp",
+          "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+          "resultID": "2b71fc0cc3e4c28d",
+          "seats": 3
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 121
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 114
+            },
+            {
+              "label": "Estero",
+              "seats": 2
+            }
+          ],
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "seats": 237
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-sud-chiama-nord",
+          "name": "SUD CHIAMA NORD",
+          "resultID": "85f7b48f98a7a046",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Valle d’Aosta · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-vda",
+          "name": "Vallée d’Aoste",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 400,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2022",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "4f8893baa82b3344",
+            "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "f64e5130dd228df2",
+            "name": "PARTITO DEMOCRATICO - ITALIA DEMOCRATICA E PROGRESSISTA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "5f4c452c77cc07db",
+            "name": "MOVIMENTO 5 STELLE"
+          },
+          {
+            "id": "6b2324c0f8701870",
+            "name": "LEGA PER SALVINI PREMIER",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "d4e9f25a53984e86",
+            "name": "AZIONE - ITALIA VIVA - CALENDA"
+          },
+          {
+            "id": "ca10f0ad1d46bc42",
+            "name": "ALLEANZA VERDI E SINISTRA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "120ed7ec162cd041",
+            "name": "+EUROPA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "a92de12467b6c31e",
+            "name": "ITALEXIT PER L'ITALIA"
+          },
+          {
+            "id": "3481ee7eda619a67",
+            "name": "UNIONE POPOLARE CON DE MAGISTRIS"
+          },
+          {
+            "id": "03951d120bd081c2",
+            "name": "ITALIA SOVRANA E POPOLARE"
+          },
+          {
+            "id": "85f7b48f98a7a046",
+            "name": "SUD CHIAMA NORD"
+          },
+          {
+            "id": "805d384ae326195d",
+            "name": "NOI MODERATI/LUPI - TOTI - BRUGNARO - UDC",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "0431501957fefa14",
+            "name": "VITA"
+          },
+          {
+            "id": "2f6f2b43c0881e3c",
+            "name": "IMPEGNO CIVICO LUIGI DI MAIO - CENTRO DEMOCRATICO",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "edca6f4eb1309561",
+            "name": "PARTITO COMUNISTA ITALIANO"
+          },
+          {
+            "id": "6e013445c43bf1b1",
+            "name": "MASTELLA NOI DI CENTRO EUROPEISTI"
+          },
+          {
+            "id": "4bafe5580be09ced",
+            "name": "ALTERNATIVA PER L'ITALIA - NO GREEN PASS"
+          },
+          {
+            "id": "e93dfec1038c5f41",
+            "name": "PARTITO ANIMALISTA - UCDL - 10 VOLTE MEGLIO"
+          },
+          {
+            "id": "ff1ef65b2eb05baf",
+            "name": "PARTITO COMUNISTA DEI LAVORATORI"
+          },
+          {
+            "id": "f7d56665055c8acd",
+            "name": "DESTRE UNITE"
+          },
+          {
+            "id": "53bd593ef3d86ced",
+            "name": "FORZA DEL POPOLO"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 5
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 34
+            },
+            {
+              "label": "Estero",
+              "seats": 3
+            },
+            {
+              "label": "Trentino-Alto Adige · U04 (BOLZANO/BOZEN) · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "seats": 43
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 5
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 23
+            }
+          ],
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "resultID": "5f4c452c77cc07db",
+          "seats": 28
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · proporzionale",
+              "seats": 9
+            }
+          ],
+          "id": "seats-azione-iv",
+          "name": "AZIONE - ITALIA VIVA - CALENDA",
+          "resultID": "d4e9f25a53984e86",
+          "seats": 9
+        },
+        {
+          "components": [
+            {
+              "label": "Trentino-Alto Adige · U05 (MERANO/MERAN) · uninominale",
+              "seats": 1
+            },
+            {
+              "label": "Trentino-Alto Adige · U06 (BRESSANONE/BRIXEN) · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-svp",
+          "name": "SUDTIROLER VOLKSPARTEI (SVP) - PATT",
+          "seats": 2
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 56
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 56
+            },
+            {
+              "label": "Valle d’Aosta · uninominale",
+              "seats": 1
+            },
+            {
+              "label": "Trentino-Alto Adige · U02 (ROVERETO) · uninominale",
+              "seats": 1
+            },
+            {
+              "label": "Trentino-Alto Adige · U03 (PERGINE VALSUGANA) · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "seats": 115
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-sud-chiama-nord",
+          "name": "SUD CHIAMA NORD",
+          "resultID": "85f7b48f98a7a046",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Trentino-Alto Adige · U01 (TRENTO) · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-campobase",
+          "name": "CAMPOBASE +EUROPA-ALL.VERDI E SIN.– PD-AZIONE-ITALIA VIVA",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 200,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-2018",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "5f4c452c77cc07db",
+            "name": "MOVIMENTO 5 STELLE"
+          },
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "7671e936cde48411",
+            "name": "LEGA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "4f8893baa82b3344",
+            "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "eaec595f69769df7",
+            "name": "LIBERI E UGUALI"
+          },
+          {
+            "id": "120ed7ec162cd041",
+            "name": "+EUROPA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "9691db5d2c066b26",
+            "name": "NOI CON L'ITALIA - UDC",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "7bcaa94be241b91d",
+            "name": "POTERE AL POPOLO!"
+          },
+          {
+            "id": "71a592ddeaf87fa2",
+            "name": "CASAPOUND ITALIA"
+          },
+          {
+            "id": "4b6a6ecf5a768c01",
+            "name": "IL POPOLO DELLA FAMIGLIA"
+          },
+          {
+            "id": "d7e4b9201cf5cc1e",
+            "name": "ITALIA EUROPA INSIEME",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "a760b49f7be6fd00",
+            "name": "CIVICA POPOLARE LORENZIN",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "6f84a376767dcccf",
+            "name": "SVP - PATT",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "1f3607ee39017404",
+            "name": "ITALIA AGLI ITALIANI"
+          },
+          {
+            "id": "e81954257efb1897",
+            "name": "PARTITO COMUNISTA"
+          },
+          {
+            "id": "2a201c59c068f523",
+            "name": "PARTITO VALORE UMANO"
+          },
+          {
+            "id": "88a0d33044a5ae73",
+            "name": "10 VOLTE MEGLIO"
+          },
+          {
+            "id": "e99c90e9f400b242",
+            "name": "PER UNA SINISTRA RIVOLUZIONARIA"
+          },
+          {
+            "id": "60535e23d6341eb6",
+            "name": "PARTITO REPUBBLICANO ITALIANO - ALA"
+          },
+          {
+            "id": "8db9a8bff60f27d7",
+            "name": "GRANDE NORD"
+          },
+          {
+            "id": "72814aa5ce12816e",
+            "name": "AUTODETERMINATZIONE"
+          },
+          {
+            "id": "59b1cd201187dd55",
+            "name": "LISTA DEL POPOLO PER LA COSTITUZIONE"
+          },
+          {
+            "id": "e1de4f3742f1dc8e",
+            "name": "PATTO PER L'AUTONOMIA"
+          },
+          {
+            "id": "5a9bdae27dd37101",
+            "name": "BLOCCO NAZIONALE PER LE LIBERTA'"
+          },
+          {
+            "id": "60fcb38836914a21",
+            "name": "SIAMO"
+          },
+          {
+            "id": "2893dc1c73252288",
+            "name": "RINASCIMENTO MIR"
+          },
+          {
+            "id": "77350f8c24e0a3d2",
+            "name": "ITALIA NEL CUORE"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 28
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 88
+            },
+            {
+              "label": "Estero",
+              "seats": 6
+            }
+          ],
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "seats": 122
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · proporzionale",
+              "seats": 14
+            }
+          ],
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "resultID": "eaec595f69769df7",
+          "seats": 14
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 92
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 133
+            },
+            {
+              "label": "Estero",
+              "seats": 1
+            },
+            {
+              "label": "Valle d’Aosta · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "resultID": "5f4c452c77cc07db",
+          "seats": 227
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 111
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 151
+            },
+            {
+              "label": "Estero",
+              "seats": 3
+            }
+          ],
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "seats": 265
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2018",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "5f4c452c77cc07db",
+            "name": "MOVIMENTO 5 STELLE"
+          },
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "7671e936cde48411",
+            "name": "LEGA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "4f8893baa82b3344",
+            "name": "FRATELLI D'ITALIA CON GIORGIA MELONI",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "eaec595f69769df7",
+            "name": "LIBERI E UGUALI"
+          },
+          {
+            "id": "120ed7ec162cd041",
+            "name": "+EUROPA",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "9691db5d2c066b26",
+            "name": "NOI CON L'ITALIA - UDC",
+            "coalitionID": "seats-centrodestra"
+          },
+          {
+            "id": "7bcaa94be241b91d",
+            "name": "POTERE AL POPOLO!"
+          },
+          {
+            "id": "71a592ddeaf87fa2",
+            "name": "CASAPOUND ITALIA"
+          },
+          {
+            "id": "4b6a6ecf5a768c01",
+            "name": "IL POPOLO DELLA FAMIGLIA"
+          },
+          {
+            "id": "d7e4b9201cf5cc1e",
+            "name": "ITALIA EUROPA INSIEME",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "a760b49f7be6fd00",
+            "name": "CIVICA POPOLARE LORENZIN",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "1f3607ee39017404",
+            "name": "ITALIA AGLI ITALIANI"
+          },
+          {
+            "id": "6f84a376767dcccf",
+            "name": "SVP - PATT",
+            "coalitionID": "seats-centrosinistra"
+          },
+          {
+            "id": "e81954257efb1897",
+            "name": "PARTITO COMUNISTA"
+          },
+          {
+            "id": "2a201c59c068f523",
+            "name": "PARTITO VALORE UMANO"
+          },
+          {
+            "id": "e99c90e9f400b242",
+            "name": "PER UNA SINISTRA RIVOLUZIONARIA"
+          },
+          {
+            "id": "60535e23d6341eb6",
+            "name": "PARTITO REPUBBLICANO ITALIANO - ALA"
+          },
+          {
+            "id": "72814aa5ce12816e",
+            "name": "AUTODETERMINATZIONE"
+          },
+          {
+            "id": "8db9a8bff60f27d7",
+            "name": "GRANDE NORD"
+          },
+          {
+            "id": "59b1cd201187dd55",
+            "name": "LISTA DEL POPOLO PER LA COSTITUZIONE"
+          },
+          {
+            "id": "d54164d249a753bd",
+            "name": "DESTRE UNITE - FORCONI"
+          },
+          {
+            "id": "05e67387353e6db2",
+            "name": "DEMOCRAZIA CRISTIANA"
+          },
+          {
+            "id": "e1de4f3742f1dc8e",
+            "name": "PATTO PER L'AUTONOMIA"
+          },
+          {
+            "id": "60fcb38836914a21",
+            "name": "SIAMO"
+          },
+          {
+            "id": "b57f9f57b5192534",
+            "name": "SMS - STATO MODERNO SOLIDALE"
+          },
+          {
+            "id": "2893dc1c73252288",
+            "name": "RINASCIMENTO MIR"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 13
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 44
+            },
+            {
+              "label": "Estero",
+              "seats": 2
+            },
+            {
+              "label": "Valle d’Aosta · uninominale",
+              "seats": 1
+            }
+          ],
+          "id": "seats-centrosinistra",
+          "name": "Centrosinistra",
+          "seats": 60
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · proporzionale",
+              "seats": 4
+            }
+          ],
+          "id": "seats-leu",
+          "name": "LIBERI E UGUALI",
+          "resultID": "eaec595f69769df7",
+          "seats": 4
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 44
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 67
+            }
+          ],
+          "id": "seats-m5s",
+          "name": "MOVIMENTO 5 STELLE",
+          "resultID": "5f4c452c77cc07db",
+          "seats": 111
+        },
+        {
+          "components": [
+            {
+              "label": "Italia · uninominale",
+              "seats": 58
+            },
+            {
+              "label": "Italia · proporzionale",
+              "seats": 77
+            },
+            {
+              "label": "Estero",
+              "seats": 2
+            }
+          ],
+          "id": "seats-centrodestra",
+          "name": "Centrodestra",
+          "seats": 137
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-maie",
+          "name": "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "components": [
+            {
+              "label": "Estero",
+              "seats": 1
+            }
+          ],
+          "id": "seats-usei",
+          "name": "UNIONE SUDAMERICANA EMIGRATI ITALIANI",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 1
+    }
+  },
+  {
+    "id": "camera-2013",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "eefe529a12b04aaf",
+            "name": "MOVIMENTO 5 STELLE BEPPEGRILLO.IT"
+          },
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "32a594109c6fed22",
+            "name": "IL POPOLO DELLA LIBERTA'",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "40bdcffd4c972b54",
+            "name": "SCELTA CIVICA CON MONTI PER L'ITALIA",
+            "coalitionID": "seats-66d853b59b85e3bb"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "78f965598bc0c27f",
+            "name": "SINISTRA ECOLOGIA LIBERTA'",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "35759707401cb7dd",
+            "name": "RIVOLUZIONE CIVILE"
+          },
+          {
+            "id": "3b3d75dfce0c1778",
+            "name": "FRATELLI D'ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "36105f98f814f285",
+            "name": "UNIONE DI CENTRO",
+            "coalitionID": "seats-66d853b59b85e3bb"
+          },
+          {
+            "id": "7c02934e33a09214",
+            "name": "FARE PER FERMARE IL DECLINO"
+          },
+          {
+            "id": "67e67df835d0eba8",
+            "name": "LA DESTRA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "322c12ba7b49b291",
+            "name": "CENTRO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "86bee032ed0b08c0",
+            "name": "FUTURO E LIBERTA'",
+            "coalitionID": "seats-66d853b59b85e3bb"
+          },
+          {
+            "id": "de13c495b5af9ed2",
+            "name": "GRANDE SUD - MPA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "ff1ef65b2eb05baf",
+            "name": "PARTITO COMUNISTA DEI LAVORATORI"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "9eae1d79c5422c8c",
+            "name": "MIR - MODERATI IN RIVOLUZIONE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "32eb0f7d57786724",
+            "name": "LISTA AMNISTIA GIUSTIZIA LIBERTA'"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "01a5c8f145417270",
+            "name": "DIE FREIHEITLICHEN"
+          },
+          {
+            "id": "71a592ddeaf87fa2",
+            "name": "CASAPOUND ITALIA"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE"
+          },
+          {
+            "id": "99c04ee532eb6bde",
+            "name": "IO AMO L'ITALIA"
+          },
+          {
+            "id": "4b29b20843ab5fa6",
+            "name": "INDIPENDENZA VENETA"
+          },
+          {
+            "id": "54bb08878bf2eb3d",
+            "name": "LIBERALI PER L'ITALIA - PLI"
+          },
+          {
+            "id": "3483d495c4b3efcf",
+            "name": "INTESA POPOLARE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "3ebb9b05f42d4807",
+            "name": "LG.VENETA REPUBBLICA"
+          },
+          {
+            "id": "2189a73976a58763",
+            "name": "VOTO DI PROTESTA"
+          },
+          {
+            "id": "a48a45ae5568d399",
+            "name": "VENETO STATO"
+          },
+          {
+            "id": "5128694843fd76e7",
+            "name": "RIFORMISTI ITALIANI"
+          },
+          {
+            "id": "51f097dcd0fa96f7",
+            "name": "INDIPENDENZA PER LA SARDEGNA"
+          },
+          {
+            "id": "22ffd0cc81da6f4d",
+            "name": "PRI"
+          },
+          {
+            "id": "787b800fdac88b1e",
+            "name": "MERIS"
+          },
+          {
+            "id": "1b00456b0c7f2d82",
+            "name": "PARTITO DI ALTERNATIVA COMUNISTA"
+          },
+          {
+            "id": "000e45c0d09f163a",
+            "name": "I PIRATI"
+          },
+          {
+            "id": "37a0617b6decc5fa",
+            "name": "MOVIMENTO PROGETTO ITALIA - MID"
+          },
+          {
+            "id": "1aceaad5db043147",
+            "name": "LIBERI PER UNA ITALIA EQUA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "05e8221f078525f2",
+            "name": "RIFONDAZIONE MISSINA ITALIANA"
+          },
+          {
+            "id": "bdf5658069e86245",
+            "name": "POPOLARI UNITI"
+          },
+          {
+            "id": "7188fbad878a0faf",
+            "name": "PROGETTO NAZIONALE"
+          },
+          {
+            "id": "fb35757fbdd03db8",
+            "name": "MOVIMENTO P.P.A."
+          },
+          {
+            "id": "d2f2352da9635ec2",
+            "name": "UNIONE POP."
+          },
+          {
+            "id": "3a8dce414fae8915",
+            "name": "TUTTI INSIEME PER L'ITALIA"
+          },
+          {
+            "id": "84ae78a356808586",
+            "name": "STAMINALI D'ITALIA"
+          },
+          {
+            "id": "ea5ae8a3807b6408",
+            "name": "DEMOCRAZIA ATEA"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 340
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 124
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-08b7616088a74916",
+          "name": "MOVIMENTO 5 STELLE BEPPEGRILLO.IT",
+          "resultID": "eefe529a12b04aaf",
+          "seats": 108
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-66d853b59b85e3bb",
+          "name": "Coalizione MARIO MONTI",
+          "seats": 45
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-39e12e4b2441ccb6",
+          "name": "PARTITO DEMOCRATICO",
+          "resultID": "4f1c11b8ff315c43",
+          "seats": 5
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-ace3d00d9ea220f9",
+          "name": "CON MONTI PER L'ITALIA",
+          "seats": 2
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-58b162bb87fdf012",
+          "name": "IL POPOLO DELLA LIBERTA'",
+          "resultID": "32a594109c6fed22",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-d7aa819b134bdc48",
+          "name": "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 2
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-8d73ab5726cc64b7",
+          "name": "MOVIMENTO 5 STELLE BEPPEGRILLO.IT",
+          "resultID": "eefe529a12b04aaf",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-5bc7517d3bd64fbb",
+          "name": "USEI",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta",
+          "id": "seats-54a84cd2e1448222",
+          "name": "VALLEE D'AOSTE",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2013",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "eefe529a12b04aaf",
+            "name": "MOVIMENTO 5 STELLE BEPPEGRILLO.IT"
+          },
+          {
+            "id": "32a594109c6fed22",
+            "name": "IL POPOLO DELLA LIBERTA'",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "d56a5e00a9822c20",
+            "name": "CON MONTI PER L'ITALIA"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "78f965598bc0c27f",
+            "name": "SINISTRA ECOLOGIA LIBERTA'",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "3b3d75dfce0c1778",
+            "name": "FRATELLI D'ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "35759707401cb7dd",
+            "name": "RIVOLUZIONE CIVILE"
+          },
+          {
+            "id": "7c02934e33a09214",
+            "name": "FARE PER FERMARE IL DECLINO"
+          },
+          {
+            "id": "67e67df835d0eba8",
+            "name": "LA DESTRA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "322c12ba7b49b291",
+            "name": "CENTRO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "d31db1c4eb1d6f56",
+            "name": "IL MEGAFONO - LISTA CROCETTA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "e252319710e0238f",
+            "name": "GRANDE SUD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "ff1ef65b2eb05baf",
+            "name": "PARTITO COMUNISTA DEI LAVORATORI"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "9eae1d79c5422c8c",
+            "name": "MIR - MODERATI IN RIVOLUZIONE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "32eb0f7d57786724",
+            "name": "LISTA AMNISTIA GIUSTIZIA LIBERTA'"
+          },
+          {
+            "id": "93960f7c2b6d07e5",
+            "name": "PARTITO SOCIALISTA ITALIANO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE"
+          },
+          {
+            "id": "e533a90bc582a93d",
+            "name": "MPA - PARTITO DEI SICILIANI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "99c04ee532eb6bde",
+            "name": "IO AMO L'ITALIA"
+          },
+          {
+            "id": "71a592ddeaf87fa2",
+            "name": "CASAPOUND ITALIA"
+          },
+          {
+            "id": "4b29b20843ab5fa6",
+            "name": "INDIPENDENZA VENETA"
+          },
+          {
+            "id": "3483d495c4b3efcf",
+            "name": "INTESA POPOLARE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "5c0a8141316d863e",
+            "name": "CANTIERE POPOLARE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "3ebb9b05f42d4807",
+            "name": "LG.VENETA REPUBBLICA"
+          },
+          {
+            "id": "ae64895c051ec1ef",
+            "name": "BASTA TASSE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "7c383fdb99c683a5",
+            "name": "MODERATI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "6490414c0be5029d",
+            "name": "CIVILTA' RURALE SVILUPPO"
+          },
+          {
+            "id": "791437c94fec9015",
+            "name": "RIALZATI ABRUZZO"
+          },
+          {
+            "id": "c0588d810e2ff5ea",
+            "name": "P.COM.MARX-LEN."
+          },
+          {
+            "id": "a48a45ae5568d399",
+            "name": "VENETO STATO"
+          },
+          {
+            "id": "22ffd0cc81da6f4d",
+            "name": "PRI"
+          },
+          {
+            "id": "76b52691f4515108",
+            "name": "DIMEZZIAMO LO STIPENDIO AI POLITICI",
+            "coalitionID": "seats-50e13444294e4dbb"
+          },
+          {
+            "id": "69255304568dd659",
+            "name": "DONNE PER L'ITALIA"
+          },
+          {
+            "id": "ba0760fac7c7591f",
+            "name": "NO ALLA CHIUSURA DEGLI OSPEDALI",
+            "coalitionID": "seats-50e13444294e4dbb"
+          },
+          {
+            "id": "51f097dcd0fa96f7",
+            "name": "INDIPENDENZA PER LA SARDEGNA"
+          },
+          {
+            "id": "d9eefdd78a3655cb",
+            "name": "UNIONE PADANA"
+          },
+          {
+            "id": "1aceaad5db043147",
+            "name": "LIBERI PER UNA ITALIA EQUA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "bdf5658069e86245",
+            "name": "POPOLARI UNITI"
+          },
+          {
+            "id": "000e45c0d09f163a",
+            "name": "I PIRATI"
+          },
+          {
+            "id": "5128694843fd76e7",
+            "name": "RIFORMISTI ITALIANI"
+          },
+          {
+            "id": "787b800fdac88b1e",
+            "name": "MERIS"
+          },
+          {
+            "id": "1b00456b0c7f2d82",
+            "name": "PARTITO DI ALTERNATIVA COMUNISTA"
+          },
+          {
+            "id": "2477004bc9611659",
+            "name": "VIVA L'ITALIA",
+            "coalitionID": "seats-50e13444294e4dbb"
+          },
+          {
+            "id": "a8ff5f69bc4e8857",
+            "name": "PAS - FLB&LT"
+          },
+          {
+            "id": "7188fbad878a0faf",
+            "name": "PROGETTO NAZIONALE"
+          },
+          {
+            "id": "1e0964042b540f6c",
+            "name": "LA BASE"
+          },
+          {
+            "id": "3a8dce414fae8915",
+            "name": "TUTTI INSIEME PER L'ITALIA"
+          },
+          {
+            "id": "05e8221f078525f2",
+            "name": "RIFONDAZIONE MISSINA ITALIANA"
+          },
+          {
+            "id": "ffcfd2e5bade9b3c",
+            "name": "MOVIMENTO EUDONNA"
+          },
+          {
+            "id": "236aa9f539001518",
+            "name": "COSTRUIRE DEMOCRAZIA"
+          },
+          {
+            "id": "37a0617b6decc5fa",
+            "name": "MOVIMENTO PROGETTO ITALIA - MID"
+          },
+          {
+            "id": "04c7ea7d641f066b",
+            "name": "PARTITO DEL SUD"
+          },
+          {
+            "id": "d96d36d954c57d8b",
+            "name": "MOVIMENTO NATURALISTA ITALIANO"
+          },
+          {
+            "id": "7c970852b2ef0fd2",
+            "name": "COMUNITA' LUCANA"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 113
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 116
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-08b7616088a74916",
+          "name": "MOVIMENTO 5 STELLE BEPPEGRILLO.IT",
+          "resultID": "eefe529a12b04aaf",
+          "seats": 54
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-a0d879479b7a3f06",
+          "name": "CON MONTI PER L'ITALIA",
+          "resultID": "d56a5e00a9822c20",
+          "seats": 18
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-39e12e4b2441ccb6",
+          "name": "PARTITO DEMOCRATICO",
+          "resultID": "4f1c11b8ff315c43",
+          "seats": 4
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-ace3d00d9ea220f9",
+          "name": "CON MONTI PER L'ITALIA",
+          "resultID": "d56a5e00a9822c20",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-d7aa819b134bdc48",
+          "name": "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-54a84cd2e1448222",
+          "name": "VALLEE D'AOSTE",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-22a8afe4127ee715",
+          "name": "SVP - PATT - PD - UPT",
+          "seats": 3
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-5af5d0729cf1f8df",
+          "name": "IL POPOLO DELLA LIBERTA' - LEGA NORD",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-2d77d30d8ec3b7bd",
+          "name": "SVP",
+          "seats": 2
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-fc8b5bdf7fecb0b2",
+          "name": "PD - SVP",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-2008",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "32a594109c6fed22",
+            "name": "IL POPOLO DELLA LIBERTA'",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "36105f98f814f285",
+            "name": "UNIONE DI CENTRO"
+          },
+          {
+            "id": "c711b84c87af86b5",
+            "name": "DI PIETRO ITALIA DEI VALORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "d148a8bb11965424",
+            "name": "LA SINISTRA L'ARCOBALENO"
+          },
+          {
+            "id": "74aa138171ed1358",
+            "name": "LA DESTRA - FIAMMA TRICOLORE"
+          },
+          {
+            "id": "6d7be6963cc72570",
+            "name": "MOVIMENTO PER L'AUTONOMIA ALL.PER IL SUD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "c017a839e3dcc47f",
+            "name": "PARTITO SOCIALISTA"
+          },
+          {
+            "id": "ff1ef65b2eb05baf",
+            "name": "PARTITO COMUNISTA DEI LAVORATORI"
+          },
+          {
+            "id": "ac23cdb2c20a53c7",
+            "name": "SINISTRA CRITICA"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP"
+          },
+          {
+            "id": "8d8a4aadadd5e5ea",
+            "name": "ASS.DIFESA DELLA VITA ABORTO?NO,GRAZIE"
+          },
+          {
+            "id": "0580e086f21c5297",
+            "name": "PER IL BENE COMUNE"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "e8888367f0cef5f4",
+            "name": "P.LIBERALE ITALIANO"
+          },
+          {
+            "id": "502412ebeddd2417",
+            "name": "UNIONE DEMOCRATICA PER I CONSUMATORI"
+          },
+          {
+            "id": "90d8aaa792bd3129",
+            "name": "LISTA DEI GRILLI PARLANTI"
+          },
+          {
+            "id": "3ebb9b05f42d4807",
+            "name": "LG.VENETA REPUBBLICA"
+          },
+          {
+            "id": "01a5c8f145417270",
+            "name": "DIE FREIHEITLICHEN"
+          },
+          {
+            "id": "dd74b3144175553e",
+            "name": "M.E.D.A."
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "aebd1e05901ed02c",
+            "name": "LEGA PER L'AUTONOMIA ALL.LOMB. LEGA PENS"
+          },
+          {
+            "id": "8d3865837558ce9b",
+            "name": "UNION FUR SUD TIROL"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "29f80628ede1e0e2",
+            "name": "LEGA SUD"
+          },
+          {
+            "id": "d0c3f0fbf4a7b8a6",
+            "name": "L'INTESA VENETA"
+          },
+          {
+            "id": "1b00456b0c7f2d82",
+            "name": "PARTITO DI ALTERNATIVA COMUNISTA"
+          },
+          {
+            "id": "d84f49a550bc5c09",
+            "name": "IL LOTO"
+          },
+          {
+            "id": "fb35757fbdd03db8",
+            "name": "MOVIMENTO P.P.A."
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 239
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 340
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-a8df82b623a06a87",
+          "name": "UNIONE DI CENTRO",
+          "resultID": "36105f98f814f285",
+          "seats": 36
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-178f3cc00b745caa",
+          "name": "SVP",
+          "resultID": "35d22d6592e8c0a6",
+          "seats": 2
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-39e12e4b2441ccb6",
+          "name": "PARTITO DEMOCRATICO",
+          "resultID": "4f1c11b8ff315c43",
+          "seats": 6
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-58b162bb87fdf012",
+          "name": "IL POPOLO DELLA LIBERTA'",
+          "resultID": "32a594109c6fed22",
+          "seats": 4
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-d7aa819b134bdc48",
+          "name": "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-4c5e6f46971dda64",
+          "name": "DI PIETRO ITALIA DEI VALORI",
+          "resultID": "c711b84c87af86b5",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta",
+          "id": "seats-22e94beaf632b270",
+          "name": "AUT.LIB. DEMOCRATIE",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2008",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "32a594109c6fed22",
+            "name": "IL POPOLO DELLA LIBERTA'",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "4f1c11b8ff315c43",
+            "name": "PARTITO DEMOCRATICO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "36105f98f814f285",
+            "name": "UNIONE DI CENTRO"
+          },
+          {
+            "id": "c711b84c87af86b5",
+            "name": "DI PIETRO ITALIA DEI VALORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "d148a8bb11965424",
+            "name": "LA SINISTRA L'ARCOBALENO"
+          },
+          {
+            "id": "74aa138171ed1358",
+            "name": "LA DESTRA - FIAMMA TRICOLORE"
+          },
+          {
+            "id": "6d7be6963cc72570",
+            "name": "MOVIMENTO PER L'AUTONOMIA ALL.PER IL SUD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "c017a839e3dcc47f",
+            "name": "PARTITO SOCIALISTA"
+          },
+          {
+            "id": "ff1ef65b2eb05baf",
+            "name": "PARTITO COMUNISTA DEI LAVORATORI"
+          },
+          {
+            "id": "ac23cdb2c20a53c7",
+            "name": "SINISTRA CRITICA"
+          },
+          {
+            "id": "0580e086f21c5297",
+            "name": "PER IL BENE COMUNE"
+          },
+          {
+            "id": "e8888367f0cef5f4",
+            "name": "P.LIBERALE ITALIANO"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "502412ebeddd2417",
+            "name": "UNIONE DEMOCRATICA PER I CONSUMATORI"
+          },
+          {
+            "id": "90d8aaa792bd3129",
+            "name": "LISTA DEI GRILLI PARLANTI"
+          },
+          {
+            "id": "3ebb9b05f42d4807",
+            "name": "LG.VENETA REPUBBLICA"
+          },
+          {
+            "id": "aebd1e05901ed02c",
+            "name": "LEGA PER L'AUTONOMIA ALL.LOMB. LEGA PENS"
+          },
+          {
+            "id": "dd74b3144175553e",
+            "name": "M.E.D.A."
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "bdf5658069e86245",
+            "name": "POPOLARI UNITI"
+          },
+          {
+            "id": "c0588d810e2ff5ea",
+            "name": "P.COM.MARX-LEN."
+          },
+          {
+            "id": "29f80628ede1e0e2",
+            "name": "LEGA SUD"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "33dc4232cefbae3a",
+            "name": "FRONTE INDIPENDENTISTA LOMBARDIA"
+          },
+          {
+            "id": "d0c3f0fbf4a7b8a6",
+            "name": "L'INTESA VENETA"
+          },
+          {
+            "id": "1d97b066d98e3339",
+            "name": "PARTITO DEL SUD-ALLEANZA MERIDIONALE"
+          },
+          {
+            "id": "d21c20b8eb62d35a",
+            "name": "SUD LIBERO"
+          },
+          {
+            "id": "fb35757fbdd03db8",
+            "name": "MOVIMENTO P.P.A."
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 130
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 168
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-a8df82b623a06a87",
+          "name": "UNIONE DI CENTRO",
+          "resultID": "36105f98f814f285",
+          "seats": 3
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-58b162bb87fdf012",
+          "name": "IL POPOLO DELLA LIBERTA'",
+          "resultID": "32a594109c6fed22",
+          "seats": 3
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-39e12e4b2441ccb6",
+          "name": "PARTITO DEMOCRATICO",
+          "resultID": "4f1c11b8ff315c43",
+          "seats": 2
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-d7aa819b134bdc48",
+          "name": "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-54a84cd2e1448222",
+          "name": "VALLEE D'AOSTE",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-4fae66cd517591f4",
+          "name": "IL POPOLO DELLA LIBERTA'",
+          "resultID": "32a594109c6fed22",
+          "seats": 3
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-883a6f269b52b4d8",
+          "name": "SVP - INSIEME PER LE AUTONOMIE",
+          "seats": 2
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-2d77d30d8ec3b7bd",
+          "name": "SVP",
+          "seats": 2
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-2006",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "b4ee7862f68c9b06",
+            "name": "L'ULIVO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "36105f98f814f285",
+            "name": "UNIONE DI CENTRO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "fe54b7197d3a18ac",
+            "name": "LA ROSA NEL PUGNO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "310aa51a8ba71e5b",
+            "name": "COMUNISTI ITALIANI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "c711b84c87af86b5",
+            "name": "DI PIETRO ITALIA DEI VALORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "0fbd7ba73099a41d",
+            "name": "FEDERAZIONE DEI VERDI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "9370f6e8b7c99234",
+            "name": "U.D.EUR POPOLARI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "cf927f1504a91068",
+            "name": "DEM.CRIST.-NUOVO PSI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "7807a085d7721c00",
+            "name": "ALTERNATIVA SOCIALE MUSSOLINI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "4bfbfa36a1e6a17f",
+            "name": "I SOCIALISTI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "0fc4a974213c89e2",
+            "name": "PROGETTO NORDEST"
+          },
+          {
+            "id": "1171ef06edc4857c",
+            "name": "LISTA CONSUMATORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "61e701c8a008ccaf",
+            "name": "NO EURO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "d46f4b8a6747541e",
+            "name": "ALLEANZA LOMBARDA AUTONOMIA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "55bfc2da5402b640",
+            "name": "PENSIONATI UNITI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "b6ac6872df1a46ba",
+            "name": "LIGA FRONTE VENETO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "77e191183d19b5f1",
+            "name": "AMBIENTA-LISTA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "01a5c8f145417270",
+            "name": "DIE FREIHEITLICHEN"
+          },
+          {
+            "id": "bfe9e75bd20e61da",
+            "name": "TERZO POLO"
+          },
+          {
+            "id": "e8888367f0cef5f4",
+            "name": "P.LIBERALE ITALIANO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "48f6e598ebee7aac",
+            "name": "IRS"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "cd2edcf1c341380a",
+            "name": "S.O.S. ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "84ad59728e9cef79",
+            "name": "SOLIDARIETA'"
+          },
+          {
+            "id": "4444018b79454b0d",
+            "name": "MOV.DEM.SIC-NOI SIC."
+          },
+          {
+            "id": "d5bdcd9220532529",
+            "name": "PER IL SUD"
+          },
+          {
+            "id": "c240ff3205890351",
+            "name": "MOVIMENTO TRIVENETO"
+          },
+          {
+            "id": "b08a5b0bde77bafa",
+            "name": "DIMENSIONE CHRISTIANA"
+          },
+          {
+            "id": "44a8446d3ca2e546",
+            "name": "DESTRA NAZIONALE"
+          },
+          {
+            "id": "29f80628ede1e0e2",
+            "name": "LEGA SUD"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 340
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 277
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-9cb5b12b600e2fbd",
+          "name": "L'UNIONE",
+          "seats": 6
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-33eed40650caf8fd",
+          "name": "FORZA ITALIA",
+          "resultID": "e5a9e2e6e87fa908",
+          "seats": 3
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-06546790d21761f8",
+          "name": "ASS.ITAL.SUD AMERICA",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-6a053b60ff60cd19",
+          "name": "PER ITALIA NEL MONDO",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-4c5e6f46971dda64",
+          "name": "DI PIETRO ITALIA DEI VALORI",
+          "resultID": "c711b84c87af86b5",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta",
+          "id": "seats-22e94beaf632b270",
+          "name": "AUT.LIB. DEMOCRATIE",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2006",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "82f2d3ad1ba715c0",
+            "name": "DEMOCRATICI SINISTRA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "ade8496766ba3f67",
+            "name": "DL.LA MARGHERITA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "36105f98f814f285",
+            "name": "UNIONE DI CENTRO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "d8f977a95f863c53",
+            "name": "INSIEME CON L'UNIONE",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "c711b84c87af86b5",
+            "name": "DI PIETRO ITALIA DEI VALORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "fe54b7197d3a18ac",
+            "name": "LA ROSA NEL PUGNO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "9370f6e8b7c99234",
+            "name": "U.D.EUR POPOLARI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "7807a085d7721c00",
+            "name": "ALTERNATIVA SOCIALE MUSSOLINI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "cf927f1504a91068",
+            "name": "DEM.CRIST.-NUOVO PSI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "4bfbfa36a1e6a17f",
+            "name": "I SOCIALISTI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "0fc4a974213c89e2",
+            "name": "PROGETTO NORDEST"
+          },
+          {
+            "id": "d46f4b8a6747541e",
+            "name": "ALLEANZA LOMBARDA AUTONOMIA",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "1171ef06edc4857c",
+            "name": "LISTA CONSUMATORI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "55bfc2da5402b640",
+            "name": "PENSIONATI UNITI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "b4ee7862f68c9b06",
+            "name": "L'ULIVO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "968e0ab2f599b2ff",
+            "name": "PSDI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "c48d98425bc6853e",
+            "name": "REPUBBLICANI EUROPEI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "22ffd0cc81da6f4d",
+            "name": "PRI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "77e191183d19b5f1",
+            "name": "AMBIENTA-LISTA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "54dcb6da4eabf77c",
+            "name": "ALLEANZA SICILIANA"
+          },
+          {
+            "id": "36f01dd1eaed6c64",
+            "name": "NUOVA SICILIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "61e701c8a008ccaf",
+            "name": "NO EURO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "c0588d810e2ff5ea",
+            "name": "P.COM.MARX-LEN."
+          },
+          {
+            "id": "b6ac6872df1a46ba",
+            "name": "LIGA FRONTE VENETO",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "be4f286060bfef44",
+            "name": "PATTO PER LA SICILIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "a5bd048582d7eed4",
+            "name": "PENSIONI E LAVORO"
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "e8888367f0cef5f4",
+            "name": "P.LIBERALE ITALIANO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "bfe9e75bd20e61da",
+            "name": "TERZO POLO"
+          },
+          {
+            "id": "cf56812bb22d90b4",
+            "name": "FORZA ROMA"
+          },
+          {
+            "id": "48f6e598ebee7aac",
+            "name": "IRS"
+          },
+          {
+            "id": "d5bdcd9220532529",
+            "name": "PER IL SUD"
+          },
+          {
+            "id": "abfaaac101e1289f",
+            "name": "PATTO CRIST.ESTESO",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "2909d332be433661",
+            "name": "RIFORMATORI LIBERALI",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "c240ff3205890351",
+            "name": "MOVIMENTO TRIVENETO"
+          },
+          {
+            "id": "4444018b79454b0d",
+            "name": "MOV.DEM.SIC-NOI SIC."
+          },
+          {
+            "id": "84ad59728e9cef79",
+            "name": "SOLIDARIETA'"
+          },
+          {
+            "id": "1b08eaf215919a49",
+            "name": "DEMOCRAZIA CRISTIANI UNITI",
+            "coalitionID": "seats-ab7d0463bb42ee32"
+          },
+          {
+            "id": "cd2edcf1c341380a",
+            "name": "S.O.S. ITALIA",
+            "coalitionID": "seats-d7dd54f7ee52f7c1"
+          },
+          {
+            "id": "62817667160894f5",
+            "name": "PARTITO DONNE D'EUROPA"
+          },
+          {
+            "id": "729ed88c54a2514d",
+            "name": "MOV.IDEA SOC. RAUTI"
+          },
+          {
+            "id": "29f80628ede1e0e2",
+            "name": "LEGA SUD"
+          },
+          {
+            "id": "b08a5b0bde77bafa",
+            "name": "DIMENSIONE CHRISTIANA"
+          },
+          {
+            "id": "236aed09bab029a3",
+            "name": "ITALIA MODERATA"
+          },
+          {
+            "id": "df6f840fd30cf035",
+            "name": "UN.FEDERALISTA MERIDIONALE"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-ab7d0463bb42ee32",
+          "name": "Centrosinistra",
+          "seats": 148
+        },
+        {
+          "detail": "Italia · liste e coalizioni",
+          "id": "seats-d7dd54f7ee52f7c1",
+          "name": "Centrodestra",
+          "seats": 153
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-9cb5b12b600e2fbd",
+          "name": "L'UNIONE",
+          "seats": 4
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-33eed40650caf8fd",
+          "name": "FORZA ITALIA",
+          "resultID": "e5a9e2e6e87fa908",
+          "seats": 1
+        },
+        {
+          "detail": "Estero",
+          "id": "seats-06546790d21761f8",
+          "name": "ASS.ITAL.SUD AMERICA",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-f910db12b50392c5",
+          "name": "AUTONOMIE LIBERTE' DEMOCRATIE",
+          "seats": 1
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-ee7cf4170a8dbd7e",
+          "name": "L'UNIONE SVP",
+          "seats": 3
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-2d77d30d8ec3b7bd",
+          "name": "SVP",
+          "seats": 2
+        },
+        {
+          "detail": "Valle d’Aosta e Trentino-Alto Adige",
+          "id": "seats-4708c5d77be121c4",
+          "name": "CASA DELLE LIBERTA'",
+          "seats": 2
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-2001",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA"
+          },
+          {
+            "id": "82f2d3ad1ba715c0",
+            "name": "DEMOCRATICI SINISTRA"
+          },
+          {
+            "id": "640b3d4f90a7362a",
+            "name": "LA MARGHERITA"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD"
+          },
+          {
+            "id": "8e7b49d626d9d143",
+            "name": "LISTA DI PIETRO"
+          },
+          {
+            "id": "c2c6e4abc7269c82",
+            "name": "CCD-CDU"
+          },
+          {
+            "id": "fd5db05cefeab73e",
+            "name": "DEMOCRAZIA EUROPEA"
+          },
+          {
+            "id": "abac360462e9ebfd",
+            "name": "PANNELLA-BONINO"
+          },
+          {
+            "id": "e7d7f9d3115b7287",
+            "name": "IL GIRASOLE"
+          },
+          {
+            "id": "310aa51a8ba71e5b",
+            "name": "COMUNISTI ITALIANI"
+          },
+          {
+            "id": "065f919fe4597336",
+            "name": "NUOVO PSI"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE"
+          },
+          {
+            "id": "b6ac6872df1a46ba",
+            "name": "LIGA FRONTE VENETO"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI"
+          },
+          {
+            "id": "c3ebfca9ecc0eb42",
+            "name": "PS D'AZ-SARD.NATZ."
+          },
+          {
+            "id": "f76a92e091c6dc44",
+            "name": "PAESE NUOVO"
+          },
+          {
+            "id": "2db86fa7a5f4a3a9",
+            "name": "ABOLIZIONE SCORPORO"
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "7d532e82362b5ca3",
+            "name": "FRONTE NAZIONALE"
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "63ff4d53dea3170d",
+            "name": "LISTA AMADU"
+          },
+          {
+            "id": "c48d98425bc6853e",
+            "name": "REPUBBLICANI EUROPEI"
+          },
+          {
+            "id": "f792588480cca812",
+            "name": "NOI SICILIANI"
+          },
+          {
+            "id": "9eeaa5d0dcd1eb75",
+            "name": "LIBERI E FORTI"
+          },
+          {
+            "id": "beb0e35282672970",
+            "name": "SOCIAL.AUTON."
+          },
+          {
+            "id": "852b459d0eaf8125",
+            "name": "MOVIMENTO DELLE LIBERTA'"
+          },
+          {
+            "id": "31afe0e4ab1f9890",
+            "name": "LIBDEM.BASTA"
+          },
+          {
+            "id": "c9f84dba961a2081",
+            "name": "COMUNISMO"
+          },
+          {
+            "id": "7eb3b36393f9f27c",
+            "name": "TERZO POLO AUTONOMIA"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-2d7e4e94f6557fe6",
+          "name": "FORZA ITALIA",
+          "resultID": "e5a9e2e6e87fa908",
+          "seats": 62
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-22ae32f994c25716",
+          "name": "DEMOCRATICI SINISTRA",
+          "resultID": "82f2d3ad1ba715c0",
+          "seats": 31
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-53fef59b12fd729b",
+          "name": "LA MARGHERITA",
+          "resultID": "640b3d4f90a7362a",
+          "seats": 27
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-393a2f53b96fc798",
+          "name": "ALLEANZA NAZIONALE",
+          "resultID": "c408e6b625d2850f",
+          "seats": 24
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-021cab1fc77814bf",
+          "name": "RIFONDAZIONE COMUNISTA",
+          "resultID": "f86aad1c7dfc8ba5",
+          "seats": 11
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-300f3debb5f49b24",
+          "name": "CASA DELLE LIBERTA'",
+          "seats": 282
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-715e96560fb3fd22",
+          "name": "L'ULIVO",
+          "seats": 183
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-4cb78668174bb6f4",
+          "name": "L'ULIVO - SVP",
+          "seats": 5
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-c84eede80dc3409f",
+          "name": "SVP",
+          "resultID": "35d22d6592e8c0a6",
+          "seats": 3
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-b92798c2df1ec542",
+          "name": "L'ULIVO - CON ILLY PER TRIESTE",
+          "seats": 1
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-78ed562630f6ed9b",
+          "name": "VALLEE D'AOSTE",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-2001",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "341981bae3ed0d6e",
+            "name": "CASA DELLE LIBERTA'"
+          },
+          {
+            "id": "b4ee7862f68c9b06",
+            "name": "L'ULIVO"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA"
+          },
+          {
+            "id": "8e7b49d626d9d143",
+            "name": "LISTA DI PIETRO"
+          },
+          {
+            "id": "fd5db05cefeab73e",
+            "name": "DEMOCRAZIA EUROPEA"
+          },
+          {
+            "id": "abac360462e9ebfd",
+            "name": "PANNELLA-BONINO"
+          },
+          {
+            "id": "617d2983e954a830",
+            "name": "FIAMMA TRICOLORE"
+          },
+          {
+            "id": "d46f4b8a6747541e",
+            "name": "ALLEANZA LOMBARDA AUTONOMIA"
+          },
+          {
+            "id": "e78e29c2b0fb6abd",
+            "name": "SVP-L'ULIVO"
+          },
+          {
+            "id": "b6ac6872df1a46ba",
+            "name": "LIGA FRONTE VENETO"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP"
+          },
+          {
+            "id": "203c09d6fb8a119f",
+            "name": "VA' PENSIERO PADANIA"
+          },
+          {
+            "id": "7d532e82362b5ca3",
+            "name": "FRONTE NAZIONALE"
+          },
+          {
+            "id": "8b6ada004bdf06ba",
+            "name": "DEM.EUR-SOC.AUT"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI"
+          },
+          {
+            "id": "7faa3e25db7f87c0",
+            "name": "FORZA NUOVA"
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "c3ebfca9ecc0eb42",
+            "name": "PS D'AZ-SARD.NATZ."
+          },
+          {
+            "id": "8aa48479a6cadf89",
+            "name": "VALLEE D'AOSTE"
+          },
+          {
+            "id": "2afa6eeee0c4377b",
+            "name": "FILOGRANA SALENTO"
+          },
+          {
+            "id": "f792588480cca812",
+            "name": "NOI SICILIANI"
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "31afe0e4ab1f9890",
+            "name": "LIBDEM.BASTA"
+          },
+          {
+            "id": "43a24adf3e0ff72d",
+            "name": "FI-LG NORD (AOSTA)"
+          },
+          {
+            "id": "1f1530bc7ecb862a",
+            "name": "P.LIBERAL POPOLARE"
+          },
+          {
+            "id": "63ff4d53dea3170d",
+            "name": "LISTA AMADU"
+          },
+          {
+            "id": "b07c238e1f415bd7",
+            "name": "LISTA ALTERNATIVA"
+          },
+          {
+            "id": "32f17a32b6e9a217",
+            "name": "FORZA CHIAPPETTA"
+          },
+          {
+            "id": "01a5c8f145417270",
+            "name": "DIE FREIHEITLICHEN"
+          },
+          {
+            "id": "3a83dd026cc582d0",
+            "name": "LISTA FRANCO GRECO"
+          },
+          {
+            "id": "852b459d0eaf8125",
+            "name": "MOVIMENTO DELLE LIBERTA'"
+          },
+          {
+            "id": "9ba2bfccba3fa84c",
+            "name": "AN (AOSTA)"
+          },
+          {
+            "id": "d3fb9ac6fca7a9da",
+            "name": "RENATO FIORELLI"
+          },
+          {
+            "id": "7eb3b36393f9f27c",
+            "name": "TERZO POLO AUTONOMIA"
+          },
+          {
+            "id": "c9f84dba961a2081",
+            "name": "COMUNISMO"
+          },
+          {
+            "id": "8e75066810ab0655",
+            "name": "GIUSEPPE BOSCOLO"
+          },
+          {
+            "id": "d5ccb6cb3bbe5f47",
+            "name": "PARLAMENTARE INDIP."
+          },
+          {
+            "id": "caf21c16ea3397df",
+            "name": "GIUSTIZIA-PROGRESSO"
+          },
+          {
+            "id": "0dc69c968742b165",
+            "name": "TOSCANA GRANDUC-FED."
+          },
+          {
+            "id": "1ecac579d1261fcc",
+            "name": "PA.C.I."
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-b8c0b863f3251e20",
+          "name": "CASA DELLE LIBERTA'",
+          "resultID": "341981bae3ed0d6e",
+          "seats": 176
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-d2410c2842855c10",
+          "name": "L'ULIVO",
+          "resultID": "b4ee7862f68c9b06",
+          "seats": 125
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-5d87b37dc08568c1",
+          "name": "RIFONDAZIONE COMUNISTA",
+          "resultID": "f86aad1c7dfc8ba5",
+          "seats": 4
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-63e677f8ba4048fc",
+          "name": "LISTA DI PIETRO",
+          "resultID": "8e7b49d626d9d143",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-505f2602063a0a6b",
+          "name": "DEMOCRAZIA EUROPEA",
+          "resultID": "fd5db05cefeab73e",
+          "seats": 2
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-37cd80a15fec0de4",
+          "name": "ALLEANZA LOMBARDA AUTONOMIA",
+          "resultID": "d46f4b8a6747541e",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-49f9b539d6459208",
+          "name": "SVP-L'ULIVO",
+          "resultID": "e78e29c2b0fb6abd",
+          "seats": 3
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-178f3cc00b745caa",
+          "name": "SVP",
+          "resultID": "35d22d6592e8c0a6",
+          "seats": 2
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-27be1b512961d23f",
+          "name": "VALLEE D'AOSTE",
+          "resultID": "8aa48479a6cadf89",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-1996",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "0214d60e1f9f2206",
+            "name": "PDS"
+          },
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA"
+          },
+          {
+            "id": "279c701d2a2904d6",
+            "name": "POP-SVP-PRI-UD-PRODI"
+          },
+          {
+            "id": "c2c6e4abc7269c82",
+            "name": "CCD-CDU"
+          },
+          {
+            "id": "d35735cc2bcf97af",
+            "name": "RINNOVAMENTO IT-DINI"
+          },
+          {
+            "id": "0fbd7ba73099a41d",
+            "name": "FEDERAZIONE DEI VERDI"
+          },
+          {
+            "id": "22380a4d0012b10e",
+            "name": "PANNELLA-SGARBI"
+          },
+          {
+            "id": "94f3ae7658abc77b",
+            "name": "MOV.SOC.TRICOLORE"
+          },
+          {
+            "id": "96650cc39ea66518",
+            "name": "SOCIALISTA"
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "463c6784b6ead459",
+            "name": "UNIONE NORD EST"
+          },
+          {
+            "id": "8d3865837558ce9b",
+            "name": "UNION FUR SUD TIROL"
+          },
+          {
+            "id": "20e72d33b226a130",
+            "name": "MANI PULITE"
+          },
+          {
+            "id": "88cd44d9dc6d436b",
+            "name": "NOI SICILIANI-FNS"
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "7c8bf53a187f0582",
+            "name": "GR.INDIP.LIBERTA'"
+          },
+          {
+            "id": "a79e35df4f9d1094",
+            "name": "AMBIENTALISTI"
+          },
+          {
+            "id": "7655e57b8158fe57",
+            "name": "PART.UMANISTA"
+          },
+          {
+            "id": "fbeaed710a4f669f",
+            "name": "RINNOVAMENTO"
+          },
+          {
+            "id": "57606e63cab5cce4",
+            "name": "PATTO PER L'AGRO"
+          },
+          {
+            "id": "1d7c3f1827341522",
+            "name": "MOV.RIN.IT."
+          },
+          {
+            "id": "46e7730399c6407f",
+            "name": "MOV.AUT.TOSCANO"
+          },
+          {
+            "id": "797af8db14c8bb66",
+            "name": "PART.LEGGE NATURALE"
+          },
+          {
+            "id": "bbbcae4eca28c6a1",
+            "name": "NUOVA DEMOCRAZIA"
+          },
+          {
+            "id": "daf10bd452848d51",
+            "name": "DEMOCRAZIA SOCIALE"
+          },
+          {
+            "id": "187870a19d4b395f",
+            "name": "FEDERALISTI LIBERALI"
+          },
+          {
+            "id": "6ff4a7183a0d700a",
+            "name": "PER LE MARCHE"
+          },
+          {
+            "id": "857f39beeab912ca",
+            "name": "NUOVE ENERGIE"
+          },
+          {
+            "id": "70be7bda6a183850",
+            "name": "SVILUPPO-LEGALITA'"
+          },
+          {
+            "id": "461b587421b3436d",
+            "name": "NORD LIBERO AUT."
+          },
+          {
+            "id": "4bb600d487eab9fd",
+            "name": "PART.FEDERAL."
+          },
+          {
+            "id": "5e2867f5f77c2528",
+            "name": "RISORGIMENTO DEL SUD"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-3514065d4ca15aa4",
+          "name": "PDS",
+          "resultID": "0214d60e1f9f2206",
+          "seats": 26
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-2d7e4e94f6557fe6",
+          "name": "FORZA ITALIA",
+          "resultID": "e5a9e2e6e87fa908",
+          "seats": 37
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-393a2f53b96fc798",
+          "name": "ALLEANZA NAZIONALE",
+          "resultID": "c408e6b625d2850f",
+          "seats": 28
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-fe1a4d4a27d52d25",
+          "name": "LEGA NORD",
+          "resultID": "ab1be92f10521852",
+          "seats": 20
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-021cab1fc77814bf",
+          "name": "RIFONDAZIONE COMUNISTA",
+          "resultID": "f86aad1c7dfc8ba5",
+          "seats": 20
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-650eb0ce0b0c862c",
+          "name": "POP-SVP-PRI-UD-PRODI",
+          "resultID": "279c701d2a2904d6",
+          "seats": 4
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-958cee8c9ac0fe04",
+          "name": "CCD-CDU",
+          "resultID": "c2c6e4abc7269c82",
+          "seats": 12
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-70d2431f6b2b4d91",
+          "name": "RINNOVAMENTO IT-DINI",
+          "resultID": "d35735cc2bcf97af",
+          "seats": 8
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-dff8eb5f1413f85a",
+          "name": "POLO PER LE LIBERTA'",
+          "seats": 169
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-715e96560fb3fd22",
+          "name": "L'ULIVO",
+          "seats": 228
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-eb91c798ee0c5d2a",
+          "name": "LEGA NORD",
+          "resultID": "ab1be92f10521852",
+          "seats": 39
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-2481e94fa996e41a",
+          "name": "L'ULIVO-LEGA AUT.VENETA",
+          "seats": 14
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-1ae5f5bbd2c6bd18",
+          "name": "PROGRESSISTI (1996)",
+          "seats": 15
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-2bac2bfc6624cc2e",
+          "name": "L'ULIVO-PS.D'AZ.",
+          "seats": 4
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-c84eede80dc3409f",
+          "name": "SVP",
+          "seats": 3
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-5a469a6ed2f25c0c",
+          "name": "LEGA D'AZIONE MERIDIONALE",
+          "resultID": "ad60e4af16e89b54",
+          "seats": 1
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-78ed562630f6ed9b",
+          "name": "VALLEE D'AOSTE",
+          "seats": 1
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-4e0debd006673050",
+          "name": "DEMOCRAZIA-LIBERTA'",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-1996",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "b4ee7862f68c9b06",
+            "name": "L'ULIVO"
+          },
+          {
+            "id": "b599dab8059a87d4",
+            "name": "POLO PER LE LIBERTA'"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD"
+          },
+          {
+            "id": "d5ece9bca3187708",
+            "name": "PROGRESSISTI (1996)"
+          },
+          {
+            "id": "94f3ae7658abc77b",
+            "name": "MOV.SOC.TRICOLORE"
+          },
+          {
+            "id": "22380a4d0012b10e",
+            "name": "PANNELLA-SGARBI"
+          },
+          {
+            "id": "0a1b1ddd285ac26a",
+            "name": "L'ULIVO-PS.D'AZ."
+          },
+          {
+            "id": "96650cc39ea66518",
+            "name": "SOCIALISTA"
+          },
+          {
+            "id": "a1dab3f6868c193d",
+            "name": "L'ABETE-SVP-PATT"
+          },
+          {
+            "id": "20e72d33b226a130",
+            "name": "MANI PULITE"
+          },
+          {
+            "id": "d46f4b8a6747541e",
+            "name": "ALLEANZA LOMBARDA AUTONOMIA"
+          },
+          {
+            "id": "463c6784b6ead459",
+            "name": "UNIONE NORD EST"
+          },
+          {
+            "id": "88cd44d9dc6d436b",
+            "name": "NOI SICILIANI-FNS"
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "d3c818706f58210f",
+            "name": "ALL.PENSIONATI EUR."
+          },
+          {
+            "id": "daf10bd452848d51",
+            "name": "DEMOCRAZIA SOCIALE"
+          },
+          {
+            "id": "90044ee3c6ef6a5f",
+            "name": "FED.LISTE CIVICHE IT"
+          },
+          {
+            "id": "25c6160705b434c4",
+            "name": "SARDIGNA NATZIONE"
+          },
+          {
+            "id": "b34bafd91111c525",
+            "name": "POUR VALLEE D'AOSTE"
+          },
+          {
+            "id": "49ce361729fd476f",
+            "name": "PIEMONTE NAZ.EUROPA"
+          },
+          {
+            "id": "a79e35df4f9d1094",
+            "name": "AMBIENTALISTI"
+          },
+          {
+            "id": "7c8bf53a187f0582",
+            "name": "GR.INDIP.LIBERTA'"
+          },
+          {
+            "id": "8d3865837558ce9b",
+            "name": "UNION FUR SUD TIROL"
+          },
+          {
+            "id": "46e7730399c6407f",
+            "name": "MOV.AUT.TOSCANO"
+          },
+          {
+            "id": "57606e63cab5cce4",
+            "name": "PATTO PER L'AGRO"
+          },
+          {
+            "id": "fbeaed710a4f669f",
+            "name": "RINNOVAMENTO"
+          },
+          {
+            "id": "120f38a8a7e35816",
+            "name": "VALLE D'AOSTA-ULIVO"
+          },
+          {
+            "id": "e27d32d8df9e4c26",
+            "name": "DESTRA DI POPOLO"
+          },
+          {
+            "id": "797af8db14c8bb66",
+            "name": "PART.LEGGE NATURALE"
+          },
+          {
+            "id": "4f7592a18840cf1e",
+            "name": "DEMOCR.PROGRESSO"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA"
+          },
+          {
+            "id": "68d16da504e1a2e8",
+            "name": "MOV.POP.MORALIZ."
+          },
+          {
+            "id": "367c89e72f3c9899",
+            "name": "ALPI AZZURRE"
+          },
+          {
+            "id": "6eb0b10a17b32b6d",
+            "name": "ALT.DEM.C.ROMANI"
+          },
+          {
+            "id": "c3c334e4335035aa",
+            "name": "P.POP.PROGRESSISTA"
+          },
+          {
+            "id": "e0e868126105a1e2",
+            "name": "PER UN PAESE NORMALE"
+          },
+          {
+            "id": "a5e27bea6b69396c",
+            "name": "REG.DOLOMITICA EUR"
+          },
+          {
+            "id": "461b587421b3436d",
+            "name": "NORD LIBERO AUT."
+          },
+          {
+            "id": "dc8e45d40ae14471",
+            "name": "COLPISCI IL CENTRO"
+          },
+          {
+            "id": "6a624411f439c061",
+            "name": "ALL.CONTADINA ARTIG."
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-d2410c2842855c10",
+          "name": "L'ULIVO",
+          "resultID": "b4ee7862f68c9b06",
+          "seats": 152
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-b8697baaf9db83fb",
+          "name": "POLO PER LE LIBERTA'",
+          "resultID": "b599dab8059a87d4",
+          "seats": 116
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-5a508df55f753318",
+          "name": "LEGA NORD",
+          "resultID": "ab1be92f10521852",
+          "seats": 27
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-1387ddc5ba9237e2",
+          "name": "PROGRESSISTI (1996)",
+          "resultID": "d5ece9bca3187708",
+          "seats": 10
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-cfe46b97dda43f09",
+          "name": "MOV.SOC.TRICOLORE",
+          "resultID": "94f3ae7658abc77b",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-5927fe4bbc609864",
+          "name": "PANNELLA-SGARBI",
+          "resultID": "22380a4d0012b10e",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-93e0c63d757b09fc",
+          "name": "L'ULIVO-PS.D'AZ.",
+          "resultID": "0a1b1ddd285ac26a",
+          "seats": 5
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-6b79595d6c51ee42",
+          "name": "L'ABETE-SVP-PATT",
+          "resultID": "a1dab3f6868c193d",
+          "seats": 2
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-e22e760df296e4f9",
+          "name": "POUR VALLEE D'AOSTE",
+          "resultID": "b34bafd91111c525",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "camera-1994",
+    "chamber": "camera",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "e5a9e2e6e87fa908",
+            "name": "FORZA ITALIA"
+          },
+          {
+            "id": "0214d60e1f9f2206",
+            "name": "PDS"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE"
+          },
+          {
+            "id": "a6e9a40de4bd44c2",
+            "name": "P.POPOLARE ITALIANO"
+          },
+          {
+            "id": "ab1be92f10521852",
+            "name": "LEGA NORD"
+          },
+          {
+            "id": "f86aad1c7dfc8ba5",
+            "name": "RIFONDAZIONE COMUNISTA"
+          },
+          {
+            "id": "144fee98beedfa0d",
+            "name": "PATTO SEGNI"
+          },
+          {
+            "id": "2fcf997ffc6d33a6",
+            "name": "LISTA PANNELLA"
+          },
+          {
+            "id": "0fbd7ba73099a41d",
+            "name": "FEDERAZIONE DEI VERDI"
+          },
+          {
+            "id": "4533cd03a2045f98",
+            "name": "PSI"
+          },
+          {
+            "id": "d0a09146b10b5aa6",
+            "name": "LA RETE-MOV.DEM."
+          },
+          {
+            "id": "365358582bc285f8",
+            "name": "ALLEANZA DEMOCRATICA"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP"
+          },
+          {
+            "id": "5acee63f858afe11",
+            "name": "SOCIALDEMOCRAZIA"
+          },
+          {
+            "id": "bc71e824e13ab518",
+            "name": "PROGRAMMA ITALIA"
+          },
+          {
+            "id": "4bc16b2ad2f1f1c3",
+            "name": "LEGA ALPINA LUMBARDA"
+          },
+          {
+            "id": "f67b2692a13b2dfd",
+            "name": "LEGA AUT.VENETA"
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "e73ad1099fa77309",
+            "name": "UN.POP."
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "4ff74e6468cb35f1",
+            "name": "SOLID.OCCUPAZ.SVILUP"
+          },
+          {
+            "id": "797af8db14c8bb66",
+            "name": "PART.LEGGE NATURALE"
+          },
+          {
+            "id": "f0cbfe75c519cd8f",
+            "name": "PARTIDU INDIP."
+          },
+          {
+            "id": "d3b4665e504696a2",
+            "name": "UNIONE DEM.ITALIANA"
+          },
+          {
+            "id": "cefe9e42d8b36f5d",
+            "name": "UN.CRIST.RIF."
+          },
+          {
+            "id": "671b246f21dd6691",
+            "name": "PATTO SOLIDARIETA'"
+          },
+          {
+            "id": "e6e3d6d7380f5742",
+            "name": "LG.ANGELA BOSSI"
+          },
+          {
+            "id": "a6ac57b51817e429",
+            "name": "LEGA PER IL PIEMONTE"
+          },
+          {
+            "id": "8c4165e2c8ec0e6a",
+            "name": "ALL.MERIDIONALE"
+          },
+          {
+            "id": "8a15fea9a8880c22",
+            "name": "ADA"
+          },
+          {
+            "id": "a19683837b69acc4",
+            "name": "ALL.POP."
+          },
+          {
+            "id": "b56352a237a1defc",
+            "name": "INIZIATIVA POP.DEM."
+          },
+          {
+            "id": "12d324ae2294ef96",
+            "name": "L'ARCA"
+          },
+          {
+            "id": "6ddca7eed1748c34",
+            "name": "RIN.SALENTINA"
+          },
+          {
+            "id": "92363979ccd98bd7",
+            "name": "MOV.CRIST.DEM."
+          },
+          {
+            "id": "4568593d4b42db44",
+            "name": "SOLID.PROGRESSO"
+          },
+          {
+            "id": "77bcff628c44ebe4",
+            "name": "INSIEME PER SVILUPPO"
+          },
+          {
+            "id": "3a83dd026cc582d0",
+            "name": "LISTA FRANCO GRECO"
+          },
+          {
+            "id": "25c3a999961d9cfe",
+            "name": "RINASCITA SOCIALISTA"
+          },
+          {
+            "id": "85d7a99ad200ddfc",
+            "name": "DEM.E SOLIDARIETA'"
+          },
+          {
+            "id": "5fb03e6f9a2eae26",
+            "name": "UNIONE MEDITERRANEA"
+          },
+          {
+            "id": "158452e9e5c0d8c4",
+            "name": "MOV.MERIDIONALE"
+          },
+          {
+            "id": "2d700ce90203c6c6",
+            "name": "DEMOCRAZIA SICILIANA"
+          },
+          {
+            "id": "40f60fed504b0297",
+            "name": "MOV.CATTOLICO DEM."
+          },
+          {
+            "id": "6d844d4667728792",
+            "name": "RIFORMISTI IRPINI"
+          },
+          {
+            "id": "40a417840b07b963",
+            "name": "P.DEM."
+          },
+          {
+            "id": "d2f2352da9635ec2",
+            "name": "UNIONE POP."
+          },
+          {
+            "id": "f35a75b7242813fc",
+            "name": "ALL.MUNICIPALITA'"
+          },
+          {
+            "id": "b4b2d72aecf8b8f2",
+            "name": "UTOPIA"
+          },
+          {
+            "id": "a821a0fd21ea4213",
+            "name": "MOV.REP."
+          },
+          {
+            "id": "1a1319d9e9862f88",
+            "name": "MOV.CRIST.VERITAS"
+          },
+          {
+            "id": "fbeaed710a4f669f",
+            "name": "RINNOVAMENTO"
+          },
+          {
+            "id": "e4a7f4277d896710",
+            "name": "RIN.DEMOCRATICO"
+          },
+          {
+            "id": "b4e16e0327bcf603",
+            "name": "LIBERAL DEM.EUROPEI"
+          },
+          {
+            "id": "da1cc889c09d911d",
+            "name": "INSIEME PER CAMBIARE"
+          },
+          {
+            "id": "c3c334e4335035aa",
+            "name": "P.POP.PROGRESSISTA"
+          },
+          {
+            "id": "322c12ba7b49b291",
+            "name": "CENTRO DEMOCRATICO"
+          },
+          {
+            "id": "f766d28aaabe904a",
+            "name": "MEDITERRANEO"
+          },
+          {
+            "id": "4c6b3a4489d0583e",
+            "name": "MOV.LIBERALDEM.SOC."
+          },
+          {
+            "id": "3c21027e13d85dd5",
+            "name": "ALL.PROGRAMMA"
+          },
+          {
+            "id": "0c29a8da40fe1aee",
+            "name": "MOV.POP.CRIST."
+          },
+          {
+            "id": "8bab7e956f13b0d3",
+            "name": "MOV.EUR.LIB.CRIST."
+          },
+          {
+            "id": "f4794f0aa9281cf6",
+            "name": "IDEA CITTA'"
+          },
+          {
+            "id": "6ffa519179ae9eb3",
+            "name": "AUTONOMIA SOCIALISTA"
+          },
+          {
+            "id": "0eb0adfb300e4b25",
+            "name": "ALL.PER I CASTELLI"
+          },
+          {
+            "id": "ee85657c03a5981b",
+            "name": "CENTRO CRIST.DEM."
+          },
+          {
+            "id": "e4c1d53bcd7783f9",
+            "name": "DEM.E RINNOVAMENTO"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-2d7e4e94f6557fe6",
+          "name": "FORZA ITALIA",
+          "resultID": "e5a9e2e6e87fa908",
+          "seats": 30
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-3514065d4ca15aa4",
+          "name": "PDS",
+          "resultID": "0214d60e1f9f2206",
+          "seats": 38
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-393a2f53b96fc798",
+          "name": "ALLEANZA NAZIONALE",
+          "resultID": "c408e6b625d2850f",
+          "seats": 23
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-abe8849e19da4f97",
+          "name": "P.POPOLARE ITALIANO",
+          "resultID": "a6e9a40de4bd44c2",
+          "seats": 29
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-fe1a4d4a27d52d25",
+          "name": "LEGA NORD",
+          "resultID": "ab1be92f10521852",
+          "seats": 11
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-021cab1fc77814bf",
+          "name": "RIFONDAZIONE COMUNISTA",
+          "resultID": "f86aad1c7dfc8ba5",
+          "seats": 11
+        },
+        {
+          "detail": "Quota proporzionale",
+          "id": "seats-acb679b802d6d92e",
+          "name": "PATTO SEGNI",
+          "resultID": "144fee98beedfa0d",
+          "seats": 13
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-058e7851f0f8f0cf",
+          "name": "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM.",
+          "seats": 154
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-3415bb61d3e07585",
+          "name": "PROGRESSISTI",
+          "seats": 164
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-e312192bb500688f",
+          "name": "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, RIFORMATORI, CENTRO CRIST.DEM.",
+          "seats": 6
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-c84eede80dc3409f",
+          "name": "SVP",
+          "resultID": "35d22d6592e8c0a6",
+          "seats": 3
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-9f9eceac0b20e012",
+          "name": "ALLEANZA NAZIONALE",
+          "resultID": "c408e6b625d2850f",
+          "seats": 8
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-52d025d1a9c4c6d8",
+          "name": "LEGA NORD, FORZA ITALIA",
+          "seats": 4
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-b87776df3e1152e1",
+          "name": "UNIONE DI CENTRO, FORZA ITALIA, ALLEANZA NAZIONALE, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+          "seats": 127
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-ae76cc96dedd2c7f",
+          "name": "FORZA ITALIA, ALLEANZA NAZIONALE",
+          "seats": 2
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-fb87eb28f05be40f",
+          "name": "PATTO PER L'ITALIA",
+          "seats": 4
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-5dd8e3611a1801a5",
+          "name": "UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+          "seats": 1
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-5a469a6ed2f25c0c",
+          "name": "LEGA D'AZIONE MERIDIONALE",
+          "resultID": "ad60e4af16e89b54",
+          "seats": 1
+        },
+        {
+          "detail": "Quota uninominale",
+          "id": "seats-6b0ba336d776ff92",
+          "name": "L.VALLE D'AOSTA",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 630,
+      "unassignedSeats": 0
+    }
+  },
+  {
+    "id": "senato-1994",
+    "chamber": "senato",
+    "territories": [
+      {
+        "results": [
+          {
+            "id": "0b2354459f8d2e1c",
+            "name": "PROGRESSISTI"
+          },
+          {
+            "id": "ddbc7c57b486edab",
+            "name": "POLO DELLE LIBERTA'"
+          },
+          {
+            "id": "48c83669af604843",
+            "name": "PATTO PER L'ITALIA"
+          },
+          {
+            "id": "791a1be7936fd400",
+            "name": "POLO BUON GOVERNO"
+          },
+          {
+            "id": "c408e6b625d2850f",
+            "name": "ALLEANZA NAZIONALE"
+          },
+          {
+            "id": "02559dc37f1973c6",
+            "name": "PANNELLA-RIFORMATORI"
+          },
+          {
+            "id": "1875be1b4187cd35",
+            "name": "PARTITO PENSIONATI"
+          },
+          {
+            "id": "4bc16b2ad2f1f1c3",
+            "name": "LEGA ALPINA LUMBARDA"
+          },
+          {
+            "id": "35d22d6592e8c0a6",
+            "name": "SVP"
+          },
+          {
+            "id": "f67b2692a13b2dfd",
+            "name": "LEGA AUT.VENETA"
+          },
+          {
+            "id": "ef1abc4a1c40ad9c",
+            "name": "FI-CCD"
+          },
+          {
+            "id": "4533cd03a2045f98",
+            "name": "PSI"
+          },
+          {
+            "id": "b34e38222f620722",
+            "name": "VERDI FEDERALISTI"
+          },
+          {
+            "id": "8dc994f95eb94d94",
+            "name": "PS D'AZ."
+          },
+          {
+            "id": "797af8db14c8bb66",
+            "name": "PART.LEGGE NATURALE"
+          },
+          {
+            "id": "bc71e824e13ab518",
+            "name": "PROGRAMMA ITALIA"
+          },
+          {
+            "id": "e6e3d6d7380f5742",
+            "name": "LG.ANGELA BOSSI"
+          },
+          {
+            "id": "fe1af86e3802257b",
+            "name": "VERDI-VERDI"
+          },
+          {
+            "id": "5acee63f858afe11",
+            "name": "SOCIALDEMOCRAZIA"
+          },
+          {
+            "id": "e04eb50981cf01f1",
+            "name": "MOV.VEN.REG.AUT"
+          },
+          {
+            "id": "6a7844dd09d017fb",
+            "name": "MAGRIS"
+          },
+          {
+            "id": "cefe9e42d8b36f5d",
+            "name": "UN.CRIST.RIF."
+          },
+          {
+            "id": "e73ad1099fa77309",
+            "name": "UN.POP."
+          },
+          {
+            "id": "ad60e4af16e89b54",
+            "name": "LEGA D'AZIONE MERIDIONALE"
+          },
+          {
+            "id": "a6ac57b51817e429",
+            "name": "LEGA PER IL PIEMONTE"
+          },
+          {
+            "id": "40a417840b07b963",
+            "name": "P.DEM."
+          },
+          {
+            "id": "8a15fea9a8880c22",
+            "name": "ADA"
+          },
+          {
+            "id": "bee7c2b49fb8d3c4",
+            "name": "UN.RIF.MERIDIONALE"
+          },
+          {
+            "id": "859fdcb8b4e1951e",
+            "name": "LG.AUT.TOSCANA-M.A.T"
+          },
+          {
+            "id": "a173fbf060c4d076",
+            "name": "MOV.FED.CALABRIA LIB"
+          },
+          {
+            "id": "97647e172b8dbb59",
+            "name": "L.VALLE D'AOSTA"
+          },
+          {
+            "id": "f0cbfe75c519cd8f",
+            "name": "PARTIDU INDIP."
+          },
+          {
+            "id": "4ff74e6468cb35f1",
+            "name": "SOLID.OCCUPAZ.SVILUP"
+          },
+          {
+            "id": "fa8c06099f647b25",
+            "name": "VESPRI SICILIANI"
+          },
+          {
+            "id": "8c4165e2c8ec0e6a",
+            "name": "ALL.MERIDIONALE"
+          },
+          {
+            "id": "fbeaed710a4f669f",
+            "name": "RINNOVAMENTO"
+          },
+          {
+            "id": "b56352a237a1defc",
+            "name": "INIZIATIVA POP.DEM."
+          },
+          {
+            "id": "6e2c372633f6afc7",
+            "name": "CAT.SOC.LIB.DEM."
+          },
+          {
+            "id": "2858930c69727c3f",
+            "name": "LIBERI FORTI UNITI"
+          },
+          {
+            "id": "6ddca7eed1748c34",
+            "name": "RIN.SALENTINA"
+          },
+          {
+            "id": "c3c334e4335035aa",
+            "name": "P.POP.PROGRESSISTA"
+          },
+          {
+            "id": "83a4cf535963252c",
+            "name": "DEMOCRATICI POPOLARI"
+          },
+          {
+            "id": "3f78eee1c3874a23",
+            "name": "LEANZA"
+          },
+          {
+            "id": "de9ca324d96fcab8",
+            "name": "UN.CRIST.RIF.SOCIAL"
+          },
+          {
+            "id": "135d80af641277cf",
+            "name": "UNITE VALDOTAINS"
+          },
+          {
+            "id": "feedae8efca5eaf1",
+            "name": "SICILIA FUTURA"
+          },
+          {
+            "id": "19c140092adb59e1",
+            "name": "LETTIERI"
+          },
+          {
+            "id": "d0a09146b10b5aa6",
+            "name": "LA RETE-MOV.DEM."
+          },
+          {
+            "id": "836f548e5a04d931",
+            "name": "SCUDO DEMOCRATICO"
+          },
+          {
+            "id": "69035cbcf00f5f42",
+            "name": "TRIMARCHI"
+          },
+          {
+            "id": "db37ec0836b5fad4",
+            "name": "MARONGIU SENATORE"
+          },
+          {
+            "id": "f35a75b7242813fc",
+            "name": "ALL.MUNICIPALITA'"
+          },
+          {
+            "id": "a19683837b69acc4",
+            "name": "ALL.POP."
+          },
+          {
+            "id": "9c0c3cc6e90c0128",
+            "name": "CEN."
+          },
+          {
+            "id": "292d93ff550ebbfa",
+            "name": "UN.CRIST.RIF-RIS.POP"
+          },
+          {
+            "id": "5713a977f61d91e3",
+            "name": "DEM.POPOLARE"
+          },
+          {
+            "id": "3a83dd026cc582d0",
+            "name": "LISTA FRANCO GRECO"
+          },
+          {
+            "id": "45767cda5dbdcd00",
+            "name": "DELFINO AL SENATO"
+          },
+          {
+            "id": "8a9fbdf37fb9badb",
+            "name": "AZ.AUTONOM.ARBORENSE"
+          },
+          {
+            "id": "071632110b2b0faa",
+            "name": "LISTA INSIEME"
+          },
+          {
+            "id": "04057c6cc2613732",
+            "name": "UNIONE ROMAGNA"
+          },
+          {
+            "id": "cd80ca8cbb1b8eba",
+            "name": "MOV.CAT.RINNOVAMENTO"
+          },
+          {
+            "id": "77bcff628c44ebe4",
+            "name": "INSIEME PER SVILUPPO"
+          },
+          {
+            "id": "5fb03e6f9a2eae26",
+            "name": "UNIONE MEDITERRANEA"
+          },
+          {
+            "id": "50968d3bc40b1bac",
+            "name": "RIZZITIELLO"
+          },
+          {
+            "id": "15a1e3b005c29ff9",
+            "name": "ZANGRANDO"
+          },
+          {
+            "id": "85d7a99ad200ddfc",
+            "name": "DEM.E SOLIDARIETA'"
+          },
+          {
+            "id": "be83c7190e22c425",
+            "name": "CRD"
+          },
+          {
+            "id": "b38dfadc73df6d06",
+            "name": "D'ANGELLA"
+          },
+          {
+            "id": "8041e80115a29ed5",
+            "name": "PDP"
+          },
+          {
+            "id": "2c62dac77c71c544",
+            "name": "GRUPPO PROGRESSISTA"
+          },
+          {
+            "id": "f766d28aaabe904a",
+            "name": "MEDITERRANEO"
+          },
+          {
+            "id": "f5ca700341d79bc4",
+            "name": "RINASCITA CIVILE"
+          },
+          {
+            "id": "da1cc889c09d911d",
+            "name": "INSIEME PER CAMBIARE"
+          },
+          {
+            "id": "22863aeaceb3433b",
+            "name": "GERVASI"
+          },
+          {
+            "id": "36048ddf071c35c2",
+            "name": "PRIMAVERA"
+          }
+        ]
+      }
+    ],
+    "seats": {
+      "groups": [
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-7f5cfa675eb7e4c7",
+          "name": "PROGRESSISTI",
+          "resultID": "0b2354459f8d2e1c",
+          "seats": 122
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-bc4a3da115afdd5c",
+          "name": "POLO DELLE LIBERTA'",
+          "resultID": "ddbc7c57b486edab",
+          "seats": 82
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-cbd9efa61e58da3f",
+          "name": "PATTO PER L'ITALIA",
+          "resultID": "48c83669af604843",
+          "seats": 31
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-66e8c11a2b438ed8",
+          "name": "POLO BUON GOVERNO",
+          "resultID": "791a1be7936fd400",
+          "seats": 64
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-33a69414821ad0f2",
+          "name": "ALLEANZA NAZIONALE",
+          "resultID": "c408e6b625d2850f",
+          "seats": 8
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-ed3a049dcc5ca500",
+          "name": "ALTRI GRUPPI",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-38c9bf4c3b87b4ad",
+          "name": "PANNELLA-RIFORMATORI",
+          "resultID": "02559dc37f1973c6",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-2f0fbb88fd074045",
+          "name": "LEGA ALPINA LUMBARDA",
+          "resultID": "4bc16b2ad2f1f1c3",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-5019b46c434d0523",
+          "name": "LISTE AUTONOMISTE",
+          "seats": 1
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-178f3cc00b745caa",
+          "name": "SVP",
+          "resultID": "35d22d6592e8c0a6",
+          "seats": 3
+        },
+        {
+          "detail": "Gruppi · intero Senato",
+          "id": "seats-9193e2565f41b5b5",
+          "name": "FI-CCD",
+          "resultID": "ef1abc4a1c40ad9c",
+          "seats": 1
+        }
+      ],
+      "note": "Riparto ministeriale originale.",
+      "totalSeats": 315,
+      "unassignedSeats": 0
+    }
+  }
+]
