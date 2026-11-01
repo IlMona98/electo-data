@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-19940327",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 20,
+      "source": {
+        "id": "camera-1994",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 1994,
+        "dateLabel": "27 marzo 1994",
+        "coverage": "Italia · voto proporzionale",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19940327.zip",
+        "sourceFile": "camera-19940327_Proporzionale.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19940327.zip",
+        "zipMember": "camera-19940327_Proporzionale.txt",
+        "eventID": "politiche-19940327",
+        "chamber": "camera",
+        "resultKind": "proportional-lists",
+        "reviewedVoteExceptions": [
+          {
+            "unit": [
+              "PUGLIA",
+              "Foggia - Lucera",
+              "Parte di Comune FOGGIA"
+            ],
+            "list": "RIN.SALENTINA",
+            "votes": -7,
+            "electors": 22939,
+            "voters": 19840,
+            "reason": "Il file originale riporta -7 voti per RIN.SALENTINA in PUGLIA / Foggia - Lucera / Parte di Comune FOGGIA. Il valore viene conservato nella somma territoriale, senza azzerarlo né convertirlo in positivo."
+          }
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-1994",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "27/03/1994",
+        "headingPrefix": "Camera 27/03/1994",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "proporzionale",
+            "label": "Quota proporzionale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 155,
+            "listMetadata": true,
+            "heading": "Camera 27/03/1994 Area ITALIA"
+          },
+          {
+            "id": "uninominale",
+            "label": "Quota uninominale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+            "format": "tree",
+            "expectedSeats": 475,
+            "expectedColleges": 475,
+            "heading": "Camera 27/03/1994 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 14,
+      "seatGroups": {
+        "electionID": "camera-1994",
+        "groups": [
+          {
+            "id": "seats-centrodestra",
+            "name": "Polo delle Libertà",
+            "members": [
+              "FORZA ITALIA",
+              "ALLEANZA NAZIONALE",
+              "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM.",
+              "LEGA NORD, UNIONE DI CENTRO, FORZA ITALIA, RIFORMATORI, CENTRO CRIST.DEM.",
+              "LEGA NORD, FORZA ITALIA",
+              "UNIONE DI CENTRO, FORZA ITALIA, ALLEANZA NAZIONALE, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+              "FORZA ITALIA, ALLEANZA NAZIONALE",
+              "UNIONE DI CENTRO, FORZA ITALIA, CENTRO CRIST.DEM., POLO LIBERAL DEMOCR.",
+              "LEGA NORD"
+            ]
+          },
+          {
+            "id": "seats-centrosinistra",
+            "name": "Alleanza dei Progressisti",
+            "members": [
+              "PROGRESSISTI",
+              "PDS",
+              "RIFONDAZIONE COMUNISTA"
+            ]
+          },
+          {
+            "id": "seats-patto-italia",
+            "name": "Patto per l’Italia",
+            "members": [
+              "PATTO PER L'ITALIA",
+              "P.POPOLARE ITALIANO",
+              "PATTO SEGNI"
+            ]
+          }
+        ],
+        "note": "Nel 1994 i due Poli di centrodestra, con candidature territoriali differenti, sono presentati insieme; le rispettive componenti restano verificabili nei dati originari."
+      },
+      "seatGroupsOrder": 8
+    },
+    {
+      "order": 22,
+      "source": {
+        "id": "senato-1994",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 1994,
+        "dateLabel": "27 marzo 1994",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19940327.zip",
+        "sourceFile": "senato-19940327.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19940327.zip",
+        "zipMember": "senato-19940327.txt",
+        "eventID": "politiche-19940327",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "VALLE D'AOSTA",
+              "Aosta",
+              "PRE'-SAINT-DIDIER"
+            ],
+            "electors": 333,
+            "voters": 633,
+            "reason": "Nel file originale VALLE D'AOSTA / Aosta / PRE'-SAINT-DIDIER riporta 333 elettori e 633 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "Merano",
+              "TIROLO"
+            ],
+            "electors": 1331,
+            "voters": 1371,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / Merano / TIROLO riporta 1331 elettori e 1371 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "SARDEGNA",
+              "Nuoro",
+              "NURAGUS"
+            ],
+            "electors": 625,
+            "voters": 655,
+            "reason": "Nel file originale SARDEGNA / Nuoro / NURAGUS riporta 625 elettori e 655 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "Bressanone",
+              "SESTO"
+            ],
+            "electors": 1012,
+            "voters": 1177,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / Bressanone / SESTO riporta 1012 elettori e 1177 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "UMBRIA",
+              "Foligno",
+              "CASCIA"
+            ],
+            "electors": 1927,
+            "voters": 1992,
+            "reason": "Nel file originale UMBRIA / Foligno / CASCIA riporta 1927 elettori e 1992 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "Trento",
+              "LASINO"
+            ],
+            "electors": 634,
+            "voters": 681,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / Trento / LASINO riporta 634 elettori e 681 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Imola",
+              "CASTENASO"
+            ],
+            "electors": 9728,
+            "voters": 9757,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Imola / CASTENASO riporta 9728 elettori e 9757 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TOSCANA",
+              "Pistoia",
+              "UZZANO"
+            ],
+            "electors": 2700,
+            "voters": 2758,
+            "reason": "Nel file originale TOSCANA / Pistoia / UZZANO riporta 2700 elettori e 2758 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "CALABRIA",
+              "Vibo Valentia",
+              "ZACCANOPOLI"
+            ],
+            "electors": 470,
+            "voters": 510,
+            "reason": "Nel file originale CALABRIA / Vibo Valentia / ZACCANOPOLI riporta 470 elettori e 510 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "Settimo Torinese",
+              "BRUSASCO"
+            ],
+            "electors": 783,
+            "voters": 1041,
+            "reason": "Nel file originale PIEMONTE / Settimo Torinese / BRUSASCO riporta 783 elettori e 1041 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "VENETO",
+              "Cittadella",
+              "LIMENA"
+            ],
+            "electors": 3709,
+            "voters": 4014,
+            "reason": "Nel file originale VENETO / Cittadella / LIMENA riporta 3709 elettori e 4014 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "SICILIA",
+              "Monreale",
+              "PALAZZO ADRIANO"
+            ],
+            "electors": 1400,
+            "voters": 1591,
+            "reason": "Nel file originale SICILIA / Monreale / PALAZZO ADRIANO riporta 1400 elettori e 1591 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "Verbania",
+              "CAMBIASCA"
+            ],
+            "electors": 1152,
+            "voters": 1194,
+            "reason": "Nel file originale PIEMONTE / Verbania / CAMBIASCA riporta 1152 elettori e 1194 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "Biella",
+              "SAN GIACOMO VERCELLESE"
+            ],
+            "electors": 227,
+            "voters": 284,
+            "reason": "Nel file originale PIEMONTE / Biella / SAN GIACOMO VERCELLESE riporta 227 elettori e 284 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Viterbo",
+              "SAN LORENZO NUOVO"
+            ],
+            "electors": 1067,
+            "voters": 1431,
+            "reason": "Nel file originale LAZIO / Viterbo / SAN LORENZO NUOVO riporta 1067 elettori e 1431 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Viterbo",
+              "VALLERANO"
+            ],
+            "electors": 1517,
+            "voters": 1670,
+            "reason": "Nel file originale LAZIO / Viterbo / VALLERANO riporta 1517 elettori e 1670 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Parma",
+              "FELINO"
+            ],
+            "electors": 4358,
+            "voters": 4550,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Parma / FELINO riporta 4358 elettori e 4550 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Piacenza",
+              "RIVERGARO"
+            ],
+            "electors": 3455,
+            "voters": 3582,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Piacenza / RIVERGARO riporta 3455 elettori e 3582 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Guidonia - Montecelio",
+              "CAMERATA NUOVA"
+            ],
+            "electors": 290,
+            "voters": 319,
+            "reason": "Nel file originale LAZIO / Guidonia - Montecelio / CAMERATA NUOVA riporta 290 elettori e 319 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Guidonia - Montecelio",
+              "CICILIANO"
+            ],
+            "electors": 696,
+            "voters": 731,
+            "reason": "Nel file originale LAZIO / Guidonia - Montecelio / CICILIANO riporta 696 elettori e 731 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Rimini",
+              "CORIANO"
+            ],
+            "electors": 5364,
+            "voters": 6068,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Rimini / CORIANO riporta 5364 elettori e 6068 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "Alba",
+              "SALE DELLE LANGHE"
+            ],
+            "electors": 284,
+            "voters": 334,
+            "reason": "Nel file originale PIEMONTE / Alba / SALE DELLE LANGHE riporta 284 elettori e 334 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "Alba",
+              "VERDUNO"
+            ],
+            "electors": 227,
+            "voters": 298,
+            "reason": "Nel file originale PIEMONTE / Alba / VERDUNO riporta 227 elettori e 298 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Cassino",
+              "CASTROCIELO"
+            ],
+            "electors": 2072,
+            "voters": 2218,
+            "reason": "Nel file originale LAZIO / Cassino / CASTROCIELO riporta 2072 elettori e 2218 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "VENETO",
+              "Villafranca di Verona",
+              "ISOLA DELLA SCALA"
+            ],
+            "electors": 6609,
+            "voters": 6730,
+            "reason": "Nel file originale VENETO / Villafranca di Verona / ISOLA DELLA SCALA riporta 6609 elettori e 6730 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "VENETO",
+              "Villafranca di Verona",
+              "ROVEREDO DI GUA'"
+            ],
+            "electors": 700,
+            "voters": 821,
+            "reason": "Nel file originale VENETO / Villafranca di Verona / ROVEREDO DI GUA' riporta 700 elettori e 821 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "CANTU'",
+              "FIGINO SERENZA"
+            ],
+            "electors": 2697,
+            "voters": 2900,
+            "reason": "Nel file originale LOMBARDIA / CANTU' / FIGINO SERENZA riporta 2697 elettori e 2900 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Marino",
+              "GALLICANO NEL LAZIO"
+            ],
+            "electors": 2177,
+            "voters": 2400,
+            "reason": "Nel file originale LAZIO / Marino / GALLICANO NEL LAZIO riporta 2177 elettori e 2400 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "CANTU'",
+              "COSTA MASNAGA"
+            ],
+            "electors": 2437,
+            "voters": 2847,
+            "reason": "Nel file originale LOMBARDIA / CANTU' / COSTA MASNAGA riporta 2437 elettori e 2847 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "Chiari",
+              "OSPITALETTO"
+            ],
+            "electors": 6064,
+            "voters": 6257,
+            "reason": "Nel file originale LOMBARDIA / Chiari / OSPITALETTO riporta 6064 elettori e 6257 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-1994",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "27/03/1994",
+        "headingPrefix": "Senato 27/03/1994",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=27/03/1994&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 315,
+            "heading": "Senato 27/03/1994 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 15,
+      "seatGroups": {
+        "electionID": "senato-1994",
+        "groups": [
+          {
+            "id": "seats-centrodestra",
+            "name": "Polo delle Libertà",
+            "members": [
+              "POLO DELLE LIBERTA'",
+              "POLO BUON GOVERNO",
+              "ALLEANZA NAZIONALE",
+              "FI-CCD"
+            ]
+          }
+        ],
+        "note": "I due Poli di centrodestra del 1994 sono accorpati nella visualizzazione, mantenendo la composizione originaria nelle fonti."
+      },
+      "seatGroupsOrder": 9
+    }
+  ]
+}

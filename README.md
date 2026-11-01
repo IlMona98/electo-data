@@ -142,3 +142,10 @@ La copertura complessiva è ora di **25 schede / 16 consultazioni**, di cui 18 s
 ### Registro grafico senza dipendenza dalle fonti elettorali
 
 `publish-identities.yml` gestisce le modifiche al registro e ai simboli separatamente dal recupero dei dati. `scripts/publish_identities.py` compila il registro, ricalcola soltanto i collegamenti canonici sull’ultimo archivio verificato e usa lo stesso formato di pubblicazione immutabile. Voti, seggi, perimetri e timestamp delle fonti sono conservati; nessuna fonte elettorale viene scaricata. I test verificano anche la pubblicazione con la rete elettorale indisponibile, i collegamenti precedentemente obsoleti, la conservazione del registro su errore e la coerenza del catalogo. Entrambi i workflow condividono la concorrenza `electo-data` e fanno checkout dell’ultima `main`. Le modifiche al solo registro non avviano più il recupero completo delle fonti.
+
+
+## Nuovo percorso di configurazione unificato
+
+Ogni consultazione si configura in un solo file in `config/elections/`, con Camera e Senato insieme. `scripts/configure_election.py` crea bozze, verifica la configurazione, pianifica l’elaborazione incrementale e prepara un’anteprima separata dai dati pubblici. Il workflow **Configura e pubblica elezioni** coordina pubblicazione, identità, gerarchie e ricerca; i vecchi workflow sono esclusivamente manuali. Le esportazioni storiche `sources.json` e `config/*seats*.json` rimangono compatibili ma sono generate dal nuovo percorso. `config/identities.json` rimane modificabile dal proprietario.
+
+Guida completa: [Configurare elezioni](docs/CONFIGURARE-ELEZIONI.md). Esempio: `python scripts/configure_election.py new --template europee-2024 --event europee-2029 --year 2029 --date-label 'DATA EFFETTIVA'`, completare la bozza, poi **Actions → Configura e pubblica elezioni → preview**. Solo dopo i controlli scegliere **publish**. L’esempio non dichiara la data di una futura elezione.

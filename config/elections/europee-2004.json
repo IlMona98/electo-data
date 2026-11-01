@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-2004",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 14,
+      "source": {
+        "id": "europee-2004",
+        "title": "Europee",
+        "category": "europee",
+        "year": 2004,
+        "dateLabel": "12 giugno 2004",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20040612.zip",
+        "sourceFile": "europee-20040612.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTILISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20040612.zip",
+        "zipMember": "europee-20040612.txt",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "Emilia Romagna",
+              "Reggio Emilia",
+              "CARPINETI"
+            ],
+            "electors": 2805,
+            "voters": 3042,
+            "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CARPINETI riporta 2805 elettori e 3042 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "Emilia Romagna",
+              "Reggio Emilia",
+              "CASALGRANDE"
+            ],
+            "electors": 3543,
+            "voters": 10408,
+            "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASALGRANDE riporta 3543 elettori e 10408 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "Emilia Romagna",
+              "Reggio Emilia",
+              "CASTELLARANO"
+            ],
+            "electors": 3612,
+            "voters": 7959,
+            "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASTELLARANO riporta 3612 elettori e 7959 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "Emilia Romagna",
+              "Reggio Emilia",
+              "CASTELNOVO NE' MONTI"
+            ],
+            "electors": 6329,
+            "voters": 7059,
+            "reason": "Nel file originale Emilia Romagna / Reggio Emilia / CASTELNOVO NE' MONTI riporta 6329 elettori e 7059 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "Lombardia",
+              "Pavia",
+              "MONTESCANO"
+            ],
+            "electors": 344,
+            "voters": 351,
+            "reason": "Nel file originale Lombardia / Pavia / MONTESCANO riporta 344 elettori e 351 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "europee-1999",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ from aggregate import require
 from sync import fetch,encode,atomic_write
 from territory_tree import build_tree,ancestor_ids
 from publish_territory_search import publish_search
+from election_config import load_bundle
 ROOT=Path(__file__).resolve().parents[1]
 
 def publish_tree(tree,election,output):
@@ -28,7 +29,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--cache',type=Path,default=ROOT/'.cache');parser.add_argument('--output',type=Path,default=ROOT/'public/v1');args=parser.parse_args()
     archive=json.loads((args.output/'archive.json').read_text());existing={e['id']:e for e in archive['elections']}
     failures=[];success=0
-    for config in json.loads((ROOT/'sources.json').read_text()):
+    for config in load_bundle(ROOT)['sources']:
         if config.get('adapter')or config['id']not in existing:continue
         try:
             verified=existing[config['id']];fresh=fetch(config,args.cache)

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-20130224",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 7,
+      "source": {
+        "id": "camera-2013",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 2013,
+        "dateLabel": "24 febbraio 2013",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20130224.zip",
+        "sourceFile": "camera_italia-20130224.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20130224.zip",
+        "zipMember": "camera_italia-20130224.txt",
+        "eventID": "politiche-20130224",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "previousElectionID": "camera-2008",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-2013",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "24/02/2013",
+        "headingPrefix": "Camera 24/02/2013",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 617,
+            "listMetadata": true,
+            "heading": "Camera 24/02/2013 Area ITALIA (escl. Valle d'Aosta)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 12,
+            "heading": "Camera 24/02/2013 Area ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=24/02/2013&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+            "format": "tree",
+            "expectedSeats": 1
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 4,
+      "partySeats": {
+        "electionID": "camera-2013",
+        "chamber": "camera",
+        "totalSeats": 630,
+        "adapter": "camera-lists",
+        "legislature": 17,
+        "snapshot": "20130315",
+        "date": "20130224",
+        "expectedMembers": 630,
+        "unlistedMembers": 1,
+        "foreignAreas": [
+          "europa",
+          "america meridionale",
+          "america settentrionale e centrale",
+          "africa asia oceania e antartide"
+        ],
+        "aliases": {},
+        "outsideLists": [
+          "MOV.ASSOCIATIVO ITALIANI ALL'ESTERO",
+          "CON MONTI PER L'ITALIA",
+          "USEI"
+        ],
+        "referenceDate": "2013-03-15",
+        "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+      },
+      "partySeatsOrder": 2,
+      "seatGroups": {
+        "electionID": "camera-2013",
+        "groups": [
+          {
+            "id": "seats-66d853b59b85e3bb",
+            "name": "Coalizione MARIO MONTI",
+            "members": [
+              "Coalizione MARIO MONTI",
+              "CON MONTI PER L'ITALIA"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 4
+    },
+    {
+      "order": 8,
+      "source": {
+        "id": "senato-2013",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 2013,
+        "dateLabel": "24 febbraio 2013",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20130224.zip",
+        "sourceFile": "senato_italia-20130224.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20130224.zip",
+        "zipMember": "senato_italia-20130224.txt",
+        "eventID": "politiche-20130224",
+        "chamber": "senato",
+        "resultKind": "lists",
+        "previousElectionID": "senato-2008",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-2013",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "24/02/2013",
+        "headingPrefix": "Senato 24/02/2013",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 301,
+            "listMetadata": true,
+            "heading": "Senato 24/02/2013 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 6,
+            "heading": "Senato 24/02/2013 Area ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta e Trentino-Alto Adige",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=24/02/2013&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+            "format": "tree",
+            "expectedSeats": 8
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 5,
+      "seatGroups": {
+        "electionID": "senato-2013",
+        "groups": [
+          {
+            "id": "seats-ab7d0463bb42ee32",
+            "name": "Centrosinistra",
+            "members": [
+              "Centrosinistra",
+              "SVP - PATT - PD - UPT",
+              "PD - SVP",
+              "SVP"
+            ]
+          },
+          {
+            "id": "seats-d7dd54f7ee52f7c1",
+            "name": "Centrodestra",
+            "members": [
+              "Centrodestra",
+              "IL POPOLO DELLA LIBERTA' - LEGA NORD"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 5
+    }
+  ]
+}

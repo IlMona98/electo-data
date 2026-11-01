@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-2024",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 0,
+      "source": {
+        "id": "europee-2024",
+        "title": "Europee",
+        "category": "europee",
+        "year": 2024,
+        "dateLabel": "8–9 giugno 2024",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti di lista del file comunale. Voto estero e fuori sede esclusi. Le percentuali si riferiscono esclusivamente al perimetro del file.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20240609.zip",
+        "sourceFile": "EUROPEE_SCRUTINI&LISTE_ITALIA_LivComune.csv",
+        "columns": [
+          "DESCREGIONE",
+          "DESCCOMUNE",
+          "DESCLISTA",
+          "NUMVOTI",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "DESCREGIONE",
+          "DESCPROVINCIA",
+          "DESCCOMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20240609.zip",
+        "zipMember": "EUROPEE_SCRUTINI&LISTE_ITALIA_LivComune.csv",
+        "previousElectionID": "europee-2019",
+        "comparisonTerritories": [
+          "national",
+          "regional"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

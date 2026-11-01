@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-20060409",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 12,
+      "source": {
+        "id": "camera-2006",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 2006,
+        "dateLabel": "9 aprile 2006",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20060409.zip",
+        "sourceFile": "camera_italia-20060409.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTILISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20060409.zip",
+        "zipMember": "camera_italia-20060409.txt",
+        "eventID": "politiche-20060409",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA 2",
+              "COMO",
+              "RAMPONIO VERNA"
+            ],
+            "electors": 329,
+            "voters": 334,
+            "reason": "Nel file originale LOMBARDIA 2 / COMO / RAMPONIO VERNA riporta 329 elettori e 334 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA 3",
+              "MANTOVA",
+              "PIEVE DI CORIANO"
+            ],
+            "electors": 758,
+            "voters": 763,
+            "reason": "Nel file originale LOMBARDIA 3 / MANTOVA / PIEVE DI CORIANO riporta 758 elettori e 763 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA 3",
+              "PAVIA",
+              "MONTESCANO"
+            ],
+            "electors": 323,
+            "voters": 422,
+            "reason": "Nel file originale LOMBARDIA 3 / PAVIA / MONTESCANO riporta 323 elettori e 422 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "RIMINI",
+              "CORIANO"
+            ],
+            "electors": 7313,
+            "voters": 7337,
+            "reason": "Nel file originale EMILIA-ROMAGNA / RIMINI / CORIANO riporta 7313 elettori e 7337 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-2006",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "09/04/2006",
+        "headingPrefix": "Camera 09/04/2006",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 617,
+            "listMetadata": true,
+            "heading": "Camera 09/04/2006 Area ITALIA (escl. Valle d'Aosta)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 12,
+            "heading": "Camera 09/04/2006 Area CIRCOSCRIZIONE ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=09/04/2006&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+            "format": "tree",
+            "expectedSeats": 1
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 8,
+      "partySeats": {
+        "electionID": "camera-2006",
+        "chamber": "camera",
+        "totalSeats": 630,
+        "adapter": "camera-lists",
+        "legislature": 15,
+        "snapshot": "20060428",
+        "date": "20060409",
+        "expectedMembers": 630,
+        "unlistedMembers": 1,
+        "foreignAreas": [
+          "europa",
+          "america meridionale",
+          "america settentrionale e centrale",
+          "africa asia oceania e antartide"
+        ],
+        "aliases": {
+          "ULIVO": "L'ULIVO",
+          "PARTITO DELLA RIFONDAZIONE COMUNISTA": "RIFONDAZIONE COMUNISTA",
+          "LEGA NORD - MOVIMENTO PER L'AUTONOMIA": "LEGA NORD",
+          "ROSA NEL PUGNO": "LA ROSA NEL PUGNO",
+          "PARTITO DEI COMUNISTI ITALIANI": "COMUNISTI ITALIANI",
+          "ITALIA DEI VALORI": "DI PIETRO ITALIA DEI VALORI",
+          "ITALIA DEI VALORI ESTERO": "DI PIETRO ITALIA DEI VALORI",
+          "POPOLARI UDEUR": "U.D.EUR POPOLARI",
+          "DEMOCRAZIA CRISTIANA E PARTITO SOCIALISTA NUOVO PSI": "DEM.CRIST.-NUOVO PSI"
+        },
+        "outsideLists": [
+          "L'UNIONE",
+          "PER ITALIA NEL MONDO",
+          "ASS.ITAL.SUD AMERICA"
+        ],
+        "referenceDate": "2006-04-28",
+        "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+      },
+      "partySeatsOrder": 0,
+      "seatGroups": {
+        "electionID": "camera-2006",
+        "groups": [
+          {
+            "id": "seats-ab7d0463bb42ee32",
+            "name": "Centrosinistra",
+            "members": [
+              "Centrosinistra",
+              "L'UNIONE"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 0
+    },
+    {
+      "order": 13,
+      "source": {
+        "id": "senato-2006",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 2006,
+        "dateLabel": "9 aprile 2006",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20060409.zip",
+        "sourceFile": "senato_italia-20060409.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI_TOTALI",
+          "VOTANTI_TOTALI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20060409.zip",
+        "zipMember": "senato_italia-20060409.txt",
+        "eventID": "politiche-20060409",
+        "chamber": "senato",
+        "resultKind": "lists",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA",
+              "PAVIA",
+              "MONTESCANO"
+            ],
+            "electors": 297,
+            "voters": 398,
+            "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 297 elettori e 398 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "MANTOVA",
+              "PIEVE DI CORIANO"
+            ],
+            "electors": 711,
+            "voters": 719,
+            "reason": "Nel file originale LOMBARDIA / MANTOVA / PIEVE DI CORIANO riporta 711 elettori e 719 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "COMO",
+              "RAMPONIO VERNA"
+            ],
+            "electors": 314,
+            "voters": 321,
+            "reason": "Nel file originale LOMBARDIA / COMO / RAMPONIO VERNA riporta 314 elettori e 321 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-2006",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "09/04/2006",
+        "headingPrefix": "Senato 09/04/2006",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 301,
+            "listMetadata": true,
+            "heading": "Senato 09/04/2006 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 6,
+            "heading": "Senato 09/04/2006 Area ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta e Trentino-Alto Adige",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=09/04/2006&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+            "format": "tree",
+            "expectedSeats": 8
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 9,
+      "seatGroups": {
+        "electionID": "senato-2006",
+        "groups": [
+          {
+            "id": "seats-ab7d0463bb42ee32",
+            "name": "Centrosinistra",
+            "members": [
+              "Centrosinistra",
+              "L'UNIONE",
+              "L'UNIONE SVP",
+              "SVP"
+            ]
+          },
+          {
+            "id": "seats-d7dd54f7ee52f7c1",
+            "name": "Centrodestra",
+            "members": [
+              "Centrodestra",
+              "CASA DELLE LIBERTA'"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 1
+    }
+  ]
+}

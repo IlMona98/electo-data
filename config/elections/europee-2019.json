@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-2019",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 3,
+      "source": {
+        "id": "europee-2019",
+        "title": "Europee",
+        "category": "europee",
+        "year": 2019,
+        "dateLabel": "26 maggio 2019",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti di lista del file comunale. Voto estero escluso. Le percentuali si riferiscono esclusivamente al perimetro del file.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20190526.zip",
+        "sourceFile": "europee-20190526.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20190526.zip",
+        "zipMember": "europee-20190526.txt",
+        "previousElectionID": "europee-2014",
+        "comparisonTerritories": [
+          "national",
+          "regional"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

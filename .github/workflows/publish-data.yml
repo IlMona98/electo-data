@@ -1,0 +1,110 @@
+name: Configura e pubblica elezioni
+
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'requirements.txt', 'tests/**', 'config/**', 'sources.json', 'public/symbols/**', '.github/workflows/publish-data.yml']
+  workflow_dispatch:
+    inputs:
+      event:
+        description: 'ID consultazione (es. politiche-20220925); vuoto per soli cambiamenti'
+        type: string
+        default: ''
+      mode:
+        description: 'preview prepara soltanto; publish pubblica la consultazione; auto solo modifiche; all controlla tutte le fonti'
+        type: choice
+        options: [preview, publish, auto, all]
+        default: preview
+  schedule:
+    - cron: '37 4 * * *'
+
+concurrency:
+  group: electo-data
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    outputs:
+      published: ${{ steps.install.outputs.published }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: eligendo-v1-${{ github.run_id }}
+          restore-keys: eligendo-v1-
+      - name: Verifica configurazioni e conversioni
+        run: |
+          python scripts/configure_election.py check
+          python -m unittest discover -s tests -v
+      - name: Prepara soltanto le consultazioni necessarie
+        env:
+          EVENT_ID: ${{ inputs.event }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          mode="${REQUESTED_MODE:-auto}"
+          if [ "$TRIGGER" = schedule ]; then mode=all; fi
+          python scripts/configure_election.py run --event "$EVENT_ID" --mode "$mode" --output "$RUNNER_TEMP/electo-preview"
+      - name: Mostra il riepilogo della verifica
+        run: |
+          if [ -f "$RUNNER_TEMP/electo-preview/report.md" ]; then cat "$RUNNER_TEMP/electo-preview/report.md" >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Conserva rapporto e copia verificata
+        uses: actions/upload-artifact@v4
+        with:
+          name: anteprima-elezioni
+          path: ${{ runner.temp }}/electo-preview
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Salva una sola versione coerente
+        id: install
+        env:
+          REQUESTED_MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$REQUESTED_MODE" = preview ]; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/ config/elections/ sources.json config/seats.json config/party-seats.json config/seat-groups.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Pubblica consultazioni verificate senza modificare le altre'
+            git push origin HEAD:main
+            echo 'published=true' >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.install.outputs.published == 'true'
+        with:
+          path: public
+
+  deploy:
+    needs: prepare
+    if: needs.prepare.outputs.published == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-1994",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 21,
+      "source": {
+        "id": "europee-1994",
+        "title": "Europee",
+        "category": "europee",
+        "year": 1994,
+        "dateLabel": "12 giugno 1994",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19940612.zip",
+        "sourceFile": "europee-19940612.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19940612.zip",
+        "zipMember": "europee-19940612.txt",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA",
+              "PAVIA",
+              "MONTESCANO"
+            ],
+            "electors": 337,
+            "voters": 392,
+            "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 337 elettori e 392 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "FORLI'-CESENA",
+              "CORIANO"
+            ],
+            "electors": 6215,
+            "voters": 6467,
+            "reason": "Nel file originale EMILIA-ROMAGNA / FORLI'-CESENA / CORIANO riporta 6215 elettori e 6467 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "TRENTO",
+              "LASINO"
+            ],
+            "electors": 159,
+            "voters": 705,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / TRENTO / LASINO riporta 159 elettori e 705 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "VITERBO",
+              "MONTE ROMANO"
+            ],
+            "electors": 1633,
+            "voters": 1635,
+            "reason": "Nel file originale LAZIO / VITERBO / MONTE ROMANO riporta 1633 elettori e 1635 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

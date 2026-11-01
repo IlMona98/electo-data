@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-2014",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 6,
+      "source": {
+        "id": "europee-2014",
+        "title": "Europee",
+        "category": "europee",
+        "year": 2014,
+        "dateLabel": "25 maggio 2014",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti di lista del file comunale. Voto estero escluso. Le percentuali si riferiscono esclusivamente al perimetro del file.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20140525.zip",
+        "sourceFile": "europee-20140525.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20140525.zip",
+        "zipMember": "europee-20140525.txt",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA",
+              "PAVIA",
+              "MONTESCANO"
+            ],
+            "electors": 348,
+            "voters": 352,
+            "reason": "Nel file originale Montescano (Pavia) riporta 348 elettori e 352 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "europee-2009",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

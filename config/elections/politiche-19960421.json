@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-19960421",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 18,
+      "source": {
+        "id": "camera-1996",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 1996,
+        "dateLabel": "21 aprile 1996",
+        "coverage": "Italia · voto proporzionale",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19960421.zip",
+        "sourceFile": "camera-19960421_Proporzionale.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-19960421.zip",
+        "zipMember": "camera-19960421_Proporzionale.txt",
+        "eventID": "politiche-19960421",
+        "chamber": "camera",
+        "resultKind": "proportional-lists",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LIGURIA",
+              "Imperia",
+              "COSTARAINERA"
+            ],
+            "electors": 591,
+            "voters": 595,
+            "reason": "Nel file originale LIGURIA / Imperia / COSTARAINERA riporta 591 elettori e 595 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Rimini - Riccione",
+              "CORIANO"
+            ],
+            "electors": 6525,
+            "voters": 6786,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Rimini - Riccione / CORIANO riporta 6525 elettori e 6786 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "FRIULI VENEZIA GIULIA",
+              "Cervignano del Friuli",
+              "VISCO"
+            ],
+            "electors": 641,
+            "voters": 672,
+            "reason": "Nel file originale FRIULI VENEZIA GIULIA / Cervignano del Friuli / VISCO riporta 641 elettori e 672 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO 1",
+              "Velletri",
+              "NEMI"
+            ],
+            "electors": 1411,
+            "voters": 1447,
+            "reason": "Nel file originale LAZIO 1 / Velletri / NEMI riporta 1411 elettori e 1447 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "camera-1994",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-1996",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "21/04/1996",
+        "headingPrefix": "Camera 21/04/1996",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "proporzionale",
+            "label": "Quota proporzionale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 155,
+            "listMetadata": true,
+            "heading": "Camera 21/04/1996 Area ITALIA"
+          },
+          {
+            "id": "uninominale",
+            "label": "Quota uninominale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+            "format": "flat",
+            "expectedSeats": 475,
+            "heading": "Camera 21/04/1996 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 12,
+      "seatGroups": {
+        "electionID": "camera-1996",
+        "groups": [
+          {
+            "id": "seats-centrodestra",
+            "name": "Polo per le Libertà",
+            "members": [
+              "POLO PER LE LIBERTA'",
+              "FORZA ITALIA",
+              "ALLEANZA NAZIONALE",
+              "CCD-CDU"
+            ]
+          },
+          {
+            "id": "seats-centrosinistra",
+            "name": "L’Ulivo",
+            "members": [
+              "L'ULIVO",
+              "PDS",
+              "POP-SVP-PRI-UD-PRODI",
+              "RINNOVAMENTO IT-DINI",
+              "L'ULIVO-LEGA AUT.VENETA",
+              "L'ULIVO-PS.D'AZ."
+            ]
+          },
+          {
+            "id": "seats-progressisti",
+            "name": "Alleanza dei Progressisti",
+            "members": [
+              "PROGRESSISTI (1996)",
+              "RIFONDAZIONE COMUNISTA"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 7
+    },
+    {
+      "order": 19,
+      "source": {
+        "id": "senato-1996",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 1996,
+        "dateLabel": "21 aprile 1996",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19960421.zip",
+        "sourceFile": "senato-19960421.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-19960421.zip",
+        "zipMember": "senato-19960421.txt",
+        "eventID": "politiche-19960421",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LIGURIA",
+              "San Remo",
+              "COSTARAINERA"
+            ],
+            "electors": 538,
+            "voters": 546,
+            "reason": "Nel file originale LIGURIA / San Remo / COSTARAINERA riporta 538 elettori e 546 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "Merano",
+              "SENALES"
+            ],
+            "electors": 491,
+            "voters": 814,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / Merano / SENALES riporta 491 elettori e 814 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "TRENTINO-ALTO ADIGE",
+              "Bressanone",
+              "LAION"
+            ],
+            "electors": 760,
+            "voters": 1221,
+            "reason": "Nel file originale TRENTINO-ALTO ADIGE / Bressanone / LAION riporta 760 elettori e 1221 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "SICILIA",
+              "Acireale",
+              "BRONTE"
+            ],
+            "electors": 15,
+            "voters": 9517,
+            "reason": "Nel file originale SICILIA / Acireale / BRONTE riporta 15 elettori e 9517 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "EMILIA-ROMAGNA",
+              "Rimini",
+              "CORIANO"
+            ],
+            "electors": 5692,
+            "voters": 5805,
+            "reason": "Nel file originale EMILIA-ROMAGNA / Rimini / CORIANO riporta 5692 elettori e 5805 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LAZIO",
+              "Velletri",
+              "NEMI"
+            ],
+            "electors": 1261,
+            "voters": 1305,
+            "reason": "Nel file originale LAZIO / Velletri / NEMI riporta 1261 elettori e 1305 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "senato-1994",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-1996",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "21/04/1996",
+        "headingPrefix": "Senato 21/04/1996",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=21/04/1996&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 315,
+            "heading": "Senato 21/04/1996 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 13,
+      "seatGroups": {
+        "electionID": "senato-1996",
+        "groups": [
+          {
+            "id": "seats-d2410c2842855c10",
+            "name": "L’Ulivo",
+            "members": [
+              "L'ULIVO",
+              "L'ULIVO-PS.D'AZ."
+            ]
+          }
+        ],
+        "note": "Le candidature territoriali collegate all’Ulivo sono accorpate nella stessa voce."
+      },
+      "seatGroupsOrder": 11
+    }
+  ]
+}

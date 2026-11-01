@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-20080413",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 10,
+      "source": {
+        "id": "camera-2008",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 2008,
+        "dateLabel": "13 aprile 2008",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20080413.zip",
+        "sourceFile": "camera_italia-20080413.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20080413.zip",
+        "zipMember": "camera_italia-20080413.txt",
+        "eventID": "politiche-20080413",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "previousElectionID": "camera-2006",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-2008",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "13/04/2008",
+        "headingPrefix": "Camera 13/04/2008",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 617,
+            "listMetadata": true,
+            "heading": "Camera 13/04/2008 Area ITALIA (escl. Valle d'Aosta)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 12,
+            "heading": "Camera 13/04/2008 Area CIRCOSCRIZIONE ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/04/2008&es0=S&tpa=H&lev0=27&levsut0=1&ms=N&tpe=I",
+            "format": "tree",
+            "expectedSeats": 1
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 6,
+      "partySeats": {
+        "electionID": "camera-2008",
+        "chamber": "camera",
+        "totalSeats": 630,
+        "adapter": "camera-lists",
+        "legislature": 16,
+        "snapshot": "20080429",
+        "date": "20080413",
+        "expectedMembers": 630,
+        "unlistedMembers": 1,
+        "foreignAreas": [
+          "europa",
+          "america meridionale",
+          "america settentrionale e centrale",
+          "africa asia oceania e antartide"
+        ],
+        "aliases": {
+          "MOVIMENTO PER L'AUTONOMIA ALLEANZA PER IL SUD": "MOVIMENTO PER L'AUTONOMIA ALL.PER IL SUD",
+          "SUDTIROLER VOLKSPARTEI": "SVP"
+        },
+        "outsideLists": [
+          "MOVIMENTO ASSOCIATIVO ITALIANI ALL'ESTERO"
+        ],
+        "referenceDate": "2008-04-29",
+        "note": "Conteggio dei mandati elettivi nella fase iniziale della legislatura, secondo la lista di elezione documentata dalla Camera. Subentri e cambi di gruppo successivi sono esclusi. Le liste estere congiunte rimangono formazioni distinte e non vengono suddivise arbitrariamente tra i partiti."
+      },
+      "partySeatsOrder": 1,
+      "seatGroups": {
+        "electionID": "camera-2008",
+        "groups": [],
+        "note": ""
+      },
+      "seatGroupsOrder": 2
+    },
+    {
+      "order": 11,
+      "source": {
+        "id": "senato-2008",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 2008,
+        "dateLabel": "13 aprile 2008",
+        "coverage": "Italia · voto di lista",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta, Trentino-Alto Adige ed estero sono esclusi da questo file di lista e non vengono ricostruiti da altri perimetri.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20080413.zip",
+        "sourceFile": "senato_italia-20080413.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20080413.zip",
+        "zipMember": "senato_italia-20080413.txt",
+        "eventID": "politiche-20080413",
+        "chamber": "senato",
+        "resultKind": "lists",
+        "previousElectionID": "senato-2006",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-2008",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "13/04/2008",
+        "headingPrefix": "Senato 13/04/2008",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Italia · liste e coalizioni",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "linked",
+            "expectedSeats": 301,
+            "listMetadata": true,
+            "heading": "Senato 13/04/2008 Area ITALIA (escl. Valle d'Aosta e Trentino-Alto Adige)"
+          },
+          {
+            "id": "estero",
+            "label": "Estero",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=E&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 6,
+            "heading": "Senato 13/04/2008 Area ESTERO"
+          },
+          {
+            "id": "speciali",
+            "label": "Valle d’Aosta e Trentino-Alto Adige",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/04/2008&es0=S&tpa=G&lev0=0&levsut0=0&ms=N&tpe=A",
+            "format": "tree",
+            "expectedSeats": 8
+          }
+        ],
+        "coalitionLabels": {
+          "PIER LUIGI BERSANI": "Centrosinistra",
+          "WALTER VELTRONI": "Centrosinistra",
+          "PRODI ROMANO": "Centrosinistra",
+          "SILVIO BERLUSCONI": "Centrodestra",
+          "BERLUSCONI SILVIO": "Centrodestra"
+        }
+      },
+      "seatsOrder": 7,
+      "seatGroups": {
+        "electionID": "senato-2008",
+        "groups": [
+          {
+            "id": "seats-ab7d0463bb42ee32",
+            "name": "Centrosinistra",
+            "members": [
+              "Centrosinistra",
+              "SVP - INSIEME PER LE AUTONOMIE",
+              "SVP"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 3
+    }
+  ]
+}

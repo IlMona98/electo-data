@@ -1,13 +1,9 @@
-name: Pubblica dettagli territoriali
+name: Recupero manuale · Pubblica dettagli territoriali
 run-name: Dettagli territoriali · ${{ github.event_name }}
 
+# Percorso di recupero manuale; la pubblicazione automatica è in publish-data.yml.
 on:
-  push:
-    branches: [main]
-    paths: ['scripts/territory_tree.py', 'scripts/publish_territories.py', 'tests/test_territory_tree.py', 'sources.json', '.github/workflows/publish-territories.yml']
   workflow_dispatch:
-  schedule:
-    - cron: '57 4 * * *'
 
 concurrency:
   group: electo-data

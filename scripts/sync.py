@@ -133,16 +133,18 @@ def main():
     parser.add_argument('--cache',type=Path,default=ROOT/'.cache')
     parser.add_argument('--output',type=Path,default=ROOT/'public/v1')
     args=parser.parse_args()
-    configs=json.loads((ROOT/'sources.json').read_text())
+    from election_config import load_bundle
+    bundle=load_bundle(ROOT)
+    configs=bundle['sources']
     registry=compile_registry(json.loads((ROOT/'config/identities.json').read_text()), ROOT/'public')
     elections=[]
     for config in configs:
         print('Checking',config['id'],flush=True)
         elections.append(fetch(config,args.cache))
     # All sources must succeed before the deployable set is updated.
-    apply_seats(elections,json.loads((ROOT/'config/seats.json').read_text()))
-    apply_party_seats(elections,json.loads((ROOT/'config/party-seats.json').read_text()))
-    consolidate_seats(elections,json.loads((ROOT/'config/seat-groups.json').read_text()))
+    apply_seats(elections,bundle['seats'])
+    apply_party_seats(elections,bundle['partySeats'])
+    consolidate_seats(elections,bundle['seatGroups'])
     apply_identity_links(elections,registry)
     archive=publish(elections,args.output)
     atomic_write(args.output/'identities.json',encode(registry))

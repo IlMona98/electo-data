@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-2009",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 9,
+      "source": {
+        "id": "europee-2009",
+        "title": "Europee",
+        "category": "europee",
+        "year": 2009,
+        "dateLabel": "7 giugno 2009",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20090607.zip",
+        "sourceFile": "europee-20090607.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "PROVINCIA",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-20090607.zip",
+        "zipMember": "europee-20090607.txt",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA",
+              "PAVIA",
+              "MONTESCANO"
+            ],
+            "electors": 347,
+            "voters": 365,
+            "reason": "Nel file originale LOMBARDIA / PAVIA / MONTESCANO riporta 347 elettori e 365 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "LECCO",
+              "MORTERONE"
+            ],
+            "electors": 33,
+            "voters": 35,
+            "reason": "Nel file originale LOMBARDIA / LECCO / MORTERONE riporta 33 elettori e 35 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "europee-2004",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

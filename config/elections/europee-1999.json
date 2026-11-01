@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "europee-1999",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 17,
+      "source": {
+        "id": "europee-1999",
+        "title": "Europee",
+        "category": "europee",
+        "year": 1999,
+        "dateLabel": "13 giugno 1999",
+        "coverage": "Italia · voto sul territorio",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Voto estero escluso.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19990613.zip",
+        "sourceFile": "europee-19990613.txt",
+        "columns": [
+          "DESCRREG",
+          "DESCRCOMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "DESCRREG",
+          "DESCRPROV",
+          "DESCRCOMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/europee/europee-19990613.zip",
+        "zipMember": "europee-19990613.txt",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "PIEMONTE",
+              "ALESSANDRIA",
+              "GAVAZZANA"
+            ],
+            "electors": 92,
+            "voters": 108,
+            "reason": "Nel file originale PIEMONTE / ALESSANDRIA / GAVAZZANA riporta 92 elettori e 108 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE",
+              "ASTI",
+              "SAN GIORGIO SCARAMPI"
+            ],
+            "electors": 130,
+            "voters": 131,
+            "reason": "Nel file originale PIEMONTE / ASTI / SAN GIORGIO SCARAMPI riporta 130 elettori e 131 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "VENETO",
+              "VICENZA",
+              "ROSA'"
+            ],
+            "electors": 552,
+            "voters": 7456,
+            "reason": "Nel file originale VENETO / VICENZA / ROSA' riporta 552 elettori e 7456 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "europee-1994",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "not-applicable"
+    }
+  ]
+}

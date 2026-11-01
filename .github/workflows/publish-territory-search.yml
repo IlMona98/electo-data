@@ -1,9 +1,7 @@
-name: Pubblica ricerca territoriale
+name: Recupero manuale · Pubblica ricerca territoriale
 
+# Percorso di recupero manuale; la pubblicazione automatica è in publish-data.yml.
 on:
-  push:
-    branches: [main]
-    paths: ['scripts/publish_territory_search.py', '.github/workflows/publish-territory-search.yml']
   workflow_dispatch:
 
 concurrency:

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-20010513",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 15,
+      "source": {
+        "id": "camera-2001",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 2001,
+        "dateLabel": "13 maggio 2001",
+        "coverage": "Italia · voto proporzionale",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Valle d’Aosta esclusa. Sono i voti della scheda proporzionale della Camera, non i voti ai candidati uninominali né i seggi assegnati.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20010513.zip",
+        "sourceFile": "camera-20010513_Proporzionale.txt",
+        "columns": [
+          "CIRCOSCRIZIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "CIRCOSCRIZIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Circoscrizione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/camera/camera-20010513.zip",
+        "zipMember": "camera-20010513_Proporzionale.txt",
+        "eventID": "politiche-20010513",
+        "chamber": "camera",
+        "resultKind": "proportional-lists",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "LOMBARDIA 3",
+              "Voghera",
+              "MONTESCANO"
+            ],
+            "electors": 352,
+            "voters": 410,
+            "reason": "Nel file originale LOMBARDIA 3 / Voghera / MONTESCANO riporta 352 elettori e 410 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "PIEMONTE 2",
+              "Canelli",
+              "BERGOLO"
+            ],
+            "electors": 70,
+            "voters": 71,
+            "reason": "Nel file originale PIEMONTE 2 / Canelli / BERGOLO riporta 70 elettori e 71 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "camera-1996",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-2001",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "13/05/2001",
+        "headingPrefix": "Camera 13/05/2001",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "proporzionale",
+            "label": "Quota proporzionale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 155,
+            "listMetadata": true,
+            "heading": "Camera 13/05/2001 Area ITALIA"
+          },
+          {
+            "id": "uninominale",
+            "label": "Quota uninominale",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A&unipro=uni",
+            "format": "flat",
+            "expectedSeats": 475,
+            "heading": "Camera 13/05/2001 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 10,
+      "seatGroups": {
+        "electionID": "camera-2001",
+        "groups": [
+          {
+            "id": "seats-centrodestra",
+            "name": "Casa delle Libertà",
+            "members": [
+              "CASA DELLE LIBERTA'",
+              "FORZA ITALIA",
+              "ALLEANZA NAZIONALE"
+            ]
+          },
+          {
+            "id": "seats-centrosinistra",
+            "name": "L’Ulivo",
+            "members": [
+              "L'ULIVO",
+              "DEMOCRATICI SINISTRA",
+              "LA MARGHERITA",
+              "L'ULIVO - SVP",
+              "L'ULIVO - CON ILLY PER TRIESTE"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "seatGroupsOrder": 6
+    },
+    {
+      "order": 16,
+      "source": {
+        "id": "senato-2001",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 2001,
+        "dateLabel": "13 maggio 2001",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Aggregazione dei voti del file comunale originale, con elettori e votanti contati una sola volta per unità territoriale. Le percentuali si riferiscono esclusivamente al perimetro del file. Il file Senato comprende i voti ai gruppi/candidati nei collegi, inclusa Valle d’Aosta. Non è una seconda scheda proporzionale di lista come quella della Camera.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20010513.zip",
+        "sourceFile": "senato-20010513.txt",
+        "columns": [
+          "REGIONE",
+          "COMUNE",
+          "LISTA",
+          "VOTI_LISTA",
+          "ELETTORI",
+          "VOTANTI"
+        ],
+        "unit": [
+          "REGIONE",
+          "COLLEGIO",
+          "COMUNE"
+        ],
+        "level": "Regione",
+        "downloadURL": "https://elezionistorico.interno.gov.it/daithome/documenti/opendata/senato/senato-20010513.zip",
+        "zipMember": "senato-20010513.txt",
+        "eventID": "politiche-20010513",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "reviewedTurnoutExceptions": [
+          {
+            "unit": [
+              "PIEMONTE",
+              "Biella",
+              "VALDENGO"
+            ],
+            "electors": 1793,
+            "voters": 1797,
+            "reason": "Nel file originale PIEMONTE / Biella / VALDENGO riporta 1793 elettori e 1797 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          },
+          {
+            "unit": [
+              "LOMBARDIA",
+              "Pavia",
+              "MONTESCANO"
+            ],
+            "electors": 326,
+            "voters": 384,
+            "reason": "Nel file originale LOMBARDIA / Pavia / MONTESCANO riporta 326 elettori e 384 votanti. I valori sono conservati senza correzioni nei riepiloghi aggregati."
+          }
+        ],
+        "previousElectionID": "senato-1996",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-2001",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "13/05/2001",
+        "headingPrefix": "Senato 13/05/2001",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=13/05/2001&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 315,
+            "heading": "Senato 13/05/2001 Area ITALIA"
+          }
+        ]
+      },
+      "seatsOrder": 11,
+      "seatGroups": {
+        "electionID": "senato-2001",
+        "groups": [
+          {
+            "id": "seats-d2410c2842855c10",
+            "name": "L’Ulivo",
+            "members": [
+              "L'ULIVO",
+              "SVP-L'ULIVO"
+            ]
+          }
+        ],
+        "note": "Le candidature territoriali collegate all’Ulivo sono accorpate nella stessa voce."
+      },
+      "seatGroupsOrder": 12
+    }
+  ]
+}
