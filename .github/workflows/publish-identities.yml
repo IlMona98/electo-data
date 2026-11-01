@@ -3,7 +3,7 @@ name: Pubblica identità grafiche
 on:
   push:
     branches: [main]
-    paths: ['config/identities.json', 'public/symbols/**', 'scripts/identities.py', 'scripts/publish_identities.py', 'requirements.txt', '.github/workflows/publish-identities.yml']
+    paths: ['config/identities.json', 'public/symbols/**', 'scripts/identities.py', 'scripts/publish_identities.py', 'requirements.txt', 'config/seat-groups.json', 'tests/**', '.github/workflows/publish-identities.yml']
   workflow_dispatch:
 
 concurrency:
