@@ -564,6 +564,22 @@
         {
           "electionID": "senato-1953",
           "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1958",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1958",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1963",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1963",
+          "resultID": "835aada79e600fc2"
         }
       ],
       "hemicycleOrder": 10
@@ -658,7 +674,16 @@
         "Partito Monarchico Popolare",
         "PMP"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1958",
+          "resultID": "5de1de3f944e42ce"
+        },
+        {
+          "electionID": "senato-1958",
+          "resultID": "5de1de3f944e42ce"
+        }
+      ],
       "hemicycleOrder": 85
     },
     {
@@ -915,7 +940,20 @@
       "aliases": [
         "Union Valdôtaine"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1958",
+          "resultID": "027fcbbc3e6f2632"
+        },
+        {
+          "electionID": "camera-1963",
+          "resultID": "027fcbbc3e6f2632"
+        },
+        {
+          "electionID": "senato-1963",
+          "resultID": "027fcbbc3e6f2632"
+        }
+      ],
       "hemicycleOrder": 50
     },
     {

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-19580525",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 27,
+      "source": {
+        "id": "camera-1958",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 1958,
+        "dateLabel": "25 maggio 1958",
+        "coverage": "Italia · voto di lista",
+        "note": "Risultati nazionali e delle 32 circoscrizioni letti dalle tabelle ufficiali di Eligendo e riconciliati esattamente per ogni lista/gruppo, elettori e votanti. I 596 seggi elettivi sono quelli della tabella nazionale. Non vengono ricostruiti risultati comunali da fonti non riconciliate.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 25 maggio 1958",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "C",
+        "date": "25/05/1958",
+        "headingPrefix": "Camera 25/05/1958",
+        "level": "Circoscrizione",
+        "expectedTerritories": 32,
+        "eventID": "politiche-19580525",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "previousElectionID": "camera-1953",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-1958",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "25/05/1958",
+        "headingPrefix": "Camera 25/05/1958",
+        "totalSeats": 596,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Liste · intera Camera",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 596,
+            "listMetadata": true,
+            "heading": "Camera 25/05/1958 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 596 seggi elettivi del 1958, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 20
+    },
+    {
+      "order": 28,
+      "source": {
+        "id": "senato-1958",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 1958,
+        "dateLabel": "25 maggio 1958",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Nel Senato 1958 la somma delle tabelle regionali di Eligendo attribuisce al PSI 100 voti in più rispetto al riepilogo nazionale: viene pubblicato il solo riepilogo nazionale originale, senza correzioni o stime. I 246 seggi elettivi provengono dalla tabella nazionale; i senatori a vita sono esclusi.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 25 maggio 1958",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "S",
+        "date": "25/05/1958",
+        "headingPrefix": "Senato 25/05/1958",
+        "level": "Regione",
+        "expectedTerritories": 0,
+        "eventID": "politiche-19580525",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "previousElectionID": "senato-1953",
+        "comparisonTerritories": [
+          "national"
+        ],
+        "nationalOnly": true,
+        "nationalOnlyReason": "Nel Senato 1958 la somma delle tabelle regionali di Eligendo attribuisce al PSI 100 voti in più rispetto al riepilogo nazionale: viene pubblicato il solo riepilogo nazionale originale, senza correzioni o stime."
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-1958",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "25/05/1958",
+        "headingPrefix": "Senato 25/05/1958",
+        "totalSeats": 246,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 246,
+            "listMetadata": true,
+            "heading": "Senato 25/05/1958 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 246 seggi elettivi del 1958, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 21
+    }
+  ]
+}

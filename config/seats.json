@@ -932,6 +932,94 @@
         }
       ],
       "note": " Sono rappresentati tutti i 237 seggi elettivi del 1953, secondo la tabella nazionale di Eligendo."
+    },
+    {
+      "electionID": "camera-1958",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "25/05/1958",
+      "headingPrefix": "Camera 25/05/1958",
+      "totalSeats": 596,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 596,
+          "listMetadata": true,
+          "heading": "Camera 25/05/1958 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 596 seggi elettivi del 1958, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1958",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "25/05/1958",
+      "headingPrefix": "Senato 25/05/1958",
+      "totalSeats": 246,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=25/05/1958&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 246,
+          "listMetadata": true,
+          "heading": "Senato 25/05/1958 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 246 seggi elettivi del 1958, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1963",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "28/04/1963",
+      "headingPrefix": "Camera 28/04/1963",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=28/04/1963&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 28/04/1963 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1963, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1963",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "28/04/1963",
+      "headingPrefix": "Senato 28/04/1963",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=28/04/1963&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 28/04/1963 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1963, secondo il riparto nazionale Eligendo."
     }
   ]
 }

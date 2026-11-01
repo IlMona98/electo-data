@@ -28,9 +28,9 @@ I job hanno permessi limitati: scrittura dei contenuti per salvare i soli risult
 
 ## Copertura attuale
 
-**27 schede, 610 riepiloghi territoriali e 17 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
+**31 schede, 697 riepiloghi territoriali e 19 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
 
-- Politiche, **Camera e Senato**: 1953, 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
+- Politiche, **Camera e Senato**: 1963, 1958, 1953, 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
 - Europee: 2024, 2019, 2014, 2009, 2004, 1999, 1994.
 
 La Camera 1994–2001 riporta la scheda proporzionale; il Senato degli stessi anni riporta i gruppi/candidati. Il campo `resultKind` mantiene la distinzione nell’interfaccia. I file Senato di lista 2006, 2008, 2013 e 2022 escludono Valle d’Aosta, Trentino-Alto Adige ed estero; non si aggiungono voti uninominali a un denominatore di lista. Ogni record dichiara il perimetro in `coverage` e `note`.
@@ -154,3 +154,8 @@ Guida completa: [Configurare elezioni](docs/CONFIGURARE-ELEZIONI.md). Esempio: `
 ### Politiche 1953
 
 La consultazione comprende Camera e Senato, con 590 e 237 seggi elettivi letti da Eligendo. La Camera include 31 circoscrizioni riconciliate esattamente. Il Senato usa il solo riepilogo nazionale: le tabelle regionali e i file comunali presentano dati discordanti e non vengono corretti o stimati. La copertura `national-only` richiede la build aggiornata dell’app. Fonti, verifiche e limiti: [Politiche 1953](docs/POLITICHE-1953.md).
+
+
+### Politiche 1958 e 1963
+
+Aggiunte entrambe le consultazioni con Camera e Senato: 596/246 seggi nel 1958 e 630/315 nel 1963. Le Camere includono 32 circoscrizioni ciascuna; il Senato 1963 include 19 regioni. Il Senato 1958 usa il solo nazionale: i riepiloghi regionali attribuiscono al PSI 100 voti in più rispetto al nazionale. Nessuna correzione o stima. [Fonti e verifiche](docs/POLITICHE-1958-1963.md).
