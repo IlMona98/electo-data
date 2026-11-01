@@ -1,4 +1,5 @@
 name: Pubblica dettagli territoriali
+run-name: Dettagli territoriali · ${{ github.event_name }}
 
 on:
   push:
