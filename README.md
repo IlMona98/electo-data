@@ -6,7 +6,7 @@ Recupero automatico degli open data elettorali del Ministero dell’Interno e di
 
 1. GitHub Actions scarica i file originali del Ministero, seguendo soltanto reindirizzamenti HTTPS ai suoi domini verificati.
 2. Il convertitore deduplica gli elettori e i votanti ripetuti sulle righe di lista, aggrega i territori e riconcilia i conteggi.
-3. Soltanto se tutte le fonti superano i controlli vengono aggiornati i JSON e pubblicati su Pages. Se una fonte fallisce, l’ultima versione pubblica resta intatta e il workflow fallisce in modo visibile.
+3. Soltanto se tutte le fonti selezionate superano i controlli viene installata una copia coerente dei JSON e pubblicata su Pages; le altre schede conservano i propri conteggi. Se una fonte fallisce, l’ultima versione pubblica resta intatta e il workflow fallisce in modo visibile.
 4. Electo recupera il JSON online e conserva una copia sul dispositivo. La fonte dei dati resta il Ministero; GitHub ne distribuisce gli estratti.
 
 ## Endpoint
@@ -20,7 +20,7 @@ Il documento completo rimane un JSON compatto: l’iPhone non deve scaricare gli
 
 ## Attivazione
 
-Il workflow è `.github/workflows/refresh-data.yml`. Si esegue quando cambiano script/configurazione, su richiesta da **Actions → Aggiorna dati Eligendo → Run workflow**, e ogni giorno alle **04:37 UTC**. Gli orari programmati di GitHub possono subire ritardi.
+Il workflow automatico è `.github/workflows/publish-data.yml`, disponibile in **Actions → Configura e pubblica elezioni → Run workflow**. Su modifiche elabora soltanto le consultazioni interessate; ogni giorno alle **04:37 UTC** controlla tutte le fonti attive. Per una nuova consultazione scegliere prima `preview` e poi `publish`, indicando il suo ID. Gli orari programmati di GitHub possono subire ritardi. I vecchi workflow sono percorsi di recupero esclusivamente manuali.
 
 Per Pages: **Settings → Pages → Build and deployment → Source → GitHub Actions**. I JSON sul ramo `main` restano accessibili tramite l’endpoint alternativo anche se Pages non è ancora attivo. Se GitHub segnala restrizioni sulla scrittura del workflow, l’amministratore del repository deve autorizzare i permessi richiesti.
 
@@ -39,7 +39,7 @@ Il nazionale è la somma esatta dei territori del rispettivo file. Le unità dei
 
 Alcune fonti originali riportano più votanti che elettori per specifici comuni. I valori sono conservati tramite eccezioni revisionate per l’esatta unità e gli esatti conteggi; l’app li segnala nei pulsanti info. Camera 1994 contiene inoltre **-7 voti per RIN.SALENTINA** in `PUGLIA / Foggia - Lucera / Parte di Comune FOGGIA`: è conservata quella singola contribuzione nella somma, senza convertirla in positiva né azzerarla. Altre contribuzioni negative sono rifiutate. I risultati aggregati pubblicati sono sempre non negativi. Se la fonte corregge un’anomalia, la relativa nota non viene più emessa.
 
-Le percentuali si riferiscono al perimetro dei file. Non sono assegnazioni di seggi. Nuove consultazioni o formati richiedono un adattatore verificato e una voce in `sources.json`: la pipeline aggiorna automaticamente le fonti supportate, non promette di interpretare qualsiasi futuro file del Ministero.
+Le percentuali si riferiscono al perimetro dei file. Non sono assegnazioni di seggi. Le nuove consultazioni si configurano in `config/elections/`; i formati nuovi richiedono un adattatore verificato: la pipeline aggiorna automaticamente le fonti supportate, non promette di interpretare qualsiasi futuro file del Ministero.
 
 Fonti e attribuzione: **Ministero dell’Interno — Archivio storico delle elezioni / Eligendo**. Catalogo originale: https://elezionistorico.interno.gov.it/eligendo/opendata.php. Tutti gli indirizzi originali sono conservati in `sources.json` e nei risultati.
 
