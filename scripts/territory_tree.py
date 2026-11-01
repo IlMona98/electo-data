@@ -54,8 +54,10 @@ def build_tree(raw, config, verified):
     children=collections.defaultdict(list)
     for n in nodes.values():children[n['parentID']].append(n)
     for node in nodes.values():
-        require(node['electors']>0 and 0<=node['voters']<=node['electors'],'Invalid geographic turnout')
-        require(all(v>=0 for v in node['counts'].values()) and sum(node['counts'].values())<=node['voters'],'Invalid geographic votes')
+        if not (node['electors']>0 and 0<=node['voters']<=node['electors'] and all(v>=0 for v in node['counts'].values()) and sum(node['counts'].values())<=node['voters']):
+            # Keep exact source values in the partition, but never display an invalid
+            # local turnout/percentage. Empty historical municipalities occur often.
+            node['unavailableReason']='Conteggi locali non coerenti o senza elettori nella fonte ministeriale.'
         if children[node['id']]:
             sub=children[node['id']];counts=collections.Counter()
             for child in sub:counts.update(child['counts'])
