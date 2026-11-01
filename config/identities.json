@@ -18,13 +18,13 @@
       "label": "La Casa delle Libertà",
       "shortLabel": "CDX",
       "kind": "coalition",
-      "colorHex": "299BD6",
+      "colorHex": "397EB8",
       "aliases": [
         "La Casa delle Libertà",
         "La Casa delle Liberta'"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 65
     },
     {
       "id": "polo-delle-liberta",
@@ -106,7 +106,7 @@
       "label": "Alleanza Nazionale",
       "shortLabel": "AN",
       "kind": "party",
-      "colorHex": "34478F",
+      "colorHex": "485786",
       "aliases": [
         "Alleanza Nazionale"
       ],
@@ -168,13 +168,26 @@
       "label": "CasaPound",
       "shortLabel": "CP",
       "kind": "party",
-      "colorHex": "212121",
+      "colorHex": "62636F",
       "aliases": [
         "CasaPound",
         "CasaPound Italia"
       ],
       "bindings": [],
-      "hemicycleOrder": 95
+      "hemicycleOrder": 92
+    },
+    {
+      "id": "centro-cristiano-democratico",
+      "label": "Centro Cristiano Democratico",
+      "shortLabel": "CCD",
+      "kind": "party",
+      "colorHex": "6F8EAB",
+      "aliases": [
+        "Centro Cristiano Democratico",
+        "CCD"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 52
     },
     {
       "id": "centro-democratico",
@@ -190,14 +203,16 @@
     },
     {
       "id": "civica-popolare-lorenzin",
-      "label": "Civica Popolare Lorenzin",
+      "label": "Civica Popolare",
       "shortLabel": "CPL",
       "kind": "party",
       "colorHex": "DA4D91",
       "aliases": [
-        "Civica Popolare Lorenzin"
+        "Civica Popolare Lorenzin",
+        "Civica Popolare"
       ],
-      "bindings": []
+      "bindings": [],
+      "hemicycleOrder": 38
     },
     {
       "id": "democrazia-cristiana",
@@ -211,6 +226,19 @@
       ],
       "bindings": [],
       "hemicycleOrder": 55
+    },
+    {
+      "id": "democrazia-proletaria",
+      "label": "Democrazia Proletaria",
+      "shortLabel": "DP",
+      "kind": "party",
+      "colorHex": "873E62",
+      "aliases": [
+        "Democrazia Proletaria",
+        "DP"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 8
     },
     {
       "id": "europa-verde",
@@ -250,6 +278,18 @@
       "hemicycleOrder": 60
     },
     {
+      "id": "forza-nuova",
+      "label": "Forza Nuova",
+      "shortLabel": "FN",
+      "kind": "party",
+      "colorHex": "765C62",
+      "aliases": [
+        "Forza Nuova"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 92
+    },
+    {
       "id": "fratelli-d-italia",
       "label": "Fratelli d'Italia",
       "shortLabel": "FdI",
@@ -284,12 +324,24 @@
       "label": "Futuro Nazionale",
       "shortLabel": "FN",
       "kind": "party",
-      "colorHex": "212121",
+      "colorHex": "55576B",
       "aliases": [
         "Futuro Nazionale"
       ],
       "bindings": [],
       "hemicycleOrder": 95
+    },
+    {
+      "id": "il-popolo-della-famiglia",
+      "label": "Il Popolo della Famiglia",
+      "shortLabel": "PdF",
+      "kind": "party",
+      "colorHex": "7D7BA8",
+      "aliases": [
+        "Il Popolo della Famiglia"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 85
     },
     {
       "id": "impegno-civico",
@@ -437,7 +489,7 @@
       "label": "Movimento Sociale Italiano",
       "shortLabel": "MSI",
       "kind": "party",
-      "colorHex": "212121",
+      "colorHex": "55576B",
       "aliases": [
         "Movimento Sociale Italiano",
         "MSI"
@@ -517,7 +569,7 @@
         "Partito Cristiano Sociale"
       ],
       "bindings": [],
-      "hemicycleOrder": 28
+      "hemicycleOrder": 32
     },
     {
       "id": "partito-democratico",
@@ -531,6 +583,19 @@
       ],
       "bindings": [],
       "hemicycleOrder": 30
+    },
+    {
+      "id": "partito-dei-comunisti-italiani",
+      "label": "Partito dei Comunisti Italiani",
+      "shortLabel": "PdCI",
+      "kind": "party",
+      "colorHex": "933E50",
+      "aliases": [
+        "Partito dei Comunisti Italiani",
+        "PdCI"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 10
     },
     {
       "id": "partito-dei-contadini-d-italia",
@@ -552,27 +617,27 @@
       "label": "Partito Democratico della Sinistra",
       "shortLabel": "PDS",
       "kind": "party",
-      "colorHex": "E94F39",
+      "colorHex": "AD3847",
       "aliases": [
         "Partito Democratico della Sinistra",
         "PDS"
       ],
       "bindings": [],
-      "hemicycleOrder": 30
+      "hemicycleOrder": 28
     },
     {
       "id": "partito-liberale-italiano",
       "label": "Partito Liberale Italiano",
       "shortLabel": "PLI",
       "kind": "party",
-      "colorHex": "3D6386",
+      "colorHex": "4878B7",
       "aliases": [
         "Partito Liberale Italiano",
         "PLI",
         "Blocco Nazionale"
       ],
       "bindings": [],
-      "hemicycleOrder": 80
+      "hemicycleOrder": 78
     },
     {
       "id": "partito-monarchico-popolare",
@@ -602,11 +667,23 @@
       "hemicycleOrder": 90
     },
     {
+      "id": "partito-radicale",
+      "label": "Partito Radicale",
+      "shortLabel": "PR",
+      "kind": "party",
+      "colorHex": "C6A13A",
+      "aliases": [
+        "Partito Radicale"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 42
+    },
+    {
       "id": "partito-repubblicano-italiano",
       "label": "Partito Repubblicano Italiano",
       "shortLabel": "PRI",
       "kind": "party",
-      "colorHex": "477C74",
+      "colorHex": "397D68",
       "aliases": [
         "Partito Repubblicano Italiano",
         "Partito Repubblicano Italiano - ALA",
@@ -634,20 +711,20 @@
       "label": "Partito Socialista Italiano",
       "shortLabel": "PSI",
       "kind": "party",
-      "colorHex": "C24552",
+      "colorHex": "D95770",
       "aliases": [
         "Partito Socialista Italiano",
         "PSI"
       ],
       "bindings": [],
-      "hemicycleOrder": 20
+      "hemicycleOrder": 22
     },
     {
       "id": "partito-socialista-democratico-italiano",
       "label": "Partito Socialista Democratico Italiano",
       "shortLabel": "PSDI",
       "kind": "party",
-      "colorHex": "D5812B",
+      "colorHex": "DE8274",
       "aliases": [
         "Partito Socialista Democratico Italiano",
         "PSDI"
@@ -673,7 +750,7 @@
       "label": "Popolo della Libertà",
       "shortLabel": "PdL",
       "kind": "party",
-      "colorHex": "299BD6",
+      "colorHex": "397EB8",
       "aliases": [
         "Popolo della Libertà",
         "Popolo della Liberta'",
@@ -681,7 +758,7 @@
         "Il Popolo della Liberta'"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 65
     },
     {
       "id": "potere-al-popolo",
@@ -696,23 +773,35 @@
       "bindings": []
     },
     {
+      "id": "radicali-italiani",
+      "label": "Radicali Italiani",
+      "shortLabel": "RI",
+      "kind": "party",
+      "colorHex": "DAB85A",
+      "aliases": [
+        "Radicali Italiani"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 42
+    },
+    {
       "id": "rifondazione-comunista",
       "label": "Rifondazione Comunista",
       "shortLabel": "RC",
       "kind": "party",
-      "colorHex": "8F2333",
+      "colorHex": "B4324D",
       "aliases": [
         "Rifondazione Comunista"
       ],
       "bindings": [],
-      "hemicycleOrder": 5
+      "hemicycleOrder": 12
     },
     {
       "id": "scelta-civica",
       "label": "Scelta Civica",
       "shortLabel": "SC",
       "kind": "party",
-      "colorHex": "80A9C1",
+      "colorHex": "57A0B5",
       "aliases": [
         "Scelta Civica",
         "Scleta Civica con Monti per l'Italia"
@@ -725,7 +814,7 @@
       "label": "Sinistra Ecologia Libertà",
       "shortLabel": "SEL",
       "kind": "party",
-      "colorHex": "78A83F",
+      "colorHex": "AC527D",
       "aliases": [
         "Sinistra Ecologia Libertà",
         "Sinistra Ecologia Liberta'"
@@ -738,7 +827,7 @@
       "label": "Sinistra Italiana",
       "shortLabel": "SI",
       "kind": "party",
-      "colorHex": "C24552",
+      "colorHex": "D0475E",
       "aliases": [
         "Sinistra Italiana"
       ],
@@ -790,7 +879,7 @@
       "label": "Unione di Centro",
       "shortLabel": "UDC",
       "kind": "party",
-      "colorHex": "55A2CC",
+      "colorHex": "8C9BB6",
       "aliases": [
         "Unione di Centro",
         "UDC"
