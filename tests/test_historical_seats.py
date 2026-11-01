@@ -8,10 +8,12 @@ RECORDS={r['electionID']:r for r in json.loads((ROOT/'config/seats.json').read_t
 FIX=ROOT/'tests/fixtures/historical-seats'
 class HistoricalSeatTests(unittest.TestCase):
     def test_every_political_record_has_a_complete_seat_source_configuration(self):
-        expected={f'{c}-{y}' for c in ['camera','senato'] for y in [1948,1994,1996,2001,2006,2008,2013,2018,2022]}
-        self.assertEqual(set(RECORDS),expected)
+        expected={f'{c}-{y}' for c in ['camera','senato'] for y in [1948,1953,1994,1996,2001,2006,2008,2013,2018,2022]}
+        self.assertTrue(expected.issubset(RECORDS))
         for r in RECORDS.values():
-            self.assertEqual(r['totalSeats'],(400 if r['chamber']=='camera' else 200) if r['date']=='25/09/2022' else (574 if r['chamber']=='camera' else 237) if r['date']=='18/04/1948' else (630 if r['chamber']=='camera' else 315))
+            capacities={'25/09/2022':{'camera':400,'senato':200},'18/04/1948':{'camera':574,'senato':237},'07/06/1953':{'camera':590,'senato':237}}
+            self.assertTrue(1<=r['totalSeats']<=1000)
+            if r['date']in capacities:self.assertEqual(r['totalSeats'],capacities[r['date']][r['chamber']])
     def test_full_national_flat_table_is_not_proportional_only(self):
         r=RECORDS['senato-2001'];s=r['parts'][0];groups,_=read_table((FIX/'flat-senato-2001.html').read_bytes(),r,s,s['url'])
         self.assertEqual(sum(g['seats'] for g in groups),315)

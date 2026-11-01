@@ -28,9 +28,9 @@ I job hanno permessi limitati: scrittura dei contenuti per salvare i soli risult
 
 ## Copertura attuale
 
-**25 schede, 577 riepiloghi territoriali e 16 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
+**27 schede, 610 riepiloghi territoriali e 17 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
 
-- Politiche, **Camera e Senato**: 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
+- Politiche, **Camera e Senato**: 1953, 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
 - Europee: 2024, 2019, 2014, 2009, 2004, 1999, 1994.
 
 La Camera 1994–2001 riporta la scheda proporzionale; il Senato degli stessi anni riporta i gruppi/candidati. Il campo `resultKind` mantiene la distinzione nell’interfaccia. I file Senato di lista 2006, 2008, 2013 e 2022 escludono Valle d’Aosta, Trentino-Alto Adige ed estero; non si aggiungono voti uninominali a un denominatore di lista. Ogni record dichiara il perimetro in `coverage` e `note`.
@@ -90,7 +90,7 @@ Le tabelle nazionali Eligendo arricchiscono i risultati con `coalitionID` e `coa
 
 ### Riparti disponibili e limiti dell’estensione
 
-I riparti completi dei seggi sono verificati per tutte le **18 schede Camera/Senato del 1948, 1994, 1996, 2001, 2006, 2008, 2013, 2018 e 2022**. Senato 2022 controlla nove pagine, includendo i sei collegi speciali del Trentino-Alto Adige: il totale è 200, senza completamenti stimati. Campobase è sommata al raggruppamento «Centrosinistra» nell’emiciclo; la composizione locale, comprendente anche Azione/Italia Viva, resta esplicita nelle note di verifica e non attribuisce il seggio a un singolo partito. Per la Camera 1994–2001 le quote proporzionale (155) e uninominale (475) sono sommate per coalizione/lista nella legenda: sommano esattamente 630 senza attribuire le vittorie di coalizione al suo partito maggiore. Camera 1994 verifica esplicitamente l’eletto di tutti i 475 collegi. Il Senato 2006 include le indicazioni di eletto da recupero nei collegi speciali, senza dedurre vincitori dalle percentuali.
+I riparti completi dei seggi sono verificati per tutte le **20 schede Camera/Senato del 1953, 1948, 1994, 1996, 2001, 2006, 2008, 2013, 2018 e 2022**. Senato 2022 controlla nove pagine, includendo i sei collegi speciali del Trentino-Alto Adige: il totale è 200, senza completamenti stimati. Campobase è sommata al raggruppamento «Centrosinistra» nell’emiciclo; la composizione locale, comprendente anche Azione/Italia Viva, resta esplicita nelle note di verifica e non attribuisce il seggio a un singolo partito. Per la Camera 1994–2001 le quote proporzionale (155) e uninominale (475) sono sommate per coalizione/lista nella legenda: sommano esattamente 630 senza attribuire le vittorie di coalizione al suo partito maggiore. Camera 1994 verifica esplicitamente l’eletto di tutti i 475 collegi. Il Senato 2006 include le indicazioni di eletto da recupero nei collegi speciali, senza dedurre vincitori dalle percentuali.
 
 I nuovi confronti con l’elezione precedente sono dichiarati esplicitamente e limitati al nazionale. Non si confronta il Senato 2022 con il perimetro diverso del 2018, né il voto di lista del Senato 2006 con i gruppi del 2001. Non si confrontano regioni storiche per somiglianza del nome. Il registro grafico del proprietario non viene modificato: le vecchie denominazioni senza associazione restano neutre e vengono incluse nel catalogo `identity-candidates.json`.
 
@@ -149,3 +149,8 @@ La copertura complessiva è ora di **25 schede / 16 consultazioni**, di cui 18 s
 Ogni consultazione si configura in un solo file in `config/elections/`, con Camera e Senato insieme. `scripts/configure_election.py` crea bozze, verifica la configurazione, pianifica l’elaborazione incrementale e prepara un’anteprima separata dai dati pubblici. Il workflow **Configura e pubblica elezioni** coordina pubblicazione, identità, gerarchie e ricerca; i vecchi workflow sono esclusivamente manuali. Le esportazioni storiche `sources.json` e `config/*seats*.json` rimangono compatibili ma sono generate dal nuovo percorso. `config/identities.json` rimane modificabile dal proprietario.
 
 Guida completa: [Configurare elezioni](docs/CONFIGURARE-ELEZIONI.md). Esempio: `python scripts/configure_election.py new --template europee-2024 --event europee-2029 --year 2029 --date-label 'DATA EFFETTIVA'`, completare la bozza, poi **Actions → Configura e pubblica elezioni → preview**. Solo dopo i controlli scegliere **publish**. L’esempio non dichiara la data di una futura elezione.
+
+
+### Politiche 1953
+
+La consultazione comprende Camera e Senato, con 590 e 237 seggi elettivi letti da Eligendo. La Camera include 31 circoscrizioni riconciliate esattamente. Il Senato usa il solo riepilogo nazionale: le tabelle regionali e i file comunali presentano dati discordanti e non vengono corretti o stimati. La copertura `national-only` richiede la build aggiornata dell’app. Fonti, verifiche e limiti: [Politiche 1953](docs/POLITICHE-1953.md).

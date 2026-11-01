@@ -556,7 +556,16 @@
       "aliases": [
         "Partito Comunista Italiano"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1953",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1953",
+          "resultID": "835aada79e600fc2"
+        }
+      ],
       "hemicycleOrder": 10
     },
     {
@@ -663,7 +672,12 @@
         "P.Naz.Mon.All.D.Lav.",
         "P.NAZ.MONARCHICO"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "senato-1953",
+          "resultID": "3eb40e9553f7b92d"
+        }
+      ],
       "hemicycleOrder": 90
     },
     {
@@ -871,7 +885,12 @@
         "PPST",
         "Partito Popolare Sudtirolese"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "senato-1953",
+          "resultID": "bed836225e236448"
+        }
+      ],
       "hemicycleOrder": 45
     },
     {

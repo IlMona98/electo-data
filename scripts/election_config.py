@@ -8,7 +8,7 @@ from aggregate import require
 
 KINDS = {'seats': 2, 'partySeats': 1, 'seatGroups': 1}
 LEGACY = {'seats': 'seats', 'partySeats': 'party-seats', 'seatGroups': 'seat-groups'}
-SOURCE_KEYS = set('adapter category chamber columns comparisonAliases comparisonTerritories coverage date dateLabel downloadURL eventID expectedTerritories headingPrefix id level listAliases note previousElectionID resultKind reviewedTurnoutExceptions reviewedVoteExceptions sourceFile sourceURL tables title type unit year zipMember'.split())
+SOURCE_KEYS = set('adapter category chamber columns comparisonAliases comparisonTerritories coverage date dateLabel downloadURL eventID expectedTerritories headingPrefix id level listAliases note nationalOnly nationalOnlyReason previousElectionID resultKind reviewedTurnoutExceptions reviewedVoteExceptions sourceFile sourceURL tables title type unit year zipMember'.split())
 
 def read(path):
     return json.loads(Path(path).read_text())
@@ -62,6 +62,9 @@ def validate_source(source):
     require(source.get('category') in ('politiche','europee'), 'Tipo di elezione non supportato')
     adapter = source.get('adapter', 'csv')
     require(adapter in ('csv','aggregate-tables','historical-vote-pages'), 'Formato non supportato: serve un adattatore verificato')
+    if source.get('nationalOnly') is not None:
+        require(adapter=='historical-vote-pages'and type(source['nationalOnly'])is bool,'Copertura solo nazionale non supportata per questo adattatore')
+        if source['nationalOnly']:require(bool(source.get('nationalOnlyReason'))and source['nationalOnlyReason']in source['note'],'Motivare la copertura solo nazionale')
     if adapter == 'historical-vote-pages':
         from seats import official_page
         q = official_page(source['sourceURL'])

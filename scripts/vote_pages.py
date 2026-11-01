@@ -56,8 +56,12 @@ def parse_votes(raw, config, url):
 
 def build(config, fetcher=download_page):
     url=config['downloadURL'];raw=fetcher(url);national=parse_votes(raw,config,url)
-    urls=child_pages(raw,url)
-    require(len(urls)==config['expectedTerritories'] and len(set(urls))==len(urls),'Incomplete historical voting territories')
+    national_only=config.get('nationalOnly',False)
+    require(type(national_only)is bool,'Invalid national-only policy')
+    if national_only:
+        require(config.get('nationalOnlyReason')and config['nationalOnlyReason']in config['note'],'A national-only source needs an explicit coverage explanation')
+    urls=[] if national_only else child_pages(raw,url)
+    require((national_only or len(urls)==config['expectedTerritories'])and len(set(urls))==len(urls),'Incomplete historical voting territories')
     with ThreadPoolExecutor(max_workers=4)as pool:documents=list(zip(urls,pool.map(fetcher,urls)))
     territories=[parse_votes(body,config,u)for u,body in documents]
     require(len({t['id']for t in territories})==len(territories),'Duplicate historical voting area')
@@ -69,15 +73,16 @@ def build(config, fetcher=download_page):
             require(key in by_name,'Unreviewed territorial voting label: '+row['name'])
             target=slug(by_name[key])
             if target!=row['id']:row['nationalResultID']=target
-    for key in ['electors','voters']:
+    for key in [] if national_only else ['electors','voters']:
         require(sum(t[key]for t in territories)==national[key],'Historical turnout does not reconcile: '+key)
     totals=Counter()
     for t in territories:
         for r in t['results']:totals[r.get('nationalResultID',r['id'])]+=r['votes']
-    require(totals==Counter({r['id']:r['votes']for r in national['results']}),'Historical territorial votes do not reconcile')
-    private={'adapter','downloadURL','type','date','headingPrefix','level','expectedTerritories','listAliases'}
+    require(national_only or totals==Counter({r['id']:r['votes']for r in national['results']}),'Historical territorial votes do not reconcile')
+    private={'adapter','downloadURL','type','date','headingPrefix','level','expectedTerritories','listAliases','nationalOnly','nationalOnlyReason'}
     result={k:v for k,v in config.items()if k not in private}
     stamp=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
-    result.update(territories=[national]+sorted(territories,key=lambda t:t['name']),sourceSHA256=sha256(raw).hexdigest(),sourceUnits=len(territories),retrievedAt=stamp,checkedAt=stamp,
+    result.update(territories=[national]+sorted(territories,key=lambda t:t['name']),sourceSHA256=sha256(raw).hexdigest(),sourceUnits=1 if national_only else len(territories),retrievedAt=stamp,checkedAt=stamp,
                   sourceDocuments=[dict(url=u,sha256=sha256(body).hexdigest())for u,body in [(url,raw)]+documents])
+    if national_only:result['territorialCoverage']='national-only'
     return result

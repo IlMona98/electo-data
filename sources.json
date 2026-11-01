@@ -1477,5 +1477,57 @@
     "eventID": "politiche-19480418",
     "chamber": "senato",
     "resultKind": "groups"
+  },
+  {
+    "id": "camera-1953",
+    "title": "Camera dei deputati",
+    "category": "politiche",
+    "year": 1953,
+    "dateLabel": "7 giugno 1953",
+    "coverage": "Italia · voto di lista",
+    "note": "Voti nazionali e delle 31 circoscrizioni letti dalle tabelle originali di Eligendo e riconciliati esattamente per ciascuna lista, elettori e votanti. Il riparto riporta tutti i 590 seggi della Camera. Non si usano i file comunali del 1953, che presentano conteggi discordanti e unità incoerenti.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=07/06/1953&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "sourceFile": "Tabelle Eligendo del 7 giugno 1953",
+    "adapter": "historical-vote-pages",
+    "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=07/06/1953&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "type": "C",
+    "date": "07/06/1953",
+    "headingPrefix": "Camera 07/06/1953",
+    "level": "Circoscrizione",
+    "expectedTerritories": 31,
+    "eventID": "politiche-19530607",
+    "chamber": "camera",
+    "resultKind": "lists",
+    "previousElectionID": "camera-1948",
+    "comparisonTerritories": [
+      "national"
+    ]
+  },
+  {
+    "id": "senato-1953",
+    "title": "Senato della Repubblica",
+    "category": "politiche",
+    "year": 1953,
+    "dateLabel": "7 giugno 1953",
+    "coverage": "Italia · voto ai gruppi",
+    "note": "Voti e seggi letti direttamente dal riepilogo nazionale ufficiale di Eligendo. Per il Senato 1953 le tabelle regionali di Eligendo non si riconciliano con il riepilogo nazionale: il dettaglio regionale non è pubblicato e i conteggi nazionali non sono ricostruiti né corretti. I 237 seggi rappresentati sono elettivi; i senatori a vita sono esclusi. La voce ALTRI GRUPPI è conservata come pubblicata dal Ministero.",
+    "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=07/06/1953&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "sourceFile": "Tabelle Eligendo del 7 giugno 1953",
+    "adapter": "historical-vote-pages",
+    "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=07/06/1953&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+    "type": "S",
+    "date": "07/06/1953",
+    "headingPrefix": "Senato 07/06/1953",
+    "level": "Regione",
+    "expectedTerritories": 0,
+    "eventID": "politiche-19530607",
+    "chamber": "senato",
+    "resultKind": "groups",
+    "previousElectionID": "senato-1948",
+    "comparisonTerritories": [
+      "national"
+    ],
+    "nationalOnly": true,
+    "nationalOnlyReason": "Per il Senato 1953 le tabelle regionali di Eligendo non si riconciliano con il riepilogo nazionale: il dettaglio regionale non è pubblicato e i conteggi nazionali non sono ricostruiti né corretti."
   }
 ]

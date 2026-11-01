@@ -109,8 +109,9 @@ def read_table(raw,record,source,url):
 
 
 def allocation(record,fetcher=download_page):
-    capacities={'camera':574,'senato':237} if record['date']=='18/04/1948' else {'camera':630,'senato':315}
-    require(record['chamber'] in capacities and record['totalSeats']==capacities[record['chamber']],'Wrong historical chamber capacity')
+    require(record['chamber'] in ('camera','senato')and type(record['totalSeats'])is int and 1<=record['totalSeats']<=1000,'Wrong historical chamber capacity')
+    # Capacity varies before 1963. Every component and their exact sum must match
+    # the configured capacity; no allocation is inferred from a hard-coded era.
     require(record['parts'] and len({s['id'] for s in record['parts']})==len(record['parts']),'Duplicate historical seat component')
     totals=Counter();names={};details={};audit=[];pages=[]
     for source in record['parts']:
