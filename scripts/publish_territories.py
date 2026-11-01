@@ -8,6 +8,7 @@ import zipfile
 from aggregate import require
 from sync import fetch,encode,atomic_write
 from territory_tree import build_tree,ancestor_ids
+from publish_territory_search import publish_search
 ROOT=Path(__file__).resolve().parents[1]
 
 def publish_tree(tree,election,output):
@@ -20,6 +21,7 @@ def publish_tree(tree,election,output):
         atomic_write(directory/name,payload)
         references.append({k:root[k]for k in ['id','name','level','parentID']}|dict(path=name,sha256=digest))
     index=dict(schemaVersion=1,electionID=election['id'],sourceSHA256=election['sourceSHA256'],regions=references,levels=tree['levels'])
+    index['search']=publish_search(directory,index)
     atomic_write(directory/'index.json',encode(index));return index
 
 def main():
