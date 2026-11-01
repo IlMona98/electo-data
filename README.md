@@ -28,9 +28,9 @@ I job hanno permessi limitati: scrittura dei contenuti per salvare i soli risult
 
 ## Copertura attuale
 
-**31 schede, 697 riepiloghi territoriali e 19 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
+**45 schede, 1.003 riepiloghi territoriali e 26 consultazioni nell’app**, con le politiche del 1948 e le consultazioni già incluse dal 1994 al 2024:
 
-- Politiche, **Camera e Senato**: 1963, 1958, 1953, 1948, 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
+- Politiche, **Camera e Senato**: 2022, 2018, 2013, 2008, 2006, 2001, 1996, 1994, 1992, 1987, 1983, 1979, 1976, 1972, 1968, 1963, 1958, 1953, 1948. I due rami sono accorpati nella stessa pagina ma conservano risultati distinti.
 - Europee: 2024, 2019, 2014, 2009, 2004, 1999, 1994.
 
 La Camera 1994–2001 riporta la scheda proporzionale; il Senato degli stessi anni riporta i gruppi/candidati. Il campo `resultKind` mantiene la distinzione nell’interfaccia. I file Senato di lista 2006, 2008, 2013 e 2022 escludono Valle d’Aosta, Trentino-Alto Adige ed estero; non si aggiungono voti uninominali a un denominatore di lista. Ogni record dichiara il perimetro in `coverage` e `note`.
@@ -159,3 +159,8 @@ La consultazione comprende Camera e Senato, con 590 e 237 seggi elettivi letti d
 ### Politiche 1958 e 1963
 
 Aggiunte entrambe le consultazioni con Camera e Senato: 596/246 seggi nel 1958 e 630/315 nel 1963. Le Camere includono 32 circoscrizioni ciascuna; il Senato 1963 include 19 regioni. Il Senato 1958 usa il solo nazionale: i riepiloghi regionali attribuiscono al PSI 100 voti in più rispetto al nazionale. Nessuna correzione o stima. [Fonti e verifiche](docs/POLITICHE-1958-1963.md).
+
+
+### Completamento delle Politiche fino al 1992
+
+Aggiunte le consultazioni 1968, 1972, 1976, 1979, 1983, 1987 e 1992 con entrambi i rami e 630/315 seggi elettivi. Undici nuove serie territoriali si riconciliano esattamente; Senato 1987 e Camera/Senato 1992 restano nazionali per incoerenze delle tabelle territoriali. È verificato l’alias dell’apostrofo nella Camera 1979. [Fonti, copertura, identità e verifiche](docs/POLITICHE-1968-1992.md).

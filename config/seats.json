@@ -1020,6 +1020,314 @@
         }
       ],
       "note": " Sono rappresentati tutti i 315 seggi elettivi del 1963, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1968",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "19/05/1968",
+      "headingPrefix": "Camera 19/05/1968",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=19/05/1968&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 19/05/1968 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1968, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1968",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "19/05/1968",
+      "headingPrefix": "Senato 19/05/1968",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=19/05/1968&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 19/05/1968 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1968, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1972",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "07/05/1972",
+      "headingPrefix": "Camera 07/05/1972",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=07/05/1972&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 07/05/1972 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1972, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1972",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "07/05/1972",
+      "headingPrefix": "Senato 07/05/1972",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=07/05/1972&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 07/05/1972 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1972, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1976",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "20/06/1976",
+      "headingPrefix": "Camera 20/06/1976",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=20/06/1976&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 20/06/1976 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1976, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1976",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "20/06/1976",
+      "headingPrefix": "Senato 20/06/1976",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=20/06/1976&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 20/06/1976 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1976, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1979",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "03/06/1979",
+      "headingPrefix": "Camera 03/06/1979",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 03/06/1979 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1979, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1979",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "03/06/1979",
+      "headingPrefix": "Senato 03/06/1979",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 03/06/1979 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1979, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1983",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "26/06/1983",
+      "headingPrefix": "Camera 26/06/1983",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 26/06/1983 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1983, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1983",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "26/06/1983",
+      "headingPrefix": "Senato 26/06/1983",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 26/06/1983 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1983, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1987",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "14/06/1987",
+      "headingPrefix": "Camera 14/06/1987",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=14/06/1987&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 14/06/1987 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1987, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1987",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "14/06/1987",
+      "headingPrefix": "Senato 14/06/1987",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=14/06/1987&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 14/06/1987 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1987, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "camera-1992",
+      "adapter": "historical-pages",
+      "chamber": "camera",
+      "type": "C",
+      "date": "05/04/1992",
+      "headingPrefix": "Camera 05/04/1992",
+      "totalSeats": 630,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Liste · intera Camera",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=05/04/1992&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 630,
+          "listMetadata": true,
+          "heading": "Camera 05/04/1992 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 630 seggi elettivi del 1992, secondo il riparto nazionale Eligendo."
+    },
+    {
+      "electionID": "senato-1992",
+      "adapter": "historical-pages",
+      "chamber": "senato",
+      "type": "S",
+      "date": "05/04/1992",
+      "headingPrefix": "Senato 05/04/1992",
+      "totalSeats": 315,
+      "unreportedSeats": 0,
+      "parts": [
+        {
+          "id": "italia",
+          "label": "Gruppi · intero Senato",
+          "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=05/04/1992&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+          "format": "flat",
+          "expectedSeats": 315,
+          "listMetadata": true,
+          "heading": "Senato 05/04/1992 Area ITALIA"
+        }
+      ],
+      "note": " Sono rappresentati tutti i 315 seggi elettivi del 1992, secondo il riparto nazionale Eligendo."
     }
   ]
 }

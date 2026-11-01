@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-19790603",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 37,
+      "source": {
+        "id": "camera-1979",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 1979,
+        "dateLabel": "3 giugno 1979",
+        "coverage": "Italia · voto di lista",
+        "note": "Risultati nazionali e delle 32 circoscrizioni letti dalle tabelle ufficiali di Eligendo e riconciliati esattamente per elettori, votanti e ciascuna lista/gruppo. Sono rappresentati tutti i 630 seggi elettivi del riparto nazionale. Le formazioni congiunte restano distinte dai singoli partiti. La variante territoriale UNITA DELLA SINISTRA è collegata alla voce nazionale UNITA' DELLA SINISTRA conservando nome e voti originali.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 3 giugno 1979",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "C",
+        "date": "03/06/1979",
+        "headingPrefix": "Camera 03/06/1979",
+        "level": "Circoscrizione",
+        "expectedTerritories": 32,
+        "eventID": "politiche-19790603",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "previousElectionID": "camera-1976",
+        "comparisonTerritories": [
+          "national"
+        ],
+        "listAliases": {
+          "UNITA DELLA SINISTRA": "UNITA' DELLA SINISTRA"
+        }
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-1979",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "03/06/1979",
+        "headingPrefix": "Camera 03/06/1979",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Liste · intera Camera",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 630,
+            "listMetadata": true,
+            "heading": "Camera 03/06/1979 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 630 seggi elettivi del 1979, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 30
+    },
+    {
+      "order": 38,
+      "source": {
+        "id": "senato-1979",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 1979,
+        "dateLabel": "3 giugno 1979",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Risultati nazionali e delle 20 regioni letti dalle tabelle ufficiali di Eligendo e riconciliati esattamente per elettori, votanti e ciascuna lista/gruppo. Sono rappresentati tutti i 315 seggi elettivi del riparto nazionale. Le formazioni congiunte restano distinte dai singoli partiti.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 3 giugno 1979",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "S",
+        "date": "03/06/1979",
+        "headingPrefix": "Senato 03/06/1979",
+        "level": "Regione",
+        "expectedTerritories": 20,
+        "eventID": "politiche-19790603",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "previousElectionID": "senato-1976",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-1979",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "03/06/1979",
+        "headingPrefix": "Senato 03/06/1979",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=03/06/1979&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 315,
+            "listMetadata": true,
+            "heading": "Senato 03/06/1979 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 315 seggi elettivi del 1979, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 31
+    }
+  ]
+}

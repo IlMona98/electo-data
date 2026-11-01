@@ -237,7 +237,32 @@
         "Democrazia Proletaria",
         "DP"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1976",
+          "resultID": "6d69b3864a44b837"
+        },
+        {
+          "electionID": "senato-1976",
+          "resultID": "6d69b3864a44b837"
+        },
+        {
+          "electionID": "camera-1983",
+          "resultID": "6d69b3864a44b837"
+        },
+        {
+          "electionID": "senato-1983",
+          "resultID": "6d69b3864a44b837"
+        },
+        {
+          "electionID": "camera-1987",
+          "resultID": "6d69b3864a44b837"
+        },
+        {
+          "electionID": "senato-1987",
+          "resultID": "6d69b3864a44b837"
+        }
+      ],
       "hemicycleOrder": 8
     },
     {
@@ -261,7 +286,16 @@
       "aliases": [
         "Federazione dei Verdi"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1987",
+          "resultID": "e51b4b408e483c34"
+        },
+        {
+          "electionID": "senato-1987",
+          "resultID": "e51b4b408e483c34"
+        }
+      ],
       "hemicycleOrder": 32
     },
     {
@@ -456,7 +490,16 @@
         "Lega Nord",
         "Lega Nord-Die Freiheitlichen-Basta Euro"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1992",
+          "resultID": "f79388140eb0396f"
+        },
+        {
+          "electionID": "senato-1992",
+          "resultID": "f79388140eb0396f"
+        }
+      ],
       "hemicycleOrder": 50
     },
     {
@@ -494,7 +537,48 @@
         "Movimento Sociale Italiano",
         "MSI"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1976",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "senato-1976",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "camera-1979",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "senato-1979",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "camera-1983",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "senato-1983",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "camera-1987",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "senato-1987",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "camera-1992",
+          "resultID": "b492644e3806dad0"
+        },
+        {
+          "electionID": "senato-1992",
+          "resultID": "b492644e3806dad0"
+        }
+      ],
       "hemicycleOrder": 95
     },
     {
@@ -579,6 +663,46 @@
         },
         {
           "electionID": "senato-1963",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1968",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1972",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1976",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1976",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1979",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1979",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1983",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1983",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "camera-1987",
+          "resultID": "835aada79e600fc2"
+        },
+        {
+          "electionID": "senato-1987",
           "resultID": "835aada79e600fc2"
         }
       ],
@@ -714,7 +838,44 @@
       "aliases": [
         "Partito Radicale"
       ],
-      "bindings": [],
+      "bindings": [
+        {
+          "electionID": "camera-1968",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "camera-1976",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "senato-1976",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "camera-1979",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "senato-1979",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "camera-1983",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "senato-1983",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "camera-1987",
+          "resultID": "1872e61cb312ae06"
+        },
+        {
+          "electionID": "senato-1987",
+          "resultID": "1872e61cb312ae06"
+        }
+      ],
       "hemicycleOrder": 42
     },
     {
@@ -951,6 +1112,14 @@
         },
         {
           "electionID": "senato-1963",
+          "resultID": "027fcbbc3e6f2632"
+        },
+        {
+          "electionID": "camera-1968",
+          "resultID": "027fcbbc3e6f2632"
+        },
+        {
+          "electionID": "senato-1968",
           "resultID": "027fcbbc3e6f2632"
         }
       ],

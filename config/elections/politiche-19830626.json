@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "politiche-19830626",
+  "status": "active",
+  "ballots": [
+    {
+      "order": 39,
+      "source": {
+        "id": "camera-1983",
+        "title": "Camera dei deputati",
+        "category": "politiche",
+        "year": 1983,
+        "dateLabel": "26 giugno 1983",
+        "coverage": "Italia · voto di lista",
+        "note": "Risultati nazionali e delle 32 circoscrizioni letti dalle tabelle ufficiali di Eligendo e riconciliati esattamente per elettori, votanti e ciascuna lista/gruppo. Sono rappresentati tutti i 630 seggi elettivi del riparto nazionale. Le formazioni congiunte restano distinte dai singoli partiti.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 26 giugno 1983",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "C",
+        "date": "26/06/1983",
+        "headingPrefix": "Camera 26/06/1983",
+        "level": "Circoscrizione",
+        "expectedTerritories": 32,
+        "eventID": "politiche-19830626",
+        "chamber": "camera",
+        "resultKind": "lists",
+        "previousElectionID": "camera-1979",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "camera-1983",
+        "adapter": "historical-pages",
+        "chamber": "camera",
+        "type": "C",
+        "date": "26/06/1983",
+        "headingPrefix": "Camera 26/06/1983",
+        "totalSeats": 630,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Liste · intera Camera",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=C&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 630,
+            "listMetadata": true,
+            "heading": "Camera 26/06/1983 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 630 seggi elettivi del 1983, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 32
+    },
+    {
+      "order": 40,
+      "source": {
+        "id": "senato-1983",
+        "title": "Senato della Repubblica",
+        "category": "politiche",
+        "year": 1983,
+        "dateLabel": "26 giugno 1983",
+        "coverage": "Italia · voto ai gruppi",
+        "note": "Risultati nazionali e delle 20 regioni letti dalle tabelle ufficiali di Eligendo e riconciliati esattamente per elettori, votanti e ciascuna lista/gruppo. Sono rappresentati tutti i 315 seggi elettivi del riparto nazionale. Le formazioni congiunte restano distinte dai singoli partiti.",
+        "sourceURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "sourceFile": "Tabelle Eligendo del 26 giugno 1983",
+        "adapter": "historical-vote-pages",
+        "downloadURL": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+        "type": "S",
+        "date": "26/06/1983",
+        "headingPrefix": "Senato 26/06/1983",
+        "level": "Regione",
+        "expectedTerritories": 20,
+        "eventID": "politiche-19830626",
+        "chamber": "senato",
+        "resultKind": "groups",
+        "previousElectionID": "senato-1979",
+        "comparisonTerritories": [
+          "national"
+        ]
+      },
+      "seatsPolicy": "configured",
+      "seats": {
+        "electionID": "senato-1983",
+        "adapter": "historical-pages",
+        "chamber": "senato",
+        "type": "S",
+        "date": "26/06/1983",
+        "headingPrefix": "Senato 26/06/1983",
+        "totalSeats": 315,
+        "unreportedSeats": 0,
+        "parts": [
+          {
+            "id": "italia",
+            "label": "Gruppi · intero Senato",
+            "url": "https://elezionistorico.interno.gov.it/index.php?tpel=S&dtel=26/06/1983&es0=S&tpa=I&lev0=0&levsut0=0&ms=S&tpe=A",
+            "format": "flat",
+            "expectedSeats": 315,
+            "listMetadata": true,
+            "heading": "Senato 26/06/1983 Area ITALIA"
+          }
+        ],
+        "note": " Sono rappresentati tutti i 315 seggi elettivi del 1983, secondo il riparto nazionale Eligendo."
+      },
+      "seatsOrder": 33
+    }
+  ]
+}
