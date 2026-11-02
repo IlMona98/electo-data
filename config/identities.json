@@ -528,6 +528,21 @@
       "hemicycleOrder": 40
     },
     {
+      "id": "movimento-comunità",
+      "label": "Movimento Comunità",
+      "shortLabel": "MC",
+      "kind": "party",
+      "colorHex": "A859AB",
+      "aliases": [
+        "Movimento Comunità",
+        "Movimento Comunita'",
+        "Comunità",
+        "Comunita'"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 48
+    },
+    {
       "id": "movimento-sociale-italiano",
       "label": "Movimento Sociale Italiano",
       "shortLabel": "MSI",
@@ -734,6 +749,20 @@
       "hemicycleOrder": 30
     },
     {
+      "id": "partito-democratico-italiano-di-unita-monarchica",
+      "label": "Partito Democratico Italiano di Unità Monarchica",
+      "shortLabel": "PDIUM",
+      "kind": "party",
+      "colorHex": "47609C",
+      "aliases": [
+        "Partito Democratico Italiano di Unità Monarchica",
+        "Partito Democratico Italiano di Unita' Monarchica",
+        "PDIUM"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 88
+    },
+    {
       "id": "partito-dei-comunisti-italiani",
       "label": "Partito dei Comunisti Italiani",
       "shortLabel": "PdCI",
@@ -893,6 +922,20 @@
       "hemicycleOrder": 48
     },
     {
+      "id": "partito-repubblicano-italiano-partito-radicale",
+      "label": "Partito Repubblicano Italiano - Partito Radicale",
+      "shortLabel": "PRI-PR",
+      "kind": "party",
+      "colorHex": "808F51",
+      "aliases": [
+        "Partito Repubblicano Italiano - Partito Radicale",
+        "PRI-P.RAD.",
+        "PRI-PR"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 48
+    },
+    {
       "id": "partito-sardo-d-azione",
       "label": "Partito Sardo d'Azione",
       "shortLabel": "PSd'Az",
@@ -920,6 +963,20 @@
       "hemicycleOrder": 22
     },
     {
+      "id": "partito-socialista-italiano-di-unita-proletaria",
+      "label": "Partito Socialista Italiano di Unità Proletaria",
+      "shortLabel": "PSIUP",
+      "kind": "party",
+      "colorHex": "D0475E",
+      "aliases": [
+        "Partito Socialista Italiano di Unità Proletaria",
+        "Partito Socialista Italiano di Unita' Proletaria",
+        "PSIUP"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 20
+    },
+    {
       "id": "partito-socialista-democratico-italiano",
       "label": "Partito Socialista Democratico Italiano",
       "shortLabel": "PSDI",
@@ -931,6 +988,19 @@
       ],
       "bindings": [],
       "hemicycleOrder": 35
+    },
+    {
+      "id": "partito-socialista-unificato",
+      "label": "Partito Socialista Unificato",
+      "shortLabel": "PSU",
+      "kind": "party",
+      "colorHex": "DC6D72",
+      "aliases": [
+        "Partito Socialista Unificato",
+        "PSU"
+      ],
+      "bindings": [],
+      "hemicycleOrder": 22
     },
     {
       "id": "piu-europa",
@@ -1099,7 +1169,12 @@
       "kind": "party",
       "colorHex": "C0D4E0",
       "aliases": [
-        "Union Valdôtaine"
+        "Union Valdôtaine",
+        "L.Valle D'Aosta",
+        "UV-ADP-PRI",
+        "UV-UVP-D.POP.",
+        "Unione Valdostana-DEMPROL-PLI",
+        "DC-UV-RV-PSDI"
       ],
       "bindings": [
         {
