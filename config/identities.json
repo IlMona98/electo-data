@@ -8,10 +8,12 @@
       "kind": "coalition",
       "colorHex": "299BD6",
       "aliases": [
-        "Centrodestra"
+        "Centrodestra",
+        "FRATELLI D'ITALIA - LEGA - NOI MODERATI - UNIONE DI CENTRO - FORZA ITALIA-PPE"
       ],
       "bindings": [],
-      "hemicycleOrder": 60
+      "hemicycleOrder": 60,
+      "politicalSide": "right"
     },
     {
       "id": "la-casa-delle-liberta",
@@ -59,10 +61,12 @@
       "kind": "coalition",
       "colorHex": "E94F39",
       "aliases": [
-        "Centrosinistra"
+        "Centrosinistra",
+        "PARTITO DEMOCRATICO - MOVIMENTO 5 STELLE - CASA RIFORMISTA"
       ],
       "bindings": [],
-      "hemicycleOrder": 30
+      "hemicycleOrder": 30,
+      "politicalSide": "left"
     },
     {
       "id": "alleanza-dei-progressisti",
@@ -528,7 +532,7 @@
       "hemicycleOrder": 40
     },
     {
-      "id": "movimento-comunità",
+      "id": "movimento-comunita",
       "label": "Movimento Comunità",
       "shortLabel": "MC",
       "kind": "party",
@@ -1239,5 +1243,18 @@
       "bindings": [],
       "hemicycleOrder": 85
     }
-  ]
+  ],
+  "candidateRules": [
+    {
+      "entityID": "centrodestra",
+      "supporterIDs": [
+        "fratelli-d-italia",
+        "lega",
+        "noi-moderati",
+        "unione-di-centro",
+        "forza-italia"
+      ]
+    }
+  ],
+  "candidateContests": []
 }

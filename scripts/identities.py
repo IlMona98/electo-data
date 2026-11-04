@@ -107,6 +107,9 @@ def compile_registry(source, public):
             key=(binding.get('electionID'),binding.get('resultID'))
             require(all(isinstance(v,str) and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,199}',v) for v in key) and key not in bindings,'Duplicate or invalid result binding')
             bindings.add(key)
+        if 'politicalSide' in item:
+            require(item['politicalSide'] in ('left','center','right'),'Political side must be left, center or right')
+            entity['politicalSide']=item['politicalSide']
         if 'hemicycleOrder' in item:
             require(type(item['hemicycleOrder']) is int and 0<=item['hemicycleOrder']<=100,'Hemicycle order must be an integer from 0 to 100')
             entity['hemicycleOrder']=item['hemicycleOrder']
@@ -127,6 +130,33 @@ def compile_registry(source, public):
             raise ValueError('Symbol hash without image')
         entities.append(entity)
     result=dict(schemaVersion=1,entities=entities)
+    by_id={e['id']:e for e in entities}
+    if 'candidateRules' in source:
+        require(isinstance(source['candidateRules'],list),'Candidate rules must be an array')
+        seen=set()
+        for rule in source['candidateRules']:
+            require(isinstance(rule,dict) and set(rule)<= {'entityID','supporterIDs','electionID'},'Invalid candidate rule fields')
+            members=rule.get('supporterIDs')
+            require(isinstance(members,list) and members and all(isinstance(x,str) for x in members),'Missing candidate supporters')
+            require(len(set(members))==len(members) and all(x in by_id and by_id[x]['kind']=='party' for x in members),'Unknown or duplicate supporter ID')
+            require(rule.get('entityID') in by_id,'Unknown candidate coalition identity')
+            scope=rule.get('electionID')
+            require(scope is None or (isinstance(scope,str) and scope.strip()),'Invalid candidate election scope')
+            key=(scope,tuple(sorted(members)))
+            require(key not in seen,'Ambiguous candidate coalition rules');seen.add(key)
+        result['candidateRules']=source['candidateRules']
+    if 'candidateContests' in source:
+        from urllib.parse import urlsplit
+        require(isinstance(source['candidateContests'],list),'Candidate contests must be an array')
+        seen=set()
+        for reference in source['candidateContests']:
+            require(isinstance(reference,dict) and set(reference)=={'electionID','territoryID','previousEntityID','sourceURL'},'Invalid candidate contest fields')
+            require(all(isinstance(v,str) and v.strip() for v in reference.values()),'Incomplete candidate contest reference')
+            key=(reference['electionID'],reference['territoryID'])
+            require(key not in seen,'Duplicate candidate contest reference');seen.add(key)
+            url=urlsplit(reference['sourceURL'])
+            require(reference['previousEntityID'] in by_id and url.scheme=='https' and url.hostname in ('elezioni.interno.gov.it','elezionistorico.interno.gov.it') and url.username is None and url.password is None,'Candidate comparison needs a ministerial source and known previous identity')
+        result['candidateContests']=source['candidateContests']
     require(len(json.dumps(result,ensure_ascii=False).encode())<=1_000_000,'Identity registry too large')
     return result
 

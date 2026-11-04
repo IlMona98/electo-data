@@ -21,6 +21,21 @@ def png(width=1,height=1):
     def chunk(tag,raw):return struct.pack('>I',len(raw))+tag+raw+struct.pack('>I',zlib.crc32(tag+raw)&0xffffffff)
     return b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',width,height,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(b'\0\xff\0\0\xff'))+chunk(b'IEND',b'')
 class IdentityTests(unittest.TestCase):
+    def test_candidate_rules_and_official_references_round_trip(self):
+        party=entity(); coalition=entity('coalition');coalition.update(kind='coalition',aliases=[],politicalSide='left')
+        value=registry(party,coalition)
+        value['candidateRules']=[dict(entityID='coalition',supporterIDs=['example'])]
+        value['candidateContests']=[dict(electionID='suppletiva',territoryID='college',previousEntityID='coalition',sourceURL='https://elezionistorico.interno.gov.it/index.php?tpel=C')]
+        result=compile_registry(value,Path('.'))
+        self.assertEqual(result['candidateRules'],value['candidateRules'])
+        self.assertEqual(result['candidateContests'],value['candidateContests'])
+        self.assertEqual(result['entities'][1]['politicalSide'],'left')
+    def test_candidate_rules_reject_unknown_duplicate_or_partial_configuration(self):
+        for rules in [[dict(entityID='example',supporterIDs=['unknown'])], [dict(entityID='example',supporterIDs=['example','example'])], [dict(entityID='example',supporterIDs=['example'])]*2]:
+            value=registry(entity());value['candidateRules']=rules
+            with self.assertRaises(ValueError):compile_registry(value,Path('.'))
+        value=registry(entity());value['candidateContests']=[dict(electionID='e',territoryID='college',previousEntityID='example',sourceURL='https://example.org')]
+        with self.assertRaises(ValueError):compile_registry(value,Path('.'))
     def test_empty_registry_is_neutral(self):
         self.assertEqual(compile_registry(registry(),Path('.'))['entities'],[])
     def test_invalid_color_is_rejected(self):
